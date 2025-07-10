@@ -2,7 +2,6 @@
   "name": "samadhi-retreat",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://anaiva27.github.io/samadhi-retreat",
   "type": "module",
   "scripts": {
      "dev": "vite",

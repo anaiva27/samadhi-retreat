@@ -147,6 +147,7 @@ const Menu = () => {
 
 			const currentScrollY = window.scrollY;
 
+			console.log("scroll", window.height, window.innerHeight);
 			if (currentScrollY > lastScrollY.current) {
 				gsap.to(".menu-bar", {
 					y: -200,
@@ -154,11 +155,12 @@ const Menu = () => {
 					ease: "power2.out",
 				});
 			} else {
-				gsap.to(".menu-bar", {
-					y: 0,
-					duration: 1,
-					ease: "power2.out",
-				});
+				if (currentScrollY <= window.innerHeight)
+					gsap.to(".menu-bar", {
+						y: 0,
+						duration: 1,
+						ease: "power2.out",
+					});
 			}
 
 			lastScrollY.current = currentScrollY;
@@ -171,13 +173,13 @@ const Menu = () => {
 		};
 	}, [isMenuOpen]);
 
-	useEffect(() => {
-		return () => {
-			if (document.body.style.position === "fixed") {
-				toggleBodyScroll(false);
-			}
-		};
-	}, []);
+	// useEffect(() => {
+	// 	return () => {
+	// 		if (document.body.style.position === "fixed") {
+	// 			toggleBodyScroll(false);
+	// 		}
+	// 	};
+	// }, []);
 
 	return (
 		<div

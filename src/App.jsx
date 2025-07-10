@@ -14,36 +14,60 @@ import Contact from "./pages/Contact/Contact";
 import { AnimatePresence } from "framer-motion";
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+	const { pathname } = useLocation();
 
-  useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 1400);
-  }, [pathname]);
+	useEffect(() => {
+		setTimeout(() => {
+			window.scrollTo(0, 0);
+		}, 1400);
+	}, [pathname]);
 
-  return null;
+	return null;
 }
 
 function App() {
-  const location = useLocation();
+	const location = useLocation();
 
-  return (
-    <>
-      <ScrollToTop />
-      <Menu />
-      <AnimatePresence mode="wait" initial={false}>
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/sample-project" element={<Project />} />
-        </Routes>
-      </AnimatePresence>
-    </>
-  );
+	return (
+		<>
+			<ScrollToTop />
+			{/* <Menu /> */}
+			<AnimatePresence
+				mode="wait"
+				initial={false}
+			>
+				<Routes
+					location={location}
+					key={location.pathname}
+				>
+					<Route
+						path="/"
+						element={<Home />}
+					/>
+					<Route
+						path="/about"
+						element={<About />}
+					/>
+					<Route
+						path="/contact"
+						element={<Contact />}
+					/>
+					<Route
+						path="/faq"
+						element={<FAQ />}
+					/>
+					<Route
+						path="/work"
+						element={<Work />}
+					/>
+					<Route
+						path="/sample-project"
+						element={<Project />}
+					/>
+				</Routes>
+			</AnimatePresence>
+		</>
+	);
 }
 
 export default App;

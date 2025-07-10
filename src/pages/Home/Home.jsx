@@ -15,6 +15,7 @@ import ReactLenis from "lenis/react";
 gsap.registerPlugin(ScrollTrigger);
 
 import Transition from "../../components/Transition/Transition";
+import Menu from "../../components/Menu/Menu";
 
 const Home = () => {
 	const workItems = Array.isArray(workList) ? workList : [];
@@ -178,6 +179,7 @@ const Home = () => {
 	return (
 		<ReactLenis root>
 			<div className="page home">
+				<Menu />
 				<section className="hero">
 					<div className="hero-img">
 						<img
@@ -275,8 +277,8 @@ const Home = () => {
 						/>
 					</div>
 					<div className="sticky-titles-footer">
-						<p className="primary sm">Embodying feminine practices</p>
-						<p className="primary sm">Women's retreat</p>
+						<p className="primary sm">Celebrating</p>
+						<p className="primary sm">Women</p>
 					</div>
 				</section>
 				<section

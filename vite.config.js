@@ -6,6 +6,6 @@ export default defineConfig({
 	plugins: [react()],
 	build: {
 		outDir: "build",
-		base: "/samadhi-retreat",
+		base: "/samadhi-retreat/",
 	},
 });

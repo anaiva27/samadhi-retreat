@@ -147,7 +147,6 @@ const Menu = () => {
 
 			const currentScrollY = window.scrollY;
 
-			console.log("scroll", window.height, window.innerHeight);
 			if (currentScrollY > lastScrollY.current) {
 				gsap.to(".menu-bar", {
 					y: -200,

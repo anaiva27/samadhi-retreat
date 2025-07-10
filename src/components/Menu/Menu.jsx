@@ -20,7 +20,7 @@ const Menu = () => {
 	const menuLinksAnimation = useRef();
 	const menuBarAnimation = useRef();
 
-	// const lastScrollY = useRef(0);
+	const lastScrollY = useRef(0);
 	const menuBarRef = useRef();
 
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -141,36 +141,36 @@ const Menu = () => {
 		}
 	}, [isMenuOpen]);
 
-	// useEffect(() => {
-	// 	const handleScroll = () => {
-	// 		if (isMenuOpen) return;
+	useEffect(() => {
+		const handleScroll = () => {
+			if (isMenuOpen) return;
 
-	// 		const currentScrollY = window.scrollY;
+			const currentScrollY = window.scrollY;
 
-	// 		if (currentScrollY > lastScrollY.current) {
-	// 			gsap.to(".menu-bar", {
-	// 				y: -200,
-	// 				duration: 1,
-	// 				ease: "power2.out",
-	// 			});
-	// 		} else {
-	// 			if (currentScrollY <= window.innerHeight)
-	// 				gsap.to(".menu-bar", {
-	// 					y: 0,
-	// 					duration: 1,
-	// 					ease: "power2.out",
-	// 				});
-	// 		}
+			if (currentScrollY > lastScrollY.current) {
+				gsap.to(".menu-bar", {
+					y: -200,
+					duration: 1,
+					ease: "power2.out",
+				});
+			} else {
+				if (currentScrollY <= window.innerHeight)
+					gsap.to(".menu-bar", {
+						y: 0,
+						duration: 1,
+						ease: "power2.out",
+					});
+			}
 
-	// 		lastScrollY.current = currentScrollY;
-	// 	};
+			lastScrollY.current = currentScrollY;
+		};
 
-	// 	window.addEventListener("scroll", handleScroll);
+		window.addEventListener("scroll", handleScroll);
 
-	// 	return () => {
-	// 		window.removeEventListener("scroll", handleScroll);
-	// 	};
-	// }, [isMenuOpen]);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, [isMenuOpen]);
 
 	// useEffect(() => {
 	// 	return () => {

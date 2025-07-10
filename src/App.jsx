@@ -31,7 +31,7 @@ function App() {
 	return (
 		<>
 			<ScrollToTop />
-			{/* <Menu /> */}
+			<Menu />
 			<AnimatePresence
 				mode="wait"
 				initial={false}

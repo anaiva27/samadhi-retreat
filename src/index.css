@@ -52,7 +52,7 @@ h2 {
 }
 
 h3 {
-  font-size: 4vw;
+  font-size: min(4vw, 45px);
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 3.4vw;
@@ -75,6 +75,10 @@ p {
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
   line-height: 130%;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px black;
 }
 
 p.primary {
@@ -179,7 +183,7 @@ textarea::placeholder {
   }
 
   h3 {
-    font-size: 8vw;
+    font-size: max(6vw, 20px);
     line-height: 7vw;
   }
 

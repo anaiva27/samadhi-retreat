@@ -2,12 +2,10 @@ import workList from "../../data/workList";
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-
 import AnimatedCopy from "../../components/AnimatedCopy/AnimatedCopy";
 import Reviews from "../../components/Reviews/Reviews";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/Footer/Footer";
-
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ReactLenis from "lenis/react";
@@ -15,7 +13,6 @@ import ReactLenis from "lenis/react";
 gsap.registerPlugin(ScrollTrigger);
 
 import Transition from "../../components/Transition/Transition";
-import Menu from "../../components/Menu/Menu";
 
 const Home = () => {
 	const workItems = Array.isArray(workList) ? workList : [];
@@ -24,162 +21,161 @@ const Home = () => {
 	const stickyWorkHeaderRef = useRef(null);
 	const homeWorkRef = useRef(null);
 
-	useEffect(() => {
-		const handleResize = () => {
-			ScrollTrigger.refresh();
-		};
+	// useEffect(() => {
+	// 	const handleResize = () => {
+	// 		ScrollTrigger.refresh();
+	// 	};
 
-		window.addEventListener("resize", handleResize);
+	// 	window.addEventListener("resize", handleResize);
 
-		const stickySection = stickyTitlesRef.current;
-		const titles = titlesRef.current.filter(Boolean);
+	// 	const stickySection = stickyTitlesRef.current;
+	// 	const titles = titlesRef.current.filter(Boolean);
 
-		if (!stickySection || titles.length !== 5) {
-			window.removeEventListener("resize", handleResize);
-			return;
-		}
+	// 	if (!stickySection || titles.length !== 5) {
+	// 		window.removeEventListener("resize", handleResize);
+	// 		return;
+	// 	}
 
-		gsap.set(titles[0], { opacity: 1, scale: 1 });
-		gsap.set(titles[1], { opacity: 0, scale: 0.75 });
-		gsap.set(titles[2], { opacity: 0, scale: 0.75 });
-		gsap.set(titles[3], { opacity: 0, scale: 0.75 });
-		gsap.set(titles[4], { opacity: 0 });
+	// 	gsap.set(titles[0], { opacity: 1, scale: 1 });
+	// 	gsap.set(titles[1], { opacity: 0, scale: 0.75 });
+	// 	gsap.set(titles[2], { opacity: 0, scale: 0.75 });
+	// 	gsap.set(titles[3], { opacity: 0, scale: 0.75 });
+	// 	gsap.set(titles[4], { opacity: 0 });
 
-		const pinTrigger = ScrollTrigger.create({
-			trigger: stickySection,
-			start: "top top",
-			end: `+=${window.innerHeight * 5}`,
-			pin: true,
-			pinSpacing: true,
-		});
+	// 	const pinTrigger = ScrollTrigger.create({
+	// 		trigger: stickySection,
+	// 		start: "top top",
+	// 		end: `+=${window.innerHeight * 5}`,
+	// 		pin: true,
+	// 		pinSpacing: true,
+	// 	});
 
-		const masterTimeline = gsap.timeline({
-			scrollTrigger: {
-				trigger: stickySection,
-				start: "top top",
-				end: `+=${window.innerHeight * 4}`,
-				scrub: 0.5,
-			},
-		});
+	// 	const masterTimeline = gsap.timeline({
+	// 		scrollTrigger: {
+	// 			trigger: stickySection,
+	// 			start: "top top",
+	// 			end: `+=${window.innerHeight * 4}`,
+	// 			scrub: 0.5,
+	// 		},
+	// 	});
 
-		masterTimeline
-			.to(
-				titles[0],
-				{
-					opacity: 0,
-					scale: 0.75,
-					duration: 0.3,
-					ease: "power2.out",
-				},
-				1
-			)
-			.to(
-				titles[1],
-				{
-					opacity: 1,
-					scale: 1,
-					duration: 0.3,
-					ease: "power2.in",
-				},
-				1.25
-			);
+	// 	masterTimeline
+	// 		.to(
+	// 			titles[0],
+	// 			{
+	// 				opacity: 0,
+	// 				scale: 0.75,
+	// 				duration: 0.3,
+	// 				ease: "power2.out",
+	// 			},
+	// 			1
+	// 		)
+	// 		.to(
+	// 			titles[1],
+	// 			{
+	// 				opacity: 1,
+	// 				scale: 1,
+	// 				duration: 0.3,
+	// 				ease: "power2.in",
+	// 			},
+	// 			1.25
+	// 		);
 
-		masterTimeline
-			.to(
-				titles[1],
-				{
-					opacity: 0,
-					scale: 0.75,
-					duration: 0.3,
-					ease: "power2.out",
-				},
-				2.5
-			)
-			.to(
-				titles[2],
-				{
-					opacity: 1,
-					scale: 1,
-					duration: 0.3,
-					ease: "power2.in",
-				},
-				2.75
-			);
+	// 	masterTimeline
+	// 		.to(
+	// 			titles[1],
+	// 			{
+	// 				opacity: 0,
+	// 				scale: 0.75,
+	// 				duration: 0.3,
+	// 				ease: "power2.out",
+	// 			},
+	// 			2.5
+	// 		)
+	// 		.to(
+	// 			titles[2],
+	// 			{
+	// 				opacity: 1,
+	// 				scale: 1,
+	// 				duration: 0.3,
+	// 				ease: "power2.in",
+	// 			},
+	// 			2.75
+	// 		);
 
-		masterTimeline
-			.to(
-				titles[2],
-				{
-					opacity: 0,
-					scale: 0.75,
-					duration: 0.3,
-					ease: "power2.out",
-				},
-				4
-			)
-			.to(
-				titles[3],
-				{
-					opacity: 1,
-					duration: 0.3,
-					ease: "power2.in",
-				},
-				4.25
-			);
+	// 	masterTimeline
+	// 		.to(
+	// 			titles[2],
+	// 			{
+	// 				opacity: 0,
+	// 				scale: 0.75,
+	// 				duration: 0.3,
+	// 				ease: "power2.out",
+	// 			},
+	// 			4
+	// 		)
+	// 		.to(
+	// 			titles[3],
+	// 			{
+	// 				opacity: 1,
+	// 				duration: 0.3,
+	// 				ease: "power2.in",
+	// 			},
+	// 			4.25
+	// 		);
 
-		masterTimeline
-			.to(
-				titles[3],
-				{
-					opacity: 0,
-					scale: 0.75,
-					duration: 0.3,
-					ease: "power2.out",
-				},
-				6
-			)
-			.to(
-				titles[4],
-				{
-					opacity: 1,
-					duration: 0.4,
-					ease: "power2.in",
-				},
-				6.4
-			);
+	// 	masterTimeline
+	// 		.to(
+	// 			titles[3],
+	// 			{
+	// 				opacity: 0,
+	// 				scale: 0.75,
+	// 				duration: 0.3,
+	// 				ease: "power2.out",
+	// 			},
+	// 			6
+	// 		)
+	// 		.to(
+	// 			titles[4],
+	// 			{
+	// 				opacity: 1,
+	// 				duration: 0.4,
+	// 				ease: "power2.in",
+	// 			},
+	// 			6.4
+	// 		);
 
-		const workHeaderSection = stickyWorkHeaderRef.current;
-		const homeWorkSection = homeWorkRef.current;
+	// 	const workHeaderSection = stickyWorkHeaderRef.current;
+	// 	const homeWorkSection = homeWorkRef.current;
 
-		let workHeaderPinTrigger;
-		if (workHeaderSection && homeWorkSection) {
-			workHeaderPinTrigger = ScrollTrigger.create({
-				trigger: workHeaderSection,
-				start: "top top",
-				endTrigger: homeWorkSection,
-				end: "bottom bottom",
-				pin: true,
-				pinSpacing: false,
-			});
-		}
+	// 	let workHeaderPinTrigger;
+	// 	if (workHeaderSection && homeWorkSection) {
+	// 		workHeaderPinTrigger = ScrollTrigger.create({
+	// 			trigger: workHeaderSection,
+	// 			start: "top top",
+	// 			endTrigger: homeWorkSection,
+	// 			end: "bottom bottom",
+	// 			pin: true,
+	// 			pinSpacing: false,
+	// 		});
+	// 	}
 
-		return () => {
-			pinTrigger.kill();
-			if (workHeaderPinTrigger) {
-				workHeaderPinTrigger.kill();
-			}
-			if (masterTimeline.scrollTrigger) {
-				masterTimeline.scrollTrigger.kill();
-			}
-			masterTimeline.kill();
-			window.removeEventListener("resize", handleResize);
-		};
-	}, []);
+	// 	return () => {
+	// 		pinTrigger.kill();
+	// 		if (workHeaderPinTrigger) {
+	// 			workHeaderPinTrigger.kill();
+	// 		}
+	// 		if (masterTimeline.scrollTrigger) {
+	// 			masterTimeline.scrollTrigger.kill();
+	// 		}
+	// 		masterTimeline.kill();
+	// 		window.removeEventListener("resize", handleResize);
+	// 	};
+	// }, []);
 
 	return (
 		<ReactLenis root>
 			<div className="page home">
-				<Menu />
 				<section className="hero">
 					<div className="hero-img">
 						<img
@@ -243,7 +239,7 @@ const Home = () => {
 						<p className="primary sm">Let’s Connect</p>
 					</div>
 
-					<h2 ref={(el) => (titlesRef.current[0] = el)}>
+					{/* <h2 ref={(el) => (titlesRef.current[0] = el)}>
 						What would it be like living your life as a celebration?
 					</h2>
 					<h2 ref={(el) => (titlesRef.current[1] = el)}>
@@ -251,25 +247,29 @@ const Home = () => {
 					</h2>
 					<h2 ref={(el) => (titlesRef.current[2] = el)}>
 						Welcome to women’s retreat at the magical land of Peru.
-					</h2>
+					</h2> */}
 					<h3
 						id="sticky"
 						ref={(el) => (titlesRef.current[3] = el)}
 					>
-						Where we offer a pathway to dissolve emotional barriers and awaken
+						Where we offer a pathway to <br />
+						dissolve emotional barriers <br />
+						and awaken
 						<br />
 						<br />
 						<span style={{ fontFamily: "Zapfino" }}>
-							the blissful woman within you
+							the blissful woman{" "}
+							<span style={{ marginTop: 30, display: "block" }}>
+								within you.
+							</span>
 						</span>
-						.
 					</h3>
-					<img
+					{/* <img
 						ref={(el) => (titlesRef.current[4] = el)}
 						className="explore-img"
 						src="/home/explore-img-2.png"
 						alt=""
-					/>
+					/> */}
 					<div className="sticky-work-logo">
 						<img
 							src="/home/logo-1.png"
@@ -285,6 +285,16 @@ const Home = () => {
 					ref={stickyWorkHeaderRef}
 					className="sticky-work-header"
 				>
+					<div className="intro">
+						<p className="primary sm">
+							What would it be like <br />
+							living your life as a celebration?
+						</p>
+						<p className="primary sm">
+							To get in touch with your sacred feminine power?
+						</p>
+					</div>
+					<h3>Welcome to women’s retreat at the magical land of Peru.</h3>
 					<AnimatedCopy
 						tag="h1"
 						animateOnScroll="true"
@@ -306,7 +316,9 @@ const Home = () => {
 								alt=""
 							/>
 						</div>
-						<p className="primary">This is more than just a retreat</p>
+						<p className="primary text-shadow">
+							This is more than just a retreat
+						</p>
 					</div>
 					<div className="services-col">
 						<h4>
@@ -395,10 +407,16 @@ const Home = () => {
 								<p className="primary sm">04 - 2025</p>
 								<h3>{work.title}</h3>
 								<div className="work-item-img">
-									<img
-										src={work.image}
-										alt={work.title}
-									/>
+									<iframe
+										width="560"
+										height="315"
+										src={work.video}
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+										referrerpolicy="strict-origin-when-cross-origin"
+										allowfullscreen
+									></iframe>
 								</div>
 								<h4>{work.category}</h4>
 							</Link>
@@ -406,7 +424,7 @@ const Home = () => {
 					</div>
 				</section>
 				<Reviews />
-				<section className="hobbies">
+				{/* <section className="hobbies">
 					<div className="hobby">
 						<AnimatedCopy
 							tag="h4"
@@ -440,7 +458,7 @@ const Home = () => {
 						</AnimatedCopy>
 					</div>
 				</section>
-				<ContactForm />
+				<ContactForm /> */}
 				<Footer />
 			</div>
 		</ReactLenis>

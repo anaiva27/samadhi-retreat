@@ -300,7 +300,7 @@ const Home = () => {
 					<div className="services-col">
 						<div className="services-banner">
 							<img
-								src="/about/services-banner.jpg"
+								src="/home/img3-1.jpg"
 								alt=""
 							/>
 						</div>

@@ -5,12 +5,10 @@
   "homepage": "https://anaiva27.github.io/samadhi-retreat",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+     "dev": "vite",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

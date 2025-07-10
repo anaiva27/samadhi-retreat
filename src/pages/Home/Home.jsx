@@ -408,8 +408,8 @@ const Home = () => {
 								<h3>{work.title}</h3>
 								<div className="work-item-img">
 									<iframe
-										width="560"
-										height="315"
+										// width="560"
+										// height="315"
 										src={work.video}
 										title="YouTube video player"
 										frameborder="0"

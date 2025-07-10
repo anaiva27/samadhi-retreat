@@ -167,7 +167,14 @@
 }
 
 .work-item-img {
-  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.work-item-img iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
 }
 
 @media (max-width: 1000px) {

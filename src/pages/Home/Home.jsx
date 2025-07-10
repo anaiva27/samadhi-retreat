@@ -309,8 +309,9 @@ const Home = () => {
 					<div className="services-col">
 						<h4>
 							It’s an invitation to step into a life where joy, connection, and
-							love flow effortlessly. Come, embrace your fullest expression and
-							let the adventure of your soul unfold!
+							love flow effortlessly. <br /> <br />
+							Come, embrace your fullest expression and let the adventure of
+							your soul unfold!
 							<br /> <br />
 							This is a retreat for women who:
 						</h4>
@@ -370,14 +371,12 @@ const Home = () => {
 				</section>
 
 				<section className="services">
-					<div className="services">
-						<h4>
-							Surrounded by the loving embrace of sisterhood and the sacred
-							presence of Mother Earth. <br /> <br />
-							This retreat is a space where you can rediscover your truest
-							self—unfiltered, untamed, and radiant.
-						</h4>
-					</div>
+					<h4>
+						Surrounded by the loving embrace of sisterhood and the sacred
+						presence of Mother Earth. <br /> <br />
+						This retreat is a space where you can rediscover your truest
+						self—unfiltered, untamed, and radiant.
+					</h4>
 				</section>
 
 				<section
@@ -385,16 +384,13 @@ const Home = () => {
 					className="home-work"
 				>
 					<div className="home-work-list">
-						{workItems.map((work, index) => (
+						{workItems.map((work) => (
 							<Link
 								to="/sample-project"
 								key={work.id}
 								className="home-work-item"
 							>
-								<p className="primary sm">{`${String(index + 1).padStart(
-									2,
-									"0"
-								)} - ${String(workItems.length).padStart(2, "0")}`}</p>
+								<p className="primary sm">04 - 2025</p>
 								<h3>{work.title}</h3>
 								<div className="work-item-img">
 									<img

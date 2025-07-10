@@ -4,8 +4,8 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
 	plugins: [react()],
-	base: "/samadhi-retreat",
 	build: {
 		outDir: "build",
+		base: "/samadhi-retreat",
 	},
 });

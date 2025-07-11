@@ -206,8 +206,6 @@ const Home = () => {
 						>
 							Retreats
 						</AnimatedCopy>
-						<br />
-						<br />
 						<AnimatedCopy
 							tag="p"
 							animateOnScroll={false}
@@ -220,6 +218,7 @@ const Home = () => {
 								September 19th - 25th, 2026
 							</span>
 						</AnimatedCopy>
+						<br />
 						<AnimatedCopy
 							tag="p"
 							animateOnScroll={false}
@@ -330,7 +329,7 @@ const Home = () => {
 								alt=""
 							/>
 						</div>
-						<p className="primary text-shadow">
+						<p className="primary sm text-shadow">
 							This is more than just a retreat
 						</p>
 					</div>

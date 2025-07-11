@@ -206,24 +206,38 @@ const Home = () => {
 						>
 							Retreats
 						</AnimatedCopy>
+						<br />
+						<br />
 						<AnimatedCopy
-							tag="h4"
+							tag="p"
 							animateOnScroll={false}
 							delay={1}
+							className="primary sm"
 						>
-							<span style={{ fontWeight: 200, letterSpacing: 1 }}>
+							<span
+								style={{ fontWeight: 200, letterSpacing: 1, color: "white" }}
+							>
 								September 19th - 25th, 2026
 							</span>
 						</AnimatedCopy>
 						<AnimatedCopy
-							tag="h4"
+							tag="p"
 							animateOnScroll={false}
 							delay={1.1}
+							className="primary sm"
 						>
-							<span style={{ fontWeight: 200, letterSpacing: 1 }}>
+							<span
+								style={{ fontWeight: 200, letterSpacing: 1, color: "white" }}
+							>
 								Where{" "}
-								<span style={{ fontFamily: "Zapfino", marginRight: 8 }}>
-									Women{" "}
+								<span
+									style={{
+										fontFamily: "Zapfino",
+										textTransform: "none",
+										fontSize: "1rem",
+									}}
+								>
+									women{" "}
 								</span>{" "}
 								Come Home to Themselves
 							</span>

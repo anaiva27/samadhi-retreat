@@ -234,6 +234,7 @@ const Home = () => {
 										fontFamily: "Zapfino",
 										textTransform: "none",
 										fontSize: "1rem",
+										marginLeft: "-4px",
 									}}
 								>
 									women{" "}
@@ -348,7 +349,7 @@ const Home = () => {
 									{/* <h5>Filmmaking</h5> */}
 								</div>
 								<div className="service-list-col">
-									<p>
+									<p className="primary sm">
 										...feel the pull to take a sacred pause: a full week to
 										nourish and replenish their body, mind, and spirit.
 									</p>
@@ -360,7 +361,7 @@ const Home = () => {
 									{/* <h5>Visual Storytelling</h5> */}
 								</div>
 								<div className="service-list-col">
-									<p>
+									<p className="primary sm">
 										...are longing to experience more fulfillment, to reignite
 										their passions, and embrace the playful, adventurous spirit
 										within them.
@@ -373,7 +374,7 @@ const Home = () => {
 									{/* <h5>Creative Direction</h5> */}
 								</div>
 								<div className="service-list-col">
-									<p>
+									<p className="primary sm">
 										...are ready to cultivate a deep, abiding love within their
 										bodies, reconnecting with their natural beauty, strength,
 										and grace.
@@ -386,7 +387,7 @@ const Home = () => {
 									{/* <h5>Creative Direction</h5> */}
 								</div>
 								<div className="service-list-col">
-									<p>
+									<p className="primary sm">
 										...are seeking a journey of transformation, where the wild,
 										free-spirited essence of their feminine power can bloom in
 										full expression.

@@ -177,6 +177,19 @@
   height: 300px;
 }
 
+  .intro2 {
+  margin: auto;
+  padding: 2em;
+  display: flex;
+  max-width: 800px;
+  gap: 2em;
+  border: 0.5px solid var(--border100);
+  border-radius: 1em;
+  text-align: center;
+}
+.service-list-col h5 {
+ text-transform: uppercase;
+}
 @media (max-width: 1000px) {
   .hero,
   .sticky-titles,
@@ -209,4 +222,14 @@
   .hobby {
     aspect-ratio: 5/3;
   }
+
+  .intro2 {
+  margin: 1.25em;
+  padding: 1.25em;
+  display: flex;
+  gap: 2em;
+  border: 0.5px solid var(--border100);
+  border-radius: 1em;
+  text-align: left;
+}
 }

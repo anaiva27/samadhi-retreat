@@ -62,7 +62,7 @@ h4 {
   font-size: 2vw;
   font-weight: 600;
   letter-spacing: -0.005em;
-  line-height: 2vw;
+  line-height: 2.8vw;
 }
 
 h5 {
@@ -179,17 +179,17 @@ textarea::placeholder {
 
   h2 {
     font-size: 8vw;
-    line-height: 8vw;
+    line-height: 9vw;
   }
 
   h3 {
     font-size: max(6vw, 20px);
-    line-height: 7vw;
+    line-height: 8vw;
   }
 
   h4 {
     font-size: 6vw;
-    line-height: 7vw;
+    line-height: 8vw;
   }
   p {
     line-height: 140%;

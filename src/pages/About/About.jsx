@@ -14,14 +14,13 @@ const About = () => {
 		<ReactLenis root>
 			<div className="page about">
 				<section className="about-header">
-					<h1>Est</h1>
-					<h1>1997</h1>
+					<h1>Beauty is in the eye of the beholder</h1>
 				</section>
 
 				<section className="about-hero">
 					<div className="about-hero-img">
 						<img
-							src="/about/about-hero.jpg"
+							src="/about/women1.jpg"
 							alt=""
 						/>
 					</div>

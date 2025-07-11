@@ -9,7 +9,7 @@ const Menu = () => {
 		{ path: "/", label: "Welcome" },
 		{ path: "/feedback", label: "Feedback" },
 		{ path: "/about", label: "About" },
-		{ path: "/work", label: "Schedule" },
+		{ path: "/schedule", label: "Schedule" },
 		{ path: "/contact", label: "Contact" },
 	];
 
@@ -149,7 +149,7 @@ const Menu = () => {
 
 			if (
 				currentScrollY > lastScrollY.current &&
-				currentScrollY > window.innerHeight
+				currentScrollY > window.innerHeight - 200
 			) {
 				gsap.to(".menu-bar", {
 					y: -200,
@@ -157,7 +157,7 @@ const Menu = () => {
 					ease: "power2.out",
 				});
 			} else {
-				if (currentScrollY <= window.innerHeight)
+				if (currentScrollY <= window.innerHeight - 200)
 					gsap.to(".menu-bar", {
 						y: 0,
 						duration: 1,

@@ -14,9 +14,10 @@ const About = () => {
 		<ReactLenis root>
 			<div className="page about">
 				<section className="about-header">
-					<h1>Beauty is in the eye of the beholder</h1>
+					<h1>"Beauty is in the eye of the beholder"</h1>
 				</section>
 
+				<p className=" headline"> Meet your facilitatiors</p>
 				<section className="about-hero">
 					<div className="about-hero-img">
 						<img
@@ -30,29 +31,21 @@ const About = () => {
 					<div className="about-me-copy-wrapper">
 						<AnimatedCopy
 							animateOnScroll={true}
-							tag="h3"
+							tag="p"
+							className=""
 						>
-							I'm Nico Palmer — a filmmaker drawn to human stories, quiet
-							moments, and the visual language of emotion. My work spans short
-							films, experimental pieces, and cinematic visuals.
+							Marina and Amber's bond spans over a decade, evolving from friends
+							and colleagues to what feels like soul sisters connected across
+							countless lifetimes.
 						</AnimatedCopy>
-
 						<AnimatedCopy
 							animateOnScroll={true}
-							tag="h3"
+							tag="p"
 						>
-							For me, filmmaking isn’t just about images — it’s about what those
-							images make us feel. I believe in subtlety, texture, and honesty
-							in storytelling.
-						</AnimatedCopy>
-
-						<AnimatedCopy
-							animateOnScroll={true}
-							tag="h3"
-						>
-							Every project is a new collaboration, a new challenge, and a new
-							chance to create something meaningful. If it moves someone, even
-							for a second — it's done its job.
+							United by a shared vision of life, wellness, and values, they have
+							cultivated a community of empowered, open-minded individuals.
+							Their combined commitment to making a meaningful impact on
+							people's lives has been remarkable.
 						</AnimatedCopy>
 					</div>
 				</section>
@@ -61,7 +54,7 @@ const About = () => {
 					<div className="services-col">
 						<div className="services-banner">
 							<img
-								src="/about/services-banner.jpg"
+								src="/about/IMG3.jpg"
 								alt=""
 							/>
 						</div>
@@ -69,12 +62,13 @@ const About = () => {
 					</div>
 					<div className="services-col">
 						<h4>
-							Every project is a chance to explore new visual language, push
-							creative boundaries, and tell stories that feel real. I approach
-							each film with care, precision, and purpose.
+							Now, they invite others to join them for an unforgettable
+							experience — Women’s retreat that promises to nurture physical,
+							emotional, and spiritual well-being amidst the mystical landscape
+							of Peru.
 						</h4>
 
-						<div className="services-list">
+						{/* <div className="services-list">
 							<div className="service-list-row">
 								<div className="service-list-col">
 									<h5>Filmmaking</h5>
@@ -116,11 +110,11 @@ const About = () => {
 									</p>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</section>
 
-				<section className="about-banner-img">
+				{/* <section className="about-banner-img">
 					<div className="about-banner-img-wrapper">
 						<img
 							src="/about/about-banner.jpg"
@@ -222,7 +216,7 @@ const About = () => {
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> */}
 
 				<ContactForm />
 

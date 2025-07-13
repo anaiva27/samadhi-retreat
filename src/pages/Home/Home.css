@@ -94,11 +94,15 @@
   opacity: 0.125;
   line-height: 1;
 }
+.sticky-work-header h3 {
+  margin: 5px auto 30px;
+  width: 80%;
+}
 
 .sticky-work-print {
   width: 60%;
   max-width: 600px;
-    margin: auto;
+  margin: auto;
   filter: invert(1);
 }
 
@@ -110,8 +114,8 @@
 }
 
 .intro {
-  margin: 2em;
-  padding: 2em;
+  margin: 1.25em;
+  padding: 1.25em;
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -177,7 +181,7 @@
   height: 300px;
 }
 
-  .intro2 {
+.intro2 {
   margin: auto;
   padding: 2em;
   display: flex;
@@ -187,15 +191,28 @@
   border-radius: 1em;
   text-align: center;
 }
+
 .service-list-col h5 {
  text-transform: uppercase;
 }
+
+.services-slider-col  {
+}
+
+.peru-banner {
+  width: 100%;
+  height: 35vh;
+  margin: 20px auto;
+}
+
 @media (max-width: 1000px) {
   .hero,
   .sticky-titles,
-  .sticky-work-header,
   .hobbies {
     padding: 1.25em;
+  }
+  .sticky-work-header {
+    padding: 0em;
   }
 
   .sticky-titles h2,  h3#sticky {

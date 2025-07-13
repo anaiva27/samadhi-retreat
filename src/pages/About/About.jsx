@@ -58,7 +58,7 @@ const About = () => {
 								alt=""
 							/>
 						</div>
-						<p className="primary">Crafted with Intention</p>
+						{/* <p className="primary">Crafted with Intention</p> */}
 					</div>
 					<div className="services-col">
 						<h4>

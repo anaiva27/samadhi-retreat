@@ -13,6 +13,7 @@ import ReactLenis from "lenis/react";
 gsap.registerPlugin(ScrollTrigger);
 
 import Transition from "../../components/Transition/Transition";
+import { Slider } from "../../components/Slider/Slider";
 
 const Home = () => {
 	const workItems = Array.isArray(workList) ? workList : [];
@@ -308,6 +309,12 @@ const Home = () => {
 							To get in touch with your sacred feminine power?
 						</p>
 					</div>
+					<div className="peru-banner">
+						<img
+							src="/home/wallpaper1.jpeg"
+							alt=""
+						/>
+					</div>
 					<h3>Welcome to women’s retreat at the magical land of Peru.</h3>
 					<AnimatedCopy
 						tag="h1"
@@ -445,14 +452,8 @@ const Home = () => {
 					What is included:
 				</p>
 				<section className="services">
-					<div className="services-col">
-						<div className="services-banner">
-							<img
-								src="/home/wallpaper1.jpeg"
-								alt=""
-							/>
-						</div>
-						<p className="primary">Explore with Intention</p>
+					<div className="services-slider-col">
+						<Slider />
 					</div>
 					<div className="services-col">
 						<h4>

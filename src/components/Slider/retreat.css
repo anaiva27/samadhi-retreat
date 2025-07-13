@@ -1,0 +1,55 @@
+.mySwiperRetreat {
+  width: 100%;
+  height: fit-content !important;
+}
+
+.swiper {
+  border-radius: 10px;
+}
+
+.swiper-slide.styled {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: fit-content !important;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.swiper-button-prev {
+  background-color: #222222ae;
+  width: 50px;
+  height: 70px;
+  margin-left: -10px;
+  color: white !important;
+}
+.swiper-button-next {
+  background-color: #2f2e2eae;
+  width: 50px;
+  height: 70px;
+  margin-right: -10px;
+  color: white !important;
+}
+/*
+.swiper-slide {
+  width: 33% !important;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 40% !important;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 30% !important;
+} */

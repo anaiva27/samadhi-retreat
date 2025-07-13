@@ -80,7 +80,6 @@
 .sticky-work-header {
   position: relative;
   width: 100vw;
-  height: 100svh;
   padding: 2em;
   display: flex;
   flex-direction: column;
@@ -201,11 +200,16 @@
 
 .peru-banner {
   width: 100%;
-  height: 35vh;
-  margin: 20px auto;
+  height: 500px;
+  margin: 40px auto;
 }
 
 @media (max-width: 1000px) {
+  .peru-banner {
+    height: 250px;
+      margin: 20px auto;
+  }
+
   .hero,
   .sticky-titles,
   .hobbies {

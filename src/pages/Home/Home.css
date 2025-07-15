@@ -250,6 +250,31 @@
   margin: auto;
 }
 
+.intro-samadhi {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25em;
+  gap: 20px;
+  margin: 1.25em;
+  border-radius: 1em;
+  overflow: hidden;
+  border: 0.5px solid var(--border100);
+}
+
+.intro-samadhi-col {
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.intro-samadhi img {
+  border-radius: 10px;
+  width: 100%;
+}
+
 
 @media (max-width: 1000px) {
   .peru-banner {

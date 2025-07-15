@@ -805,42 +805,47 @@ const Home = () => {
 					</div>
 				</section>
 
-				<Reviews />
-				{/* <section className="hobbies">
-					<div className="hobby">
-						<AnimatedCopy
-							tag="h4"
-							animateOnScroll={true}
-						>
-							Camera
-						</AnimatedCopy>
-					</div>
-					<div className="hobby">
-						<AnimatedCopy
-							tag="h4"
-							animateOnScroll={true}
-						>
-							Editing
-						</AnimatedCopy>
-					</div>
-					<div className="hobby">
-						<AnimatedCopy
-							tag="h4"
-							animateOnScroll={true}
-						>
-							Story
-						</AnimatedCopy>
-					</div>
-					<div className="hobby">
-						<AnimatedCopy
-							tag="h4"
-							animateOnScroll={true}
-						>
-							Sound
-						</AnimatedCopy>
+				<p
+					className="primary "
+					style={{ textAlign: "center" }}
+				>
+					Why Samadhi:
+				</p>
+				<section className="intro-samadhi">
+					<img
+						src="/home/wellness-retreats-in-peru.webp"
+						alt=""
+					/>
+
+					<div className="intro-samadhi-col">
+						<h5>
+							In today's hectic world, many of us experience disconnection,
+							navigating on autopilot through the burdens of stress, work,
+							family responsibilities, and health challenges.
+						</h5>
+						<p>
+							Samadhi is a serene and eco-conscious retreat center situated in
+							the Andes Mountains of Sacred Valley, Peru. Founded by mindful
+							individuals, it serves as a sanctuary for healing, sacred
+							reciprocity, and communion with Pacha Mama (Mother Earth) and the
+							Divine.
+						</p>
+						<p>
+							Built with heartfelt intention, the center cultivates organic
+							vegetables on-site, prepares food with blessings, and fosters a
+							warm and inviting atmosphere where joy, connection, and deep
+							healing thrive.
+						</p>
+						<p>
+							Samadhi Center at the sacred land of Peru is an ideal destination
+							for your next journey — a journey focused on cultural immersion,
+							awe-inspiring nature, embodying feminine practices,
+							self-nourishment, and hitting the reset button in our busy lives.
+						</p>
 					</div>
 				</section>
-				<ContactForm /> */}
+				<Reviews hasQuotes={true} />
+
 				<Footer />
 			</div>
 		</ReactLenis>

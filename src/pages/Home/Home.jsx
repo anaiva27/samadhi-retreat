@@ -14,6 +14,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 import Transition from "../../components/Transition/Transition";
 import { Slider } from "../../components/Slider/Slider";
+import PrimaryButton from "../../components/Buttons/PrimaryButton";
+import { InstagramEmbed, YouTubeEmbed } from "react-social-media-embed";
 
 const Home = () => {
 	const workItems = Array.isArray(workList) ? workList : [];
@@ -284,7 +286,7 @@ const Home = () => {
 						className="explore-img"
 						src="/home/explore-img-2.png"
 						alt=""
-					/> */}
+						/> */}
 					<div className="sticky-work-logo">
 						<img
 							src="/home/logo-1.png"
@@ -295,6 +297,26 @@ const Home = () => {
 						<p className="primary sm">Celebrating</p>
 						<p className="primary sm">Women</p>
 					</div>
+				</section>
+				<section className="video-frame">
+					<iframe
+						src="video/v3.mp4"
+						width={"40%"}
+						height={"100%"}
+						loading="lazy"
+						frameBorder="0"
+						allowFullScreen
+						title="Local Video Player"
+					></iframe>
+					<iframe
+						src="video/v2.mp4"
+						width={"40%"}
+						height={"100%"}
+						loading="lazy"
+						frameBorder="0"
+						allowFullScreen
+						title="Local Video Player"
+					></iframe>
 				</section>
 				<section
 					ref={stickyWorkHeaderRef}
@@ -336,10 +358,10 @@ const Home = () => {
 								src="/home/img3-1.jpg"
 								alt=""
 							/>
+							<p className="primary sm text-shadow">
+								This is more than just a retreat
+							</p>
 						</div>
-						<p className="primary sm text-shadow">
-							This is more than just a retreat
-						</p>
 					</div>
 					<div className="services-col">
 						<h4>
@@ -352,9 +374,16 @@ const Home = () => {
 						</h4>
 						<div className="services-list">
 							<div className="service-list-row">
-								<div className="service-list-col">
-									{/* <h5>Filmmaking</h5> */}
-								</div>
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<p className="primary sm">
 										...feel the pull to take a sacred pause: a full week to
@@ -364,9 +393,16 @@ const Home = () => {
 							</div>
 
 							<div className="service-list-row">
-								<div className="service-list-col">
-									{/* <h5>Visual Storytelling</h5> */}
-								</div>
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<p className="primary sm">
 										...are longing to experience more fulfillment, to reignite
@@ -377,9 +413,16 @@ const Home = () => {
 							</div>
 
 							<div className="service-list-row">
-								<div className="service-list-col">
-									{/* <h5>Creative Direction</h5> */}
-								</div>
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<p className="primary sm">
 										...are ready to cultivate a deep, abiding love within their
@@ -390,9 +433,16 @@ const Home = () => {
 							</div>
 
 							<div className="service-list-row">
-								<div className="service-list-col">
-									{/* <h5>Creative Direction</h5> */}
-								</div>
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<p className="primary sm">
 										...are seeking a journey of transformation, where the wild,
@@ -419,7 +469,7 @@ const Home = () => {
 					className="home-work"
 				>
 					<div className="home-work-list">
-						{workItems.map((work) => (
+						{workItems.slice(0, 3).map((work) => (
 							<Link
 								to="/sample-project"
 								key={work.id}
@@ -443,6 +493,12 @@ const Home = () => {
 							</Link>
 						))}
 					</div>
+					<Link
+						to="/feedback"
+						className="primary-button"
+					>
+						more reviews
+					</Link>
 				</section>
 
 				<p
@@ -452,164 +508,297 @@ const Home = () => {
 					What is included:
 				</p>
 				<section className="services">
-					<div className="services-slider-col">
-						<Slider />
-					</div>
-					<div className="services-col">
+					<Slider />
+					<div className="service-list-col">
 						<h4>
 							A Transformational Experience to gain clarity as you clear blocks
 							holding you back
 						</h4>
 
-						<div className="services-list">
+						<div className="service-list">
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
-									<h5>6 nights shared accommodation</h5>
+									<h5>6 nights</h5>
 								</div>
-								<div className="service-list-col">
-									<p className="primary sm">
-										... in chakra bungalows, a restful sanctuary to align your
-										soul.
-									</p>
-								</div>
+								<p className="primary sm">
+									shared accommodation in chakra bungalows, a restful sanctuary
+									to align your soul.
+								</p>
 							</div>
 
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<h5>3 nourishing organic meals</h5>
 								</div>
 								<div className="service-list-col">
-									<p className="primary sm">... to energize and heal.</p>
+									<p className="primary sm"> to energize and heal.</p>
 								</div>
 							</div>
 
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<h5>Full Access</h5>
 								</div>
 								<div className="service-list-col">
 									<p className="primary sm">
-										... to serene amenities, including jacuzzi and chakra
-										garden.
+										to serene amenities, including jacuzzi and chakra garden.
 									</p>
 								</div>
 							</div>
 
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<h5>TEMAZCAL CEREMONY</h5>
 								</div>
 								<div className="service-list-col">
 									<p className="primary sm">
-										... to release and renew your spirit.
+										to release and renew your spirit.
 									</p>
 								</div>
 							</div>
 
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<h5>Cacao CEREMONY</h5>
 								</div>
 								<div className="service-list-col">
 									<p className="primary sm">
-										... and ecstatic dance to awaken joy within.
+										and ecstatic dance to awaken joy within.
 									</p>
 								</div>
 							</div>
 
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<h5>Bonfire circle</h5>
 								</div>
 								<div className="service-list-col">
 									<p className="primary sm">
-										... for heartfelt sharing and connection.
+										for heartfelt sharing and connection.
 									</p>
 								</div>
 							</div>
 
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<h5>Daily movement</h5>
 								</div>
 								<div className="service-list-col">
 									<p className="primary sm">
-										... yoga and mobility, meditation, and journaling to ground
-										and center
+										yoga and mobility, meditation, and journaling to ground and
+										center
 									</p>
 								</div>
 							</div>
 
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<h5>Trip to Pisac town</h5>
 								</div>
 								<div className="service-list-col">
 									<p className="primary sm">
-										... and sound healing with local practitioner.
+										and sound healing with local practitioner.
 									</p>
 								</div>
 							</div>
 
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<h5>Breathwork session</h5>
 								</div>
 								<div className="service-list-col">
-									<p className="primary sm">... to release and let go.</p>
+									<p className="primary sm"> to release and let go.</p>
 								</div>
 							</div>
 
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<h5>Tour to Moray and Maras</h5>
 								</div>
 								<div className="service-list-col">
 									<p className="primary sm">
-										... to explore ancient wisdom and beauty.
+										to explore ancient wisdom and beauty.
 									</p>
 								</div>
 							</div>
 
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<h5>Sacred mandala creation</h5>
 								</div>
 								<div className="service-list-col">
-									<p className="primary sm">
-										... to express your inner artist.
-									</p>
+									<p className="primary sm">to express your inner artist.</p>
 								</div>
 							</div>
 
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<h5>Shuttle service</h5>
 								</div>
 								<div className="service-list-col">
 									<p className="primary sm">
-										... from Cusco airport for a seamless journey.
+										from Cusco airport for a seamless journey.
 									</p>
 								</div>
 							</div>
 
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<h5>Zoom prep call</h5>
 								</div>
 								<div className="service-list-col">
 									<p className="primary sm">
-										... and a month of integration through virtual classes.
+										and a month of integration through virtual classes.
 									</p>
 								</div>
 							</div>
 
 							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
 								<div className="service-list-col">
 									<h5>A personalized gift bag</h5>
 								</div>
 								<div className="service-list-col">
-									<p className="primary sm">... to honor your journey.</p>
+									<p className="primary sm"> to honor your journey.</p>
 								</div>
 							</div>
 						</div>

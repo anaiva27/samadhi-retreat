@@ -7,14 +7,26 @@ const workList = [
 	},
 	{
 		id: 2,
-		title: "Lugene Nigh",
-		category: "Vancouver, Canada",
-		video: "https://www.youtube.com/embed/FcpaSSKD3VQ?si=bfRpGeZf57iv2S5Z",
+		title: "Sofia Oshchebska",
+		category: "Dubai, UAE",
+		video: "https://www.youtube.com/embed/OmdlzD4xtSw?si=Fa_zdvCnUr4kEhKG",
 	},
 	{
 		id: 3,
-		title: "Lizzie Name",
-		category: "Place, Country",
+		title: "Diane Bennett",
+		category: "Delaware, USA",
+		video: "https://www.youtube.com/embed/3WNwQQwv0PA?si=TkKFyMWpi36c1_Tz",
+	},
+	{
+		id: 4,
+		title: "Lugene Nigh",
+		category: "Delaware, USA",
+		video: "https://www.youtube.com/embed/FcpaSSKD3VQ?si=bfRpGeZf57iv2S5Z",
+	},
+	{
+		id: 5,
+		title: "Lizzie Bissett",
+		category: "Oakland, New Zealand",
 		video: "https://www.youtube.com/embed/a_DcGVlnNpw?si=c7Sj0dkHPbN_9s1I",
 	},
 ];

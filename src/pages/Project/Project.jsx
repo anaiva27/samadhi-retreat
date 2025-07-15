@@ -1,6 +1,7 @@
-import React from "react";
+import workList from "../../data/workList";
 import "./Project.css";
-
+import { Link } from "react-router-dom";
+import Reviews from "../../components/Reviews/Reviews";
 import ParallaxImage from "../../components/ParallaxImage/ParallaxImage";
 import AnimatedCopy from "../../components/AnimatedCopy/AnimatedCopy";
 
@@ -9,179 +10,56 @@ import ReactLenis from "lenis/react";
 import Transition from "../../components/Transition/Transition";
 
 const Project = () => {
-  return (
-    <ReactLenis root>
-      <div className="page project">
-        <section className="project-header">
-          <AnimatedCopy
-            delay={1}
-            animateOnScroll={false}
-            className="primary sm"
-          >
-            Short film on self-discovery
-          </AnimatedCopy>
-          <AnimatedCopy tag="h2" delay={1}>
-            Fragments of Light
-          </AnimatedCopy>
-        </section>
+	const workItems = Array.isArray(workList) ? workList : [];
 
-        <section className="project-banner-img">
-          <div className="project-banner-img-wrapper">
-            <ParallaxImage src="/project/banner.jpg" alt="" />
-          </div>
-        </section>
-
-        <section className="project-details">
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Overview
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              A visual meditation on identity, *Fragments of Light* explores the
-              quiet journey of self-discovery through minimalism, mood, and
-              motion.
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Year
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              2024
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Category
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Short Film
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Running Time
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              6:30
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Directed by
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Nico Palmer
-            </AnimatedCopy>
-          </div>
-        </section>
-
-        <section className="project-images">
-          <div className="project-images-container">
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-1.jpg" alt="" />
-              </div>
-            </div>
-
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-2.jpg" alt="" />
-              </div>
-            </div>
-
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-3.jpg" alt="" />
-              </div>
-            </div>
-
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-4.jpg" alt="" />
-              </div>
-            </div>
-
-            <div className="project-img">
-              <div className="project-img-wrapper">
-                <ParallaxImage src="/project/project-5.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="project-details">
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Editor
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Nico Palmer
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Sound Design
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Elena Brooks
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Art Director
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Milo Vance
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Producer
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Asha Lennox
-            </AnimatedCopy>
-          </div>
-
-          <div className="details">
-            <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-              Director
-            </AnimatedCopy>
-            <AnimatedCopy tag="h4" animateOnScroll={true}>
-              Nico Palmer
-            </AnimatedCopy>
-          </div>
-        </section>
-
-        <section className="next-project">
-          <AnimatedCopy tag="p" animateOnScroll={true} className="primary sm">
-            02 - 05
-          </AnimatedCopy>
-          <AnimatedCopy tag="h3" animateOnScroll={true}>
-            Next
-          </AnimatedCopy>
-
-          <div className="next-project-img">
-            <div className="next-project-img-wrapper">
-              <ParallaxImage src="/work/work-2.jpg" alt="" />
-            </div>
-          </div>
-
-          <AnimatedCopy tag="h4" animateOnScroll={true}>
-            Market Pulse
-          </AnimatedCopy>
-        </section>
-      </div>
-    </ReactLenis>
-  );
+	return (
+		<ReactLenis root>
+			<div className="page project">
+				<section className="project-header">
+					<AnimatedCopy
+						delay={1}
+						animateOnScroll={false}
+						className="primary sm"
+					>
+						What they felt. What they found. <br />
+						Honest feedback from those who’ve experienced the retreat firsthand.
+					</AnimatedCopy>
+					<AnimatedCopy
+						tag="h2"
+						delay={1}
+					>
+						Check out the feedback from our amazing retreat guests.
+					</AnimatedCopy>
+				</section>
+				<div className="home-work-list">
+					{workItems.map((work) => (
+						<Link
+							to="/sample-project"
+							key={work.id}
+							className="home-work-item"
+						>
+							<p className="primary sm">04 - 2025</p>
+							<h3>{work.title}</h3>
+							<div className="work-item-img">
+								<iframe
+									// width="560"
+									// height="315"
+									src={work.video}
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+									referrerpolicy="strict-origin-when-cross-origin"
+									allowfullscreen
+								></iframe>
+							</div>
+							<h4>{work.category}</h4>
+						</Link>
+					))}
+				</div>
+				<Reviews />
+			</div>
+		</ReactLenis>
+	);
 };
 
 export default Transition(Project);

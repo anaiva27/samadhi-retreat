@@ -45,7 +45,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5vw;
+  font-size: min(5vw, 60px);
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 4vw;
@@ -79,6 +79,10 @@ p {
 
 .text-shadow {
   text-shadow: 1px 1px black;
+}
+
+.bold {
+  font-weight: 900;
 }
 
 p.primary {
@@ -127,6 +131,20 @@ a {
 button {
   outline: none;
   border: none;
+}
+
+.primary-button {
+  border: 0.5px solid grey;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--bg);
+  background-color: #0f0f0f;
+  font-size: 16px;
 }
 
 input,
@@ -189,8 +207,11 @@ textarea::placeholder {
 
   h4 {
     font-size: 6vw;
-    line-height: 8vw;
+    line-height: 8.5vw;
   }
+  h5 {
+  font-size: 1rem;
+}
   p {
     line-height: 140%;
   }

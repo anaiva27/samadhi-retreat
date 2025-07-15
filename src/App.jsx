@@ -61,7 +61,7 @@ function App() {
 						element={<Work />}
 					/>
 					<Route
-						path="/sample-project"
+						path="/feedback"
 						element={<Project />}
 					/>
 				</Routes>

@@ -1,6 +1,11 @@
+.project {
+  margin-top: 130px;
+}
+
 .project-header {
   width: 100vw;
-  height: 50svh;
+  height: auto;
+  /* min-height: 400px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

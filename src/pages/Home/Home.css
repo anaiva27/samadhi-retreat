@@ -125,6 +125,13 @@
 .home-work {
   width: 100%;
   padding: 8em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-work a.primary-button {
+ margin-top: 50px;
 }
 
 .home-work-list {
@@ -191,11 +198,19 @@
   text-align: center;
 }
 
+.service-list-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
 .service-list-col h5 {
  text-transform: uppercase;
 }
 
 .services-slider-col  {
+  width: 100%;
 }
 
 .peru-banner {
@@ -204,11 +219,51 @@
   margin: 40px auto;
 }
 
+.video-frame {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 710px;
+  overflow: hidden;
+  margin: 80px auto 40px;
+  /* background-color: black;
+  padding-top: 15px; */
+}
+
+.services-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1000px;
+  position: relative;
+}
+
+.services-banner img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.services-banner p {
+  position: absolute !important;
+  margin: auto;
+}
+
+
 @media (max-width: 1000px) {
   .peru-banner {
     height: 250px;
-      margin: 20px auto;
+    margin: 20px auto;
   }
+
+  .video-frame {
+  width: 375px;
+  height: 265px;
+  overflow: hidden;
+  gap: 0;
+    margin: 50px auto 10px;
+}
 
   .hero,
   .sticky-titles,

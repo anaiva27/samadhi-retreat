@@ -63,7 +63,7 @@ h4#review-copy,
 h4#review-author {
   font-kerning: none;
   overflow: hidden;
-  line-height: 1 !important;
+  line-height: 1.25 !important;
 }
 
 h4#review-copy .line,
@@ -83,6 +83,7 @@ h4#review-author .line span {
 @media (max-width: 1000px) {
   .reviews {
     padding: 4em 1.25em;
+    margin-top: 40px;
   }
 
   #review-copy {

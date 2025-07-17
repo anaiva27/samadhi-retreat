@@ -1,3 +1,8 @@
+.about {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
 .about-header {
   width: 100%;
   margin-top: 8em;
@@ -52,18 +57,18 @@
 }
 
 .about-me-copy-wrapper {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .about-me-copy-wrapper p {
-  margin: 1em;
+  margin: 0 1em;
 }
 
 .about-me-copy-wrapper p {
-  font-size: 2.5vw;
+  /* font-size: 2.5vw;
   letter-spacing: -0.02em;
-  line-height: 4vw;
+  line-height: 4vw; */
 }
 
 .services {

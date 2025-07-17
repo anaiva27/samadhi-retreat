@@ -14,33 +14,31 @@ const About = () => {
 		<ReactLenis root>
 			<div className="page about">
 				<section className="about-header">
-					<h1>"Beauty is in the eye of the beholder"</h1>
+					<h2>"Beauty is in the eye of the beholder"</h2>
 				</section>
 
 				<p className=" headline"> Meet your facilitatiors</p>
-				<section className="about-hero">
-					<div className="about-hero-img">
+				<section className="services">
+					<div className="services-col">
 						<img
 							src="/about/women1.jpg"
 							alt=""
 						/>
 					</div>
-				</section>
-
-				<section className="about-me-copy">
-					<div className="about-me-copy-wrapper">
+					<div className="services-col">
 						<AnimatedCopy
 							animateOnScroll={true}
-							tag="p"
+							tag="h3"
 							className=""
 						>
 							Marina and Amber's bond spans over a decade, evolving from friends
 							and colleagues to what feels like soul sisters connected across
 							countless lifetimes.
 						</AnimatedCopy>
+						<br />
 						<AnimatedCopy
 							animateOnScroll={true}
-							tag="p"
+							tag="h5"
 						>
 							United by a shared vision of life, wellness, and values, they have
 							cultivated a community of empowered, open-minded individuals.

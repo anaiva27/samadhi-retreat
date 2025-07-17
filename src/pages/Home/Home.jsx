@@ -216,7 +216,12 @@ const Home = () => {
 							className="primary sm"
 						>
 							<span
-								style={{ fontWeight: 200, letterSpacing: 1, color: "white" }}
+								style={{
+									fontWeight: 600,
+									letterSpacing: 1,
+									color: "white",
+									marginTop: 15,
+								}}
 							>
 								September 19th - 25th, 2026
 							</span>
@@ -226,10 +231,10 @@ const Home = () => {
 							tag="p"
 							animateOnScroll={false}
 							delay={1.1}
-							className="primary sm"
+							className="primary sm "
 						>
 							<span
-								style={{ fontWeight: 200, letterSpacing: 1, color: "white" }}
+								style={{ fontWeight: 600, letterSpacing: 1, color: "white" }}
 							>
 								Where{" "}
 								<span
@@ -238,6 +243,7 @@ const Home = () => {
 										textTransform: "none",
 										fontSize: "1rem",
 										marginLeft: "-4px",
+										fontWeight: 600,
 									}}
 								>
 									women{" "}
@@ -331,12 +337,17 @@ const Home = () => {
 							To get in touch with your sacred feminine power?
 						</p>
 					</div>
-					<div className="peru-banner">
-						<img
-							src="/home/wallpaper1.jpeg"
-							alt=""
-						/>
-					</div>
+				</section>
+				<div className="peru-banner">
+					<img
+						src="/home/wallpaper1.jpeg"
+						alt=""
+					/>
+				</div>
+				<section
+					ref={stickyWorkHeaderRef}
+					className="sticky-work-header"
+				>
 					<h3>Welcome to women’s retreat at the magical land of Peru.</h3>
 					<AnimatedCopy
 						tag="h1"

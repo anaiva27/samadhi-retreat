@@ -298,7 +298,7 @@ const Home = () => {
 						<p className="primary sm">Women</p>
 					</div>
 				</section>
-				<section className="video-frame">
+				{/* <section className="video-frame">
 					<iframe
 						src="video/v3.mp4"
 						width={"40%"}
@@ -317,7 +317,7 @@ const Home = () => {
 						allowFullScreen
 						title="Local Video Player"
 					></iframe>
-				</section>
+				</section> */}
 				<section
 					ref={stickyWorkHeaderRef}
 					className="sticky-work-header"
@@ -364,14 +364,19 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="services-col">
-						<h4>
+						<h4 style={{ textAlign: "center" }}>
 							It’s an invitation to step into a life where joy, connection, and
-							love flow effortlessly. <br /> <br />
+							love flow effortlessly.
+						</h4>{" "}
+						<h5 style={{ textAlign: "center" }}>
 							Come, embrace your fullest expression and let the adventure of
 							your soul unfold!
-							<br /> <br />
+						</h5>
+						<br /> <br />
+						<h5 style={{ textAlign: "center" }}>
 							This is a retreat for women who:
-						</h4>
+						</h5>
+						<br />
 						<div className="services-list">
 							<div className="service-list-row">
 								<img
@@ -458,10 +463,12 @@ const Home = () => {
 				<section className="intro2">
 					<h4>
 						Surrounded by the loving embrace of sisterhood and the sacred
-						presence of Mother Earth. <br /> <br />
+						presence of Mother Earth.
+					</h4>
+					<h5>
 						This retreat is a space where you can rediscover your truest
 						self—unfiltered, untamed, and radiant.
-					</h4>
+					</h5>
 				</section>
 
 				<section
@@ -507,7 +514,7 @@ const Home = () => {
 				>
 					What is included:
 				</p>
-				<section className="services">
+				<section className="services home">
 					<Slider />
 					<div className="service-list-col">
 						<h4>
@@ -818,11 +825,11 @@ const Home = () => {
 					/>
 
 					<div className="intro-samadhi-col">
-						<h5>
+						<h4>
 							In today's hectic world, many of us experience disconnection,
 							navigating on autopilot through the burdens of stress, work,
 							family responsibilities, and health challenges.
-						</h5>
+						</h4>
 						<p>
 							Samadhi is a serene and eco-conscious retreat center situated in
 							the Andes Mountains of Sacred Valley, Peru. Founded by mindful
@@ -836,12 +843,12 @@ const Home = () => {
 							warm and inviting atmosphere where joy, connection, and deep
 							healing thrive.
 						</p>
-						<p>
+						<h5>
 							Samadhi Center at the sacred land of Peru is an ideal destination
 							for your next journey — a journey focused on cultural immersion,
 							awe-inspiring nature, embodying feminine practices,
 							self-nourishment, and hitting the reset button in our busy lives.
-						</p>
+						</h5>
 					</div>
 				</section>
 				<Reviews hasQuotes={true} />

@@ -188,6 +188,8 @@
 }
 
 .intro2 {
+   display: flex;
+  flex-direction: column;
   margin: auto;
   padding: 2em;
   display: flex;
@@ -250,17 +252,23 @@
   margin: auto;
 }
 
+.services.home {
+  max-width: 1200px;
+  margin: 2em auto;
+}
+
 .intro-samadhi {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.25em;
+  padding: 2em;
   gap: 20px;
-  margin: 1.25em;
+  margin: 2em auto;
   border-radius: 1em;
   overflow: hidden;
   border: 0.5px solid var(--border100);
+  max-width: 1200px;
 }
 
 .intro-samadhi-col {
@@ -281,6 +289,12 @@
     height: 250px;
     margin: 20px auto;
   }
+
+  .intro-samadhi {
+  padding: 1.25em;
+  gap: 20px;
+  margin: 1.25em;
+}
 
   .video-frame {
   width: 375px;

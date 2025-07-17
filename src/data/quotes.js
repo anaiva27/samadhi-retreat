@@ -2,7 +2,7 @@ const quotes = [
 	{
 		id: 1,
 		copy: "The Earth is our mother. Whatever befalls the Earth befalls the sons and daughters of the Earth.",
-		author: "Chief Seattle, Duwamish elde",
+		author: "Chief Seattle, Duwamish elder",
 		image: "/reviews/review-1.jpg",
 	},
 	{

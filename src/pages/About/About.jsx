@@ -111,11 +111,12 @@ const About = () => {
 								Susanna combines science-backed neuroscience and mindset tools
 								with somatic healing practices like meditation, breathwork, and
 								intentional journaling to help men and women break through
-								limiting beliefs and reconnect with their true selves. She’s
-								also the creator of the Manifestation Journal ‘Intentions’, and
-								the visionary behind retreats designed to rewire old patterns,
-								regulate the nervous system, and create lasting transformation
-								from the inside out.
+								limiting beliefs and reconnect with their true selves. <br />
+								<br />
+								She’s also the creator of the Manifestation Journal
+								‘Intentions’, and the visionary behind retreats designed to
+								rewire old patterns, regulate the nervous system, and create
+								lasting transformation from the inside out.
 							</AnimatedCopy>
 						</div>
 					</section>
@@ -152,11 +153,13 @@ const About = () => {
 								Four years ago, Yulia moved to Mexico, where she immersed
 								herself in ancient traditions and techniques related to the four
 								elements and spiritual temazcal, actively engaging with the
-								local community. She is a Sun-Dancer in Lakota traditions, a
-								Human Design and Genetic Keys reader, a dedicated Vipassana
-								meditator, a Reiki Master, and an art historian. Yulia's mission
-								is to empower women by blending ancient and contemporary
-								mindfulness tools to achieve transformative results.
+								local community.
+								<br />
+								<br /> She is a Sun-Dancer in Lakota traditions, a Human Design
+								and Genetic Keys reader, a dedicated Vipassana meditator, a
+								Reiki Master, and an art historian. Yulia's mission is to
+								empower women by blending ancient and contemporary mindfulness
+								tools to achieve transformative results.
 							</AnimatedCopy>
 						</div>
 					</section>

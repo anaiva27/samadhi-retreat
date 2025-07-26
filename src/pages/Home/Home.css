@@ -90,7 +90,7 @@
 }
 
 .sticky-work-header h1 {
-  opacity: 0.125;
+  opacity: 0.18;
   line-height: 1;
 }
 .sticky-work-header h3 {
@@ -222,16 +222,21 @@
 }
 
 .video-frame {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   display: flex;
-  align-items: center;
+   align-items: center;
   justify-content: center;
-  height: 710px;
+  height: auto;
   overflow: hidden;
   margin: 80px auto 40px;
-  /* background-color: black;
-  padding-top: 15px; */
 }
+
+.video-frame iframe {
+  min-height: 600px;
+  width: 100%;
+  height: auto;
+  }
 
 .services-banner {
   width: 100%;
@@ -297,12 +302,16 @@
 }
 
   .video-frame {
-  width: 375px;
-  height: 265px;
+  width: 100%;
   overflow: hidden;
-  gap: 0;
-    margin: 50px auto 10px;
+  margin: 50px auto 10px;
 }
+
+.video-frame iframe {
+  min-height: 400px;
+  width: 100%;
+  height: auto;
+  }
 
   .hero,
   .sticky-titles,

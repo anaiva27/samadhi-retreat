@@ -5,13 +5,16 @@
 
 .about-header {
   width: 100%;
-  margin-top: 8em;
   padding: 2em;
   display: flex;
   justify-content: center;
   justify-self: center;
   flex-direction: column;
   text-align: center;
+}
+
+.header-space {
+  margin-top: 8em;
 }
 
 .about-header h1 {
@@ -101,6 +104,9 @@
 
 .services-col:nth-child(2) {
   flex: 4;
+}
+.services-col img {
+   border-radius: 1em;
 }
 
 .services-col h4 {

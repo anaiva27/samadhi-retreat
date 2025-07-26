@@ -275,8 +275,8 @@ const Home = () => {
 						id="sticky"
 						ref={(el) => (titlesRef.current[3] = el)}
 					>
-						Where we offer a pathway to <br />
-						dissolve emotional barriers <br />
+						A sacred space to release <br />
+						what no longer serves you <br />
 						and awaken
 						<br />
 						<br />
@@ -304,26 +304,17 @@ const Home = () => {
 						<p className="primary sm">Women</p>
 					</div>
 				</section>
-				{/* <section className="video-frame">
+				<section className="video-frame">
 					<iframe
-						src="video/v3.mp4"
-						width={"40%"}
-						height={"100%"}
-						loading="lazy"
-						frameBorder="0"
-						allowFullScreen
-						title="Local Video Player"
+						src="https://www.youtube.com/embed/y-_pgybgKPo?si=UlVtE6g0kjZ0VM2H"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
 					></iframe>
-					<iframe
-						src="video/v2.mp4"
-						width={"40%"}
-						height={"100%"}
-						loading="lazy"
-						frameBorder="0"
-						allowFullScreen
-						title="Local Video Player"
-					></iframe>
-				</section> */}
+				</section>
+
 				<section
 					ref={stickyWorkHeaderRef}
 					className="sticky-work-header"

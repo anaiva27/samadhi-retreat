@@ -13,11 +13,15 @@ const About = () => {
 	return (
 		<ReactLenis root>
 			<div className="page about">
-				<section className="about-header">
+				<section className="about-header header-space">
 					<h2>"Beauty is in the eye of the beholder"</h2>
 				</section>
 
-				<p className=" headline"> Meet your facilitatiors</p>
+				<p className=" headline">
+					{" "}
+					Meet Marina and Amber, <br />
+					your facilitatiors
+				</p>
 				<section className="services">
 					<div className="services-col">
 						<img
@@ -28,7 +32,7 @@ const About = () => {
 					<div className="services-col">
 						<AnimatedCopy
 							animateOnScroll={true}
-							tag="h3"
+							tag="h4"
 							className=""
 						>
 							Marina and Amber's bond spans over a decade, evolving from friends
@@ -38,7 +42,8 @@ const About = () => {
 						<br />
 						<AnimatedCopy
 							animateOnScroll={true}
-							tag="h5"
+							tag="p"
+							className="primary"
 						>
 							United by a shared vision of life, wellness, and values, they have
 							cultivated a community of empowered, open-minded individuals.
@@ -56,165 +61,159 @@ const About = () => {
 								alt=""
 							/>
 						</div>
-						{/* <p className="primary">Crafted with Intention</p> */}
 					</div>
 					<div className="services-col">
-						<h4>
+						<AnimatedCopy
+							animateOnScroll={true}
+							tag="p"
+							className="primary"
+						>
 							Now, they invite others to join them for an unforgettable
 							experience — Women’s retreat that promises to nurture physical,
 							emotional, and spiritual well-being amidst the mystical landscape
 							of Peru.
-						</h4>
-
-						{/* <div className="services-list">
-							<div className="service-list-row">
-								<div className="service-list-col">
-									<h5>Filmmaking</h5>
-								</div>
-								<div className="service-list-col">
-									<p>
-										From short films to personal narratives, my work is driven
-										by emotion and atmosphere. I handle direction,
-										cinematography, and editing — crafting each piece with a
-										filmmaker’s eye for mood, movement, and meaning.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<div className="service-list-col">
-									<h5>Visual Storytelling</h5>
-								</div>
-								<div className="service-list-col">
-									<p>
-										I create visuals that speak — whether it’s a quiet moment or
-										a bold idea. My work blends aesthetic choices with story
-										clarity, making sure the emotional core always comes
-										through.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<div className="service-list-col">
-									<h5>Creative Direction</h5>
-								</div>
-								<div className="service-list-col">
-									<p>
-										From ideation to final cut, I guide the visual and narrative
-										tone of every project. I bring a cohesive, cinematic vision
-										that aligns story, style, and intention — grounded in
-										authenticity.
-									</p>
-								</div>
-							</div>
-						</div> */}
+						</AnimatedCopy>
 					</div>
 				</section>
 
-				{/* <section className="about-banner-img">
-					<div className="about-banner-img-wrapper">
-						<img
-							src="/about/about-banner.jpg"
-							alt=""
-						/>
-					</div>
+				<div className="page about">
+					<section className="about-header">
+						<br />
+						<h2>Guest Facilitators</h2>
+					</section>
+
+					<p className=" headline"> Meet Sussana</p>
+					<section className="services">
+						<div className="services-col">
+							<img
+								src="/about/susanna.jpeg"
+								alt=""
+							/>
+						</div>
+						<div className="services-col">
+							<AnimatedCopy
+								animateOnScroll={true}
+								tag="h4"
+								className=""
+							>
+								Susanna – a transformational life coach, certified breathwork
+								facilitator, and devoted student, and corporate trainer, of Dr.
+								Joe Dispenza’s work. With a global background in the corporate
+								tech world, she deeply understands the pressure, burnout, and
+								identity loss many high-achieving people face.
+							</AnimatedCopy>
+							<br />
+							<AnimatedCopy
+								animateOnScroll={true}
+								tag="p"
+								className="primary"
+							>
+								Susanna combines science-backed neuroscience and mindset tools
+								with somatic healing practices like meditation, breathwork, and
+								intentional journaling to help men and women break through
+								limiting beliefs and reconnect with their true selves. She’s
+								also the creator of the Manifestation Journal ‘Intentions’, and
+								the visionary behind retreats designed to rewire old patterns,
+								regulate the nervous system, and create lasting transformation
+								from the inside out.
+							</AnimatedCopy>
+						</div>
+					</section>
+				</div>
+
+				<div className="page about">
+					<br />
+					<p className=" headline"> Meet Yulia</p>
+					<section className="services">
+						<div className="services-col">
+							<img
+								src="/about/yulia.JPG"
+								alt=""
+							/>
+						</div>
+						<div className="services-col">
+							<AnimatedCopy
+								animateOnScroll={true}
+								tag="h4"
+								className=""
+							>
+								Yulia is an art and mindfulness educator with over 15 years of
+								global experience as an art curator. Eight years ago, she
+								discovered Human Design and began incorporating mindfulness
+								practices to gain deeper insights into her own path and better
+								serve others.
+							</AnimatedCopy>
+							<br />
+							<AnimatedCopy
+								animateOnScroll={true}
+								tag="p"
+								className="primary"
+							>
+								Four years ago, Yulia moved to Mexico, where she immersed
+								herself in ancient traditions and techniques related to the four
+								elements and spiritual temazcal, actively engaging with the
+								local community. She is a Sun-Dancer in Lakota traditions, a
+								Human Design and Genetic Keys reader, a dedicated Vipassana
+								meditator, a Reiki Master, and an art historian. Yulia's mission
+								is to empower women by blending ancient and contemporary
+								mindfulness tools to achieve transformative results.
+							</AnimatedCopy>
+						</div>
+					</section>
+				</div>
+
+				<section className="sticky-work-header">
+					<AnimatedCopy
+						tag="h1"
+						animateOnScroll="true"
+					>
+						<div className="sticky-work-print">
+							<img
+								src="/home/logo-1.png"
+								alt=""
+							/>
+						</div>
+					</AnimatedCopy>
+					<h3>Welcome to women’s retreat at the magical land of Peru.</h3>
 				</section>
 
-				<section className="fav-tools">
-					<div className="fav-tools-header">
-						<AnimatedCopy
-							tag="p"
-							animateOnScroll={true}
-							className="primary sm"
-						>
-							Daily Stack
-						</AnimatedCopy>
-						<AnimatedCopy
-							tag="h2"
-							animateOnScroll={true}
-							delay={0.25}
-						>
-							Favourite Tools
-						</AnimatedCopy>
-						<AnimatedCopy
-							tag="p"
-							animateOnScroll={true}
-							className="secondary"
-							delay={0.5}
-						>
-							My favorite stack includes Framer, Figma, and other cutting-edge
-							technologies to ensure seamless and dynamic designs.
-						</AnimatedCopy>
-					</div>
-
-					<div className="fav-tools-list">
-						<div className="fav-tools-list-row">
-							<div className="fav-tool">
-								<div className="fav-tool-img">
-									<img
-										src="/about/tool-1.jpg"
-										alt=""
-									/>
-								</div>
-								<h4>DaVinci Resolve</h4>
-								<p className="primary sm">Color Grading</p>
-							</div>
-							<div className="fav-tool">
-								<div className="fav-tool-img">
-									<img
-										src="/about/tool-2.jpg"
-										alt=""
-									/>
-								</div>
-								<h4>Adobe Premiere Pro</h4>
-								<p className="primary sm">Video Editing</p>
-							</div>
-							<div className="fav-tool">
-								<div className="fav-tool-img">
-									<img
-										src="/about/tool-3.jpg"
-										alt=""
-									/>
-								</div>
-								<h4>Blackmagic Pocket</h4>
-								<p className="primary sm">Cinematic Shooting</p>
-							</div>
+				<div className="page about">
+					<section className="services">
+						<div className="services-col">
+							<img
+								src="/about/women4.jpg"
+								alt=""
+							/>
 						</div>
-						<div className="fav-tools-list-row">
-							<div className="fav-tool">
-								<div className="fav-tool-img">
-									<img
-										src="/about/tool-4.jpg"
-										alt=""
-									/>
-								</div>
-								<h4>ShotDeck</h4>
-								<p className="primary sm">Visual References</p>
-							</div>
-							<div className="fav-tool">
-								<div className="fav-tool-img">
-									<img
-										src="/about/tool-5.jpg"
-										alt=""
-									/>
-								</div>
-								<h4>Frame.io</h4>
-								<p className="primary sm">Remote Collaboration</p>
-							</div>
-							<div className="fav-tool">
-								<div className="fav-tool-img">
-									<img
-										src="/about/tool-6.jpg"
-										alt=""
-									/>
-								</div>
-								<h4>Celtx</h4>
-								<p className="primary sm">Scriptwriting Tool</p>
-							</div>
+						<div className="services-col">
+							<AnimatedCopy
+								animateOnScroll={true}
+								tag="h4"
+								className=""
+							>
+								Where women come home to themselves.{" "}
+							</AnimatedCopy>
+							<AnimatedCopy
+								animateOnScroll={true}
+								tag="p"
+								className="primary"
+							>
+								We chose Samadhi Retreat Center for its deep connection to
+								nature, spirit, and tradition. Nestled in the heart of Peru’s
+								Sacred Valley within a native farming community, it offers a
+								powerful setting for transformation—surrounded by mountains,
+								ancient temples, and living culture.
+							</AnimatedCopy>
 						</div>
-					</div>
-				</section> */}
+						<div className="services-col">
+							<img
+								src="/about/marina-amber.jpeg"
+								alt=""
+							/>
+						</div>
+						<button className="primary-button">Reserve your spot</button>
+					</section>
+				</div>
 
 				<ContactForm />
 

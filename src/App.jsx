@@ -12,6 +12,7 @@ import FAQ from "./pages/FAQ/FAQ";
 import Contact from "./pages/Contact/Contact";
 
 import { AnimatePresence } from "framer-motion";
+import Schedule from "./pages/Schedule/Schedule";
 
 function ScrollToTop() {
 	const { pathname } = useLocation();
@@ -63,6 +64,10 @@ function App() {
 					<Route
 						path="/feedback"
 						element={<Project />}
+					/>
+					<Route
+						path="/schedule"
+						element={<Schedule />}
 					/>
 				</Routes>
 			</AnimatePresence>

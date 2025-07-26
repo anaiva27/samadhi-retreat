@@ -14,7 +14,20 @@ const About = () => {
 		<ReactLenis root>
 			<div className="page about">
 				<section className="about-header header-space">
-					<h2>"Beauty is in the eye of the beholder"</h2>
+					<h2>
+						"We're all just walking each other home." <br />
+						<span
+							style={{
+								fontFamily: "Zapfino",
+								textTransform: "none",
+								fontSize: "1rem",
+								marginLeft: "-4px",
+								fontWeight: 600,
+							}}
+						>
+							- Ram Dass
+						</span>
+					</h2>
 				</section>
 
 				<p className=" headline">

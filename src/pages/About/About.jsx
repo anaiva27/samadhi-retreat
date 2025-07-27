@@ -56,7 +56,7 @@ const About = () => {
 						<AnimatedCopy
 							animateOnScroll={true}
 							tag="p"
-							className="primary"
+							//className="primary"
 						>
 							United by a shared vision of life, wellness, and values, they have
 							cultivated a community of empowered, open-minded individuals.
@@ -79,7 +79,7 @@ const About = () => {
 						<AnimatedCopy
 							animateOnScroll={true}
 							tag="p"
-							className="primary"
+							//className="primary"
 						>
 							Now, they invite others to join them for an unforgettable
 							experience — Women’s retreat that promises to nurture physical,
@@ -119,7 +119,7 @@ const About = () => {
 							<AnimatedCopy
 								animateOnScroll={true}
 								tag="p"
-								className="primary"
+								//className="primary"
 							>
 								Susanna combines science-backed neuroscience and mindset tools
 								with somatic healing practices like meditation, breathwork, and
@@ -161,7 +161,7 @@ const About = () => {
 							<AnimatedCopy
 								animateOnScroll={true}
 								tag="p"
-								className="primary"
+								//className="primary"
 							>
 								Four years ago, Yulia moved to Mexico, where she immersed
 								herself in ancient traditions and techniques related to the four
@@ -212,7 +212,7 @@ const About = () => {
 							<AnimatedCopy
 								animateOnScroll={true}
 								tag="p"
-								className="primary"
+								//className="primary"
 							>
 								We chose Samadhi Retreat Center for its deep connection to
 								nature, spirit, and tradition. Nestled in the heart of Peru’s

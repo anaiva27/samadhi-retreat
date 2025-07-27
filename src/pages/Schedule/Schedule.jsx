@@ -317,8 +317,23 @@ const Schedule = () => {
 						</div>
 					</div>
 				</section>
-				<br />
-				<br />
+
+				<section className="sticky-work-header">
+					<button
+						style={{ margin: "auto" }}
+						className="primary-button"
+						onClick={() =>
+							window.open(
+								"https://book.stripe.com/14AfZgbtCdYigNOfc22wU0S",
+								"_blank",
+								"noopener,noreferrer"
+							)
+						}
+					>
+						Reserve your spot
+					</button>
+				</section>
+
 				<h3 className="center-text headline center">
 					Stay for another 4 days to see more of Sacred Valley including iconic
 					Machu Picchu <br />

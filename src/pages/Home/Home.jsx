@@ -314,11 +314,25 @@ const Home = () => {
 						allowfullscreen
 					></iframe>
 				</section>
-
 				<section
 					ref={stickyWorkHeaderRef}
 					className="sticky-work-header"
 				>
+					<button
+						style={{ margin: "auto" }}
+						className="primary-button"
+						onClick={() =>
+							window.open(
+								"https://book.stripe.com/14AfZgbtCdYigNOfc22wU0S",
+								"_blank",
+								"noopener,noreferrer"
+							)
+						}
+					>
+						Reserve your spot
+					</button>
+					<br />
+					<br />
 					<div className="intro">
 						<p className="primary sm">
 							What would it be like <br />
@@ -473,6 +487,22 @@ const Home = () => {
 					</h5>
 				</section>
 
+				<section className="sticky-work-header">
+					<button
+						style={{ margin: "auto", marginBottom: "-50px" }}
+						className="primary-button"
+						onClick={() =>
+							window.open(
+								"https://book.stripe.com/14AfZgbtCdYigNOfc22wU0S",
+								"_blank",
+								"noopener,noreferrer"
+							)
+						}
+					>
+						Reserve your spot
+					</button>
+				</section>
+
 				<section
 					ref={homeWorkRef}
 					className="home-work"
@@ -529,6 +559,7 @@ const Home = () => {
 									textTransform: "none",
 									fontSize: "1rem",
 									marginLeft: "-4px",
+									marginTop: "20px",
 									fontWeight: 600,
 								}}
 							>
@@ -825,6 +856,22 @@ const Home = () => {
 							</div>
 						</div>
 					</div>
+				</section>
+
+				<section className="sticky-work-header">
+					<button
+						style={{ margin: "auto", marginTop: "-20px" }}
+						className="primary-button"
+						onClick={() =>
+							window.open(
+								"https://book.stripe.com/14AfZgbtCdYigNOfc22wU0S",
+								"_blank",
+								"noopener,noreferrer"
+							)
+						}
+					>
+						Reserve your spot
+					</button>
 				</section>
 
 				<p

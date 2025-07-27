@@ -95,7 +95,7 @@
   margin: 1.25em;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1em;
   border: 0.5px solid var(--border100);
   border-radius: 1em;
 }

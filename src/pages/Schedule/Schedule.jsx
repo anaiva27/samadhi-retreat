@@ -60,6 +60,19 @@ const Schedule = () => {
 							{" "}
 							September 19th - 25th, 2026
 						</span>
+						<br />
+						<span
+							style={{
+								fontFamily: "Zapfino",
+								textTransform: "none",
+								fontSize: ".8rem",
+								marginLeft: "-4px",
+								fontWeight: 600,
+							}}
+						>
+							{" "}
+							Price - $3333
+						</span>
 					</h3>
 					<div className="schedule-list">
 						<div className="schedule-list-row">

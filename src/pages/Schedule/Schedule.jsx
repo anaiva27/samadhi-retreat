@@ -71,7 +71,7 @@ const Schedule = () => {
 							}}
 						>
 							{" "}
-							Price - $3333
+							- $3333 USD
 						</span>
 					</h3>
 					<div className="schedule-list">

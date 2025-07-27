@@ -319,7 +319,7 @@ const Home = () => {
 					className="sticky-work-header"
 				>
 					<button
-						style={{ margin: "auto" }}
+						style={{ margin: "5px auto 20px" }}
 						className="primary-button"
 						onClick={() =>
 							window.open(

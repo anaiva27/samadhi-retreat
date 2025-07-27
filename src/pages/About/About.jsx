@@ -221,12 +221,6 @@ const About = () => {
 								ancient temples, and living culture.
 							</AnimatedCopy>
 						</div>
-						<div className="services-col">
-							<img
-								src="/about/marina-amber.jpeg"
-								alt=""
-							/>
-						</div>
 						<button
 							className="primary-button"
 							onClick={() =>
@@ -239,6 +233,12 @@ const About = () => {
 						>
 							Reserve your spot
 						</button>
+						<div className="services-col">
+							<img
+								src="/about/marina-amber.jpeg"
+								alt=""
+							/>
+						</div>
 					</section>
 				</div>
 

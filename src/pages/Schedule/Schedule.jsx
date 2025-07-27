@@ -52,7 +52,7 @@ const Schedule = () => {
 							style={{
 								fontFamily: "Zapfino",
 								textTransform: "none",
-								fontSize: "1rem",
+								fontSize: ".8rem",
 								marginLeft: "-4px",
 								fontWeight: 600,
 							}}
@@ -340,7 +340,7 @@ const Schedule = () => {
 						<AnimatedCopy
 							animateOnScroll={true}
 							tag="p"
-							className="primary"
+							//className="primary"
 						>
 							<StarSm /> Transfer to Ollantaytambo town
 							<br />
@@ -373,7 +373,7 @@ const Schedule = () => {
 						<AnimatedCopy
 							animateOnScroll={true}
 							tag="p"
-							className="primary"
+							//className="primary"
 						>
 							<StarSm /> Lunch and dinner
 							<br />
@@ -527,6 +527,51 @@ const Schedule = () => {
 								}}
 							/>
 						</div>
+					</div>
+				</section>
+
+				<section className="schedule-section">
+					<h3 className="center-text headline center">
+						"When women gather in circle, magic happens—not the trick kind, but
+						the healing kind." <br />
+						<span
+							style={{
+								fontFamily: "Zapfino",
+								textTransform: "none",
+								fontSize: "1rem",
+								marginLeft: "-4px",
+								fontWeight: 600,
+							}}
+						>
+							{" "}
+							- Toko-pa Turner
+						</span>
+					</h3>
+					<button
+						className="primary-button"
+						onClick={() =>
+							window.open(
+								"https://book.stripe.com/14AfZgbtCdYigNOfc22wU0S",
+								"_blank",
+								"noopener,noreferrer"
+							)
+						}
+					>
+						Reserve your spot
+					</button>
+
+					<h5>
+						Designed around sacred geometry and the chakra system, Samadhi
+						invites you to explore your essence through art, nature, and
+						conscious living. With organic gardens, eco-conscious practices, and
+						superfood-powered meals, every detail supports your healing—body,
+						mind, and soul.
+					</h5>
+					<div className="services-col">
+						<img
+							src="/schedule/women3.jpeg"
+							alt=""
+						/>
 					</div>
 				</section>
 

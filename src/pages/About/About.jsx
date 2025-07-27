@@ -227,7 +227,18 @@ const About = () => {
 								alt=""
 							/>
 						</div>
-						<button className="primary-button">Reserve your spot</button>
+						<button
+							className="primary-button"
+							onClick={() =>
+								window.open(
+									"https://book.stripe.com/14AfZgbtCdYigNOfc22wU0S",
+									"_blank",
+									"noopener,noreferrer"
+								)
+							}
+						>
+							Reserve your spot
+						</button>
 					</section>
 				</div>
 

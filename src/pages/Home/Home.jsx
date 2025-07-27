@@ -522,6 +522,19 @@ const Home = () => {
 						<h4>
 							A Transformational Experience to gain clarity as you clear blocks
 							holding you back
+							<br />
+							<span
+								style={{
+									fontFamily: "Zapfino",
+									textTransform: "none",
+									fontSize: "1rem",
+									marginLeft: "-4px",
+									fontWeight: 600,
+								}}
+							>
+								{" "}
+								Price - $3333
+							</span>
 						</h4>
 
 						<div className="service-list">

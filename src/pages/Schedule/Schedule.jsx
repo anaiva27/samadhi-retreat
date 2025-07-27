@@ -65,7 +65,7 @@ const Schedule = () => {
 							style={{
 								fontFamily: "Zapfino",
 								textTransform: "none",
-								fontSize: ".8rem",
+								fontSize: "1rem",
 								marginLeft: "-4px",
 								fontWeight: 600,
 							}}

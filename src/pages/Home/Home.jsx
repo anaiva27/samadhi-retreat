@@ -20,7 +20,6 @@ import { InstagramEmbed, YouTubeEmbed } from "react-social-media-embed";
 const Home = () => {
 	const workItems = Array.isArray(workList) ? workList : [];
 	const stickyTitlesRef = useRef(null);
-	const titlesRef = useRef([]);
 	const stickyWorkHeaderRef = useRef(null);
 	const homeWorkRef = useRef(null);
 
@@ -271,28 +270,32 @@ const Home = () => {
 					<h2 ref={(el) => (titlesRef.current[2] = el)}>
 						Welcome to women’s retreat at the magical land of Peru.
 					</h2> */}
-					<h3
+					<AnimatedCopy
+						tag="h3"
+						animateOnScroll={true}
+						delay={0.1}
 						id="sticky"
-						ref={(el) => (titlesRef.current[3] = el)}
 					>
+						{" "}
 						A sacred space to release <br />
 						what no longer serves you <br />
 						and awaken
 						<br />
 						<br />
-						<span style={{ fontFamily: "Zapfino" }}>
+						<span
+							className="margin-top"
+							style={{ fontFamily: "Zapfino" }}
+						>
 							the blissful woman{" "}
-							<span style={{ marginTop: 30, display: "block" }}>
+							<span
+								className="block"
+								style={{ marginTop: 30, display: "block", height: 90 }}
+							>
 								within you.
 							</span>
 						</span>
-					</h3>
-					{/* <img
-						ref={(el) => (titlesRef.current[4] = el)}
-						className="explore-img"
-						src="/home/explore-img-2.png"
-						alt=""
-						/> */}
+					</AnimatedCopy>
+
 					<div className="sticky-work-logo">
 						<img
 							src="/home/Logo-updated.png"
@@ -544,6 +547,20 @@ const Home = () => {
 					className="primary "
 					style={{ textAlign: "center" }}
 				>
+					<span
+						style={{
+							//fontFamily: "Zapfino",
+							textTransform: "none",
+							fontSize: "1rem",
+							marginLeft: "-4px",
+							marginTop: "20px",
+							fontWeight: 600,
+						}}
+					>
+						{" "}
+						$3333 USD
+					</span>
+					<br />
 					What is included:
 				</p>
 				<section className="services home">
@@ -552,21 +569,8 @@ const Home = () => {
 						<h4>
 							A Transformational Experience to gain clarity as you clear blocks
 							holding you back
-							<br />
-							<span
-								style={{
-									fontFamily: "Zapfino",
-									textTransform: "none",
-									fontSize: "1rem",
-									marginLeft: "-4px",
-									marginTop: "20px",
-									fontWeight: 600,
-								}}
-							>
-								{" "}
-								Price - $3333
-							</span>
 						</h4>
+						<br />
 
 						<div className="service-list">
 							<div className="service-list-row">

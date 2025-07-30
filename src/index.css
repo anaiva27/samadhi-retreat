@@ -85,6 +85,14 @@ p {
   font-weight: 900;
 }
 
+.block {
+  display: block !important;
+}
+
+  .margin-top {
+   margin-top: 80px;
+}
+
 p.primary {
   text-transform: uppercase;
   font-family: "Messina Sans Mono";
@@ -259,4 +267,8 @@ textarea::placeholder {
   p {
     line-height: 140%;
   }
+
+  .margin-top {
+   margin-top: 40px;
+}
 }

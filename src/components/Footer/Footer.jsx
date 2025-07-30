@@ -8,10 +8,6 @@ const Footer = () => {
 		<div className="footer">
 			<div className="footer-row">
 				<div className="footer-contact">
-					<h3>
-						Let’s Connect Today <br />
-						info<span>@</span>marinafitness.pro
-					</h3>
 					<div className="socials-container">
 						<Link>
 							<img
@@ -45,6 +41,10 @@ const Footer = () => {
 							/>
 						</Link>
 					</div>
+					<h3>
+						Let’s Connect Today <br />
+						info<span>@</span>marinafitness.pro
+					</h3>
 					<p className="secondary">Feel free to reach out anytime.</p>
 
 					<Link

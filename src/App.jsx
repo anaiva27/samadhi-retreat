@@ -62,7 +62,7 @@ function App() {
 						element={<Work />}
 					/>
 					<Route
-						path="/feedback"
+						path="/testimonials"
 						element={<Project />}
 					/>
 					<Route

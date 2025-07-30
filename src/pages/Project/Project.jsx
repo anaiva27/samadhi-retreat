@@ -17,18 +17,18 @@ const Project = () => {
 			<div className="page project">
 				<section className="project-header">
 					<AnimatedCopy
+						tag="h2"
+						delay={1}
+					>
+						Check out the feedback from our amazing retreat guests.
+					</AnimatedCopy>
+					<AnimatedCopy
 						delay={1}
 						animateOnScroll={false}
 						className="primary sm"
 					>
 						What they felt. What they found. <br />
 						Honest feedback from those who’ve experienced the retreat firsthand.
-					</AnimatedCopy>
-					<AnimatedCopy
-						tag="h2"
-						delay={1}
-					>
-						Check out the feedback from our amazing retreat guests.
 					</AnimatedCopy>
 				</section>
 				<div className="home-work-list">

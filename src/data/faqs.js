@@ -2,27 +2,41 @@ export const faqItems = [
 	{
 		question: "Is this retreat right for me?",
 		answer:
-			"If you’re feeling the pull to travel, grow, connect, and rediscover yourself, this might be your sign to say YES! Our retreats are perfect for souls ready to step into a safe, supportive space for transformation. Whether you’re seeking clarity, connection with like-minded souls, or simply a break from your day to day reality, a retreat can be the catalyst for the change you’ve been longing for. Trust your inner knowing - it’s time to honor yourself.",
+			"If you’re feeling the pull to travel, grow, connect, and rediscover yourself, this might be your sign to say YES! <br />Our retreats are perfect for souls ready to step into a safe, supportive space for transformation. Whether you’re seeking clarity, connection with like-minded souls, or simply a break from your day to day reality, a retreat can be the catalyst for the change you’ve been longing for. <br />Trust your inner knowing - it’s time to honor yourself.",
 	},
 	{
 		question: "Where is the retreat located?",
 		answer:
-			"The Samadhi retreat center located in the Urubamba Sacred Valley, Peru, nestled between Cusco and Machu Picchu. It’s truly the best venue built with so much love and intention. Here their official website : www.samadhisacredvalley.com",
+			"The Samadhi retreat center located in the Urubamba Sacred Valley, Peru, nestled between Cusco and Machu Picchu. It’s truly the best venue built with so much love and intention.<br /> Here their official website : <a className='inline-link' href='https://www.samadhisacredvalley.com'>www.samadhisacredvalley.com</a>",
 	},
 	{
 		question: "What’s not included?",
 		answer:
-			"International flights to Peru ,Domestic flight to Cusco, Travel insurance (highly recommended), Additional excursions or private sessions (massage, photoshoot and etc) outside the itinerary, Tips for staff",
+			"<ul className='faq-list'><li> International flights to Peru ,Domestic flight to Cusco, </li><li>Travel insurance (highly recommended), </li><li>Additional excursions or private sessions (massage, photoshoot and etc) outside the itinerary,</li><li> Tips for staff</li></ul>",
 	},
 	{
 		question: "What is the daily schedule like?",
 		answer:
-			"Here is our tentative schedule for our retreat and it’s a subject to change as we are approaching the dates of the retreat : ",
+			"You can see our tentative schedule <a className='inline-link' href='/schedule'>HERE</a> ",
 	},
 	{
 		question: "What should I pack to Perú?",
-		answer:
-			"Here is our tentative schedule for our retreat and it’s a subject to change as we are approaching the dates of the retreat : ",
+		answer: `<ul className='faq-list'><li> Comfortable clothes (yoga pants, some light long sleeves sweater or hoodie, shorts and short sleeve shirts)
+wind/rain jacket</li><li>
+scarf/ and or hat</li><li>
+Warm socks</li><li>
+Bathing suit</li><li>
+Beautiful white or neutral earth tone dress for cacao ceremony</li><li>
+Hiking shoes/boots</li><li>
+Sunscreen</li><li>
+Sunglasses </li><li>
+Dramamine or chlorophyll supplements for high altitude </li><li>
+Electrolytes</li><li>
+Common medicine traveling kit </li><li>
+Ear plugs</li><li>
+A few special totems or things for altar (stones, pictures of loved ones or pets, jewelry) </li><li>
+Cash to exchange it in local currency or pay for massage</li></ul>
+ `,
 	},
 	{
 		question: "What level of fitness is required?",
@@ -56,7 +70,7 @@ export const faqItems = [
 	{
 		question: "What is the cancellation and refund policy? ",
 		answer:
-			"A non-refundable deposit of $799 is required to secure your reservation. 💰next two payments $1267 each has to be submitted by April 19th of 2026 and July 19th of 2026. Once payment is submitted it’s not refundable. 💰 If participants choose the 4 days add on after the retreat it is $1199 and it’s non refundable.",
+			"A non-refundable deposit of $799 is required to secure your reservation. 💰next two payments $1267 each has to be submitted by April 19th of 2026 and July 19th of 2026. Once payment is submitted it’s non-refundable. 💰 If participants choose the 4 days add on after the retreat it is $1199 and it’s non-refundable.",
 	},
 	{
 		question: "How do I get to the retreat center? ",
@@ -82,6 +96,6 @@ export const faqItems = [
 		question:
 			"I’m interested but want to learn more - can I talk to someone first?",
 		answer:
-			"Absolutely! We offer short video calls with our team for anyone interested in joining a retreat. It’s a chance for you to meet us face-to-face, feel the vibe, ask questions, and learn more about the experience to make sure it’s a true full-body yes for you. We’re happy to support and make sure it’s the perfect fit",
+			"Absolutely! We offer short video calls with our team for anyone interested in joining a retreat. It’s a chance for you to meet us face-to-face, feel the vibe, ask questions, and learn more about the experience to make sure it’s a true full-body yes for you. We’re happy to support and make sure it’s the perfect fit.",
 	},
 ];

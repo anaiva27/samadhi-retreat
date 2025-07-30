@@ -252,6 +252,39 @@ const Home = () => {
 							</span>
 						</AnimatedCopy>
 					</div>
+					<div className="socials-container">
+						<Link>
+							<img
+								className="social-icon"
+								src="/home/fb.png"
+								alt="social icon"
+							/>
+						</Link>
+
+						<Link>
+							<img
+								className="social-icon"
+								src="/home/inst.png"
+								alt="social icon"
+							/>
+						</Link>
+
+						<Link>
+							<img
+								className="social-icon"
+								src="/home/wp.png"
+								alt="social icon"
+							/>
+						</Link>
+
+						<Link>
+							<img
+								className="social-icon"
+								src="/home/yt.png"
+								alt="social icon"
+							/>
+						</Link>
+					</div>
 				</section>
 				<section
 					ref={stickyTitlesRef}
@@ -295,7 +328,7 @@ const Home = () => {
 						/> */}
 					<div className="sticky-work-logo">
 						<img
-							src="/home/logo-1.png"
+							src="/home/Logo-updated.png"
 							alt=""
 						/>
 					</div>
@@ -360,7 +393,7 @@ const Home = () => {
 					>
 						<div className="sticky-work-print">
 							<img
-								src="/home/logo-1.png"
+								src="/home/Logo-updated.png"
 								alt=""
 							/>
 						</div>

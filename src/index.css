@@ -142,6 +142,27 @@ button {
   margin: auto;
 }
 
+.cursive {
+  font-family: "Zapfino";
+}
+
+.tall-font {
+  line-height: 400%;
+  width: 100%;
+}
+
+.invert-color {
+  filter: invert(1);
+}
+
+.white-text a {
+  color: var(--bg) !important;
+}
+
+.white-text {
+  color: var(--bg) !important;
+}
+
 .primary-button {
   border: 0.5px solid grey;
   border-radius: 10px;

@@ -185,7 +185,7 @@ const About = () => {
 					>
 						<div className="sticky-work-print">
 							<img
-								src="/home/logo-1.png"
+								src="/home/Logo-updated.png"
 								alt=""
 							/>
 						</div>

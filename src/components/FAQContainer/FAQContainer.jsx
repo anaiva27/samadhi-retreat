@@ -4,6 +4,8 @@ import "./FAQContainer.css";
 import AnimatedCopy from "../AnimatedCopy/AnimatedCopy.jsx";
 import { ArrowRight } from "lucide-react";
 import gsap from "gsap";
+import parse from "html-react-parser";
+import StarSm from "../Star/StarSm.jsx";
 
 const FAQContainer = ({ title = true, fullWidth = false }) => {
 	const [activeIndices, setActiveIndices] = useState([]);
@@ -93,9 +95,9 @@ const FAQContainer = ({ title = true, fullWidth = false }) => {
 						>
 							We know you have questions, and we’re here to make the retreat
 							experience as seamless and exciting as possible. Whether you’re
-							new to Samadhi SiSTarhood retreat or a returning guest, this FAQ
-							hub has all the answers you need to feel confident and prepared to
-							join us.
+							new to Samadhi Si<span style={{ fontWeight: 600 }}>Star</span>hood
+							retreat or a returning guest, this FAQ hub has all the answers you
+							need to feel confident and prepared to join us.
 						</AnimatedCopy>
 					</div>
 				)}
@@ -124,7 +126,7 @@ const FAQContainer = ({ title = true, fullWidth = false }) => {
 								ref={(el) => (contentRefs.current[index] = el)}
 								style={{ height: 0, opacity: 0, overflow: "hidden" }}
 							>
-								<p>{item.answer}</p>
+								<p>{parse(item.answer)}</p>
 							</div>
 						</div>
 					))}

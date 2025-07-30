@@ -8,7 +8,7 @@ const Menu = () => {
 	const menuLinks = [
 		{ path: "/", label: "Welcome" },
 		{ path: "/about", label: "About" },
-		{ path: "/feedback", label: "Testimonials" },
+		{ path: "/testimonials", label: "Testimonials" },
 		{ path: "/", label: "Destinations" },
 		{ path: "/schedule", label: "Schedule" },
 		{ path: "/contact", label: "Contact" },
@@ -18,6 +18,7 @@ const Menu = () => {
 	const location = useLocation();
 	const menuContainer = useRef();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [userLocation, setUserLocation] = useState("");
 	const menuAnimation = useRef();
 	const menuLinksAnimation = useRef();
 	const menuBarAnimation = useRef();
@@ -76,6 +77,17 @@ const Menu = () => {
 
 			previousPathRef.current = location.pathname;
 			return () => clearTimeout(timer);
+		}
+
+		if (location.pathname === "home" || location.pathname === "/") {
+			setUserLocation("home");
+			console.log(
+				"loc",
+				location.pathname,
+				location.pathname === "home" || location.pathname === "/"
+			);
+		} else {
+			setUserLocation("");
 		}
 
 		previousPathRef.current = location.pathname;
@@ -185,6 +197,8 @@ const Menu = () => {
 	// 	};
 	// }, []);
 
+	console.log("loc", userLocation);
+
 	return (
 		<div
 			className="menu-container"
@@ -196,15 +210,37 @@ const Menu = () => {
 			>
 				<div className="menu-bar-container">
 					<div
-						className="menu-logo"
+						className={
+							userLocation === "home" ? "menu-logo" : "menu-logo invert-color"
+						}
 						onClick={closeMenu}
 					>
 						<Link to="/">
 							<img
-								src="/home/logo-1.png"
+								src="/home/Logo-updated.png"
 								alt=""
 							/>
 						</Link>
+					</div>
+					<div className="menu-items">
+						{menuLinks.map((link, index) => (
+							<div
+								key={index}
+								className={
+									userLocation === "home" ? "menu-item white-text" : "menu-item"
+								}
+							>
+								{/* <div className="menu-link-item-holder"> */}
+								<Link
+									className="menu-link"
+									to={link.path}
+									onClick={() => handleLinkClick(link.path)}
+								>
+									{link.label}
+								</Link>
+								{/* </div> */}
+							</div>
+						))}
 					</div>
 					<div className="menu-actions">
 						<div className="menu-toggle">

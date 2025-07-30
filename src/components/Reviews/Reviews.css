@@ -11,6 +11,11 @@
   justify-content: center;
   align-items: center;
   gap: 2em;
+  margin-top: 150px;
+}
+
+.review {
+  width: 75%;
 }
 
 #review-copy {
@@ -33,7 +38,8 @@
 
 #quote-icon {
   position: absolute;
-  top: 20%;
+  top: 5%;
+  z-index: 5;
 }
 
 .reviews-list {

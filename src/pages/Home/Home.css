@@ -39,6 +39,21 @@
 
 }
 
+.socials-container {
+  position: absolute;
+  width: 30%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  bottom: 30px;
+  right: 30px;
+}
+
+.social-icon {
+  max-width: 40px;
+  width: 100%;
+}
+
 .sticky-titles {
   position: relative;
   width: 100vw;
@@ -294,6 +309,20 @@
     height: 250px;
     margin: 20px auto;
   }
+
+  .socials-container {
+  position: absolute;
+  width: 50px;
+  max-width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  top: 130px;
+  right: 35px;
+  bottom: unset;
+  gap: 10px;
+}
 
   .intro-samadhi {
   padding: 1.25em;

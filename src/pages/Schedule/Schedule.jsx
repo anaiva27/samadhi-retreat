@@ -368,7 +368,6 @@ const Schedule = () => {
 						<AnimatedCopy
 							animateOnScroll={true}
 							tag="p"
-							//className="primary"
 						>
 							<StarSm /> Transfer to Ollantaytambo town
 							<br />

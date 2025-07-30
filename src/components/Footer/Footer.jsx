@@ -10,14 +10,16 @@ const Footer = () => {
 				<div className="footer-contact">
 					<h3>
 						Let’s Connect Today <br />
-						info<span>@</span>marinafitness.com
+						info<span>@</span>marinafitness.pro
 					</h3>
 
 					<p className="secondary">Feel free to reach out anytime.</p>
 
 					<Link
-						to="/contact"
+						to="https://calendly.com/marina-marinafitness/30min"
 						className="btn"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						Get in Touch
 					</Link>
@@ -33,10 +35,18 @@ const Footer = () => {
 					</Link>
 
 					<Link
-						to="/work"
+						to="/schedule"
 						className="footer-nav-item"
 					>
-						<span>Work</span>
+						<span>Schedule</span>
+						<span>&#8594;</span>
+					</Link>
+
+					<Link
+						to="/testimonials"
+						className="footer-nav-item"
+					>
+						<span>Testimonials</span>
 						<span>&#8594;</span>
 					</Link>
 
@@ -45,6 +55,14 @@ const Footer = () => {
 						className="footer-nav-item"
 					>
 						<span>About</span>
+						<span>&#8594;</span>
+					</Link>
+
+					<Link
+						to="/destinations"
+						className="footer-nav-item"
+					>
+						<span>destinations</span>
 						<span>&#8594;</span>
 					</Link>
 
@@ -68,7 +86,7 @@ const Footer = () => {
 			<div className="footer-row">
 				<div className="footer-header">
 					<img
-						src="/home/logo-1.png"
+						src="/home/Logo-updated.png"
 						alt=""
 					/>
 				</div>

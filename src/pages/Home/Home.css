@@ -40,18 +40,16 @@
 }
 
 .socials-container {
-  position: absolute;
-  width: 30%;
-  max-width: 300px;
+  width: 180px;
   display: flex;
   justify-content: space-between;
-  bottom: 30px;
-  right: 30px;
+  gap: 10px;
 }
 
 .social-icon {
-  max-width: 40px;
-  width: 100%;
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
 }
 
 .sticky-titles {
@@ -311,17 +309,10 @@
   }
 
   .socials-container {
-  position: absolute;
-  width: 50px;
-  max-width: 50px;
+  width: 200px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  top: 130px;
-  right: 35px;
-  bottom: unset;
   gap: 10px;
+  margin: auto;
 }
 
   .intro-samadhi {

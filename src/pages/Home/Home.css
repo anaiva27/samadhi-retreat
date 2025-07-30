@@ -47,8 +47,8 @@
 }
 
 .social-icon {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   filter: invert(1);
 }
 
@@ -312,7 +312,7 @@
   width: 200px;
   display: flex;
   gap: 10px;
-  margin: auto;
+  margin-right: auto;
 }
 
   .intro-samadhi {

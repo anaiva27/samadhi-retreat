@@ -1,6 +1,5 @@
 import React from "react";
 import "./ContactForm.css";
-import { Link } from "react-router";
 
 const ContactForm = () => {
 	return (
@@ -21,39 +20,7 @@ const ContactForm = () => {
 				<div className="contact-form-col">
 					<div className="contact-form-header">
 						<h3>Start a Conversation</h3>
-						<div className="socials-container">
-							<Link>
-								<img
-									className="social-icon"
-									src="/home/fb.png"
-									alt="social icon"
-								/>
-							</Link>
 
-							<Link>
-								<img
-									className="social-icon"
-									src="/home/inst.png"
-									alt="social icon"
-								/>
-							</Link>
-
-							<Link>
-								<img
-									className="social-icon"
-									src="/home/wp.png"
-									alt="social icon"
-								/>
-							</Link>
-
-							<Link>
-								<img
-									className="social-icon"
-									src="/home/yt.png"
-									alt="social icon"
-								/>
-							</Link>
-						</div>
 						<p>
 							We’d love to hear what you’re working on and explore how we can
 							help you achieve that.

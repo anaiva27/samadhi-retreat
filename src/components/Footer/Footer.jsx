@@ -12,7 +12,39 @@ const Footer = () => {
 						Let’s Connect Today <br />
 						info<span>@</span>marinafitness.pro
 					</h3>
+					<div className="socials-container">
+						<Link>
+							<img
+								className="social-icon"
+								src="/home/fb.png"
+								alt="social icon"
+							/>
+						</Link>
 
+						<Link>
+							<img
+								className="social-icon"
+								src="/home/inst.png"
+								alt="social icon"
+							/>
+						</Link>
+
+						<Link>
+							<img
+								className="social-icon"
+								src="/home/wp.png"
+								alt="social icon"
+							/>
+						</Link>
+
+						<Link>
+							<img
+								className="social-icon"
+								src="/home/yt.png"
+								alt="social icon"
+							/>
+						</Link>
+					</div>
 					<p className="secondary">Feel free to reach out anytime.</p>
 
 					<Link

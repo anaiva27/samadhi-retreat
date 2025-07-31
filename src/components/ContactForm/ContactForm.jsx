@@ -68,7 +68,7 @@ const ContactForm = () => {
 				<div className="contact-form-col">
 					{/* <div id="mc_embed_signup"> */}
 					<form
-						action="https://marinafitness.us18.list-manage.com/subscribe/post?u=81d7f5090e271a5e5249e16c7&amp;id=5616982dce&amp;f_id=00bdafe6f0"
+						action="https://marinafitness.us18.list-manage.com/subscribe/post?u=81d7f5090e271a5e5249e16c7&amp;id=a72c961373&amp;f_id=00a2afe6f0"
 						method="post"
 						id="mc-embedded-subscribe-form"
 						name="mc-embedded-subscribe-form"
@@ -139,7 +139,7 @@ const ContactForm = () => {
 								>
 									<input
 										type="text"
-										name="b_81d7f5090e271a5e5249e16c7_5616982dce"
+										name="b_81d7f5090e271a5e5249e16c7_a72c961373"
 										tabindex="-1"
 										value=""
 									/>

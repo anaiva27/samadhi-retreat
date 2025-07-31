@@ -49,7 +49,7 @@ const Project = () => {
 									frameborder="0"
 									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
 									referrerpolicy="strict-origin-when-cross-origin"
-									allowfullscreen
+									allowFullScreen
 								></iframe>
 							</div>
 							<h4>{work.category}</h4>

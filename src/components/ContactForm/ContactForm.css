@@ -76,6 +76,13 @@
   gap: 4em;
 }
 
+.contact-form-fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .75em;
+}
+
 .contact-form-availability {
   width: 75%;
   display: flex;
@@ -93,6 +100,10 @@
 
 .form-item .btn {
   width: 100%;
+}
+
+.form-item input {
+  border: none !important;
 }
 
 @media (max-width: 900px) {

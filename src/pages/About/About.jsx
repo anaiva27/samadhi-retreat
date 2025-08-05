@@ -178,6 +178,51 @@ const About = () => {
 					</section>
 				</div>
 
+				<div className="page about">
+					<br />
+					<p className=" headline"> Meet Angelica</p>
+					<section className="services">
+						<div className="services-col">
+							<img
+								src="/about/angelica.png"
+								alt=""
+							/>
+						</div>
+						<div className="services-col">
+							<AnimatedCopy
+								animateOnScroll={true}
+								tag="h4"
+								className=""
+							>
+								Angelica is a photographer, a certified yoga teacher and
+								Registered Massage Therapist whose work is dedicated to
+								liberating and empowering feminine authentic self-expression and
+								creating safety for emotional healing to occur through
+								therapeutic body work, and Reiki to creative projects and
+								building authentic community gatherings for artists and women.
+							</AnimatedCopy>
+							<br />
+							<AnimatedCopy
+								animateOnScroll={true}
+								tag="p"
+								//className="primary"
+							>
+								Angelica supports others in reconnecting with their natural
+								rhythm through feminine healing — rooted in softness, intuition,
+								and cyclical wisdom.
+								<br />
+								<br />
+								Her work invites a return to balance through nurturing,
+								body-based practices that honour the body’s intelligence and the
+								sacred in slowness.
+								<br />
+								Angelica is the founder of Earth Body Balance, a holistic
+								massage therapy practice in Toronto, Canada.
+							</AnimatedCopy>
+						</div>
+					</section>
+				</div>
+
 				<section className="sticky-work-header">
 					<AnimatedCopy
 						tag="h1"

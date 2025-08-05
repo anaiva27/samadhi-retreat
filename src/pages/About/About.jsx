@@ -240,7 +240,7 @@ const About = () => {
 
 				<div className="page about">
 					<section className="services">
-						<div className="services-col">
+						<div className="services-col square-img">
 							<img
 								src="/about/women4.jpg"
 								alt=""
@@ -278,7 +278,7 @@ const About = () => {
 						>
 							Reserve your spot
 						</button>
-						<div className="services-col">
+						<div className="services-col square-img">
 							<img
 								src="/about/marina-amber.jpeg"
 								alt=""

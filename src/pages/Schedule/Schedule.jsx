@@ -318,7 +318,7 @@ const Schedule = () => {
 				<p className="center-text headline">$1200 USD</p>
 
 				<section className="schedule-section">
-					<div className="services-col">
+					<div className="services-col tall-img">
 						<img
 							src="/schedule/women2.jpeg"
 							alt=""
@@ -561,7 +561,7 @@ const Schedule = () => {
 						superfood-powered meals, every detail supports your healing—body,
 						mind, and soul.
 					</h5>
-					<div className="services-col">
+					<div className="services-col tall-img">
 						<img
 							src="/schedule/women3.jpeg"
 							alt=""

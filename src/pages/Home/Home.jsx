@@ -370,7 +370,7 @@ const Home = () => {
 					</AnimatedCopy>
 				</section>
 
-				<section className="services">
+				<section className="services home">
 					<div className="services-col">
 						<div className="services-banner">
 							<img
@@ -492,8 +492,7 @@ const Home = () => {
 
 				<section className="sticky-work-header">
 					<button
-						style={{ margin: "auto", marginBottom: "-50px" }}
-						className="primary-button"
+						className="primary-button button-home"
 						onClick={() =>
 							window.open(
 								"https://book.stripe.com/14AfZgbtCdYigNOfc22wU0S",
@@ -535,6 +534,7 @@ const Home = () => {
 							</Link>
 						))}
 					</div>
+					<br />
 					<Link
 						to="/feedback"
 						className="primary-button"
@@ -878,6 +878,7 @@ const Home = () => {
 					</button>
 				</section>
 
+				<br />
 				<p
 					className="primary "
 					style={{ textAlign: "center" }}

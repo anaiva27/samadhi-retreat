@@ -150,9 +150,18 @@
   /* border-top: 0.5px solid var(--border100); */
 }
 
+.about-banner {
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.about-banner img {
+  border-radius: 1em;
+  overflow: hidden;
+  aspect-ratio: 5/4;
+}
+
 .about-banner-img {
-  margin: 2em;
-  height: 50svh;
   border-radius: 1em;
   overflow: hidden;
   border: 0.5px solid var(--border100);
@@ -228,9 +237,8 @@
 }
 
 @media (max-width: 1000px) {
-  .services-banner {
-  height: 100%;
-  min-height: unset;
+.about-banner img {
+  aspect-ratio: 5/6;
 }
 
   .about-header {
@@ -280,12 +288,12 @@
     padding: 1.25em;
   }
 
-  .services-col:nth-child(1) {
+  /* .services-col:nth-child(1) {
     aspect-ratio: 5/5;
   }
   .home-services-col:nth-child(1) {
     aspect-ratio: 5/3;
-  }
+  } */
 
   .service-list-row {
     flex-direction: column;

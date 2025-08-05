@@ -67,8 +67,8 @@ const About = () => {
 				</section>
 
 				<section className="services">
-					<div className="services-col">
-						<div className="services-banner">
+					<div className="">
+						<div className="about-banner">
 							<img
 								src="/about/IMG3.jpg"
 								alt=""
@@ -95,7 +95,7 @@ const About = () => {
 						<h2>Guest Facilitators</h2>
 					</section>
 
-					<p className=" headline"> Meet Sussana</p>
+					<p className=" headline"> Meet Susanna</p>
 					<section className="services">
 						<div className="services-col">
 							<img

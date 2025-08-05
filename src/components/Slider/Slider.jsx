@@ -63,10 +63,29 @@ export function Slider() {
 			</SwiperSlide>
 			<SwiperSlide className="styled">
 				<img
-					src="/slider/img456.jpg"
+					src="/slider/img5a.jpg"
 					alt=""
 				/>
 			</SwiperSlide>
+			<SwiperSlide className="styled">
+				<img
+					src="/slider/IMG_0488a.png"
+					alt=""
+				/>
+			</SwiperSlide>
+			<SwiperSlide className="styled">
+				<img
+					src="/slider/IMG_0303a.png"
+					alt=""
+				/>
+			</SwiperSlide>
+			<SwiperSlide className="styled">
+				<img
+					src="/slider/B8A8046a.jpg"
+					alt=""
+				/>
+			</SwiperSlide>
+
 			<SwiperSlide className="styled">
 				<img
 					src="/slider/img554.jpg"
@@ -79,9 +98,60 @@ export function Slider() {
 					alt=""
 				/>
 			</SwiperSlide>
+
+			<SwiperSlide className="styled">
+				<img
+					src="/slider/img8b.jpg"
+					alt=""
+				/>
+			</SwiperSlide>
+			<SwiperSlide className="styled">
+				<img
+					src="/slider/img12b.jpg"
+					alt=""
+				/>
+			</SwiperSlide>
+			<SwiperSlide className="styled">
+				<img
+					src="/slider/img53b.jpg"
+					alt=""
+				/>
+			</SwiperSlide>
+			<SwiperSlide className="styled">
+				<img
+					src="/slider/B8A7461b.jpg"
+					alt=""
+				/>
+			</SwiperSlide>
+
 			<SwiperSlide className="styled">
 				<img
 					src="/slider/img5677.jpg"
+					alt=""
+				/>
+			</SwiperSlide>
+
+			<SwiperSlide className="styled">
+				<img
+					src="/slider/img98c.png"
+					alt=""
+				/>
+			</SwiperSlide>
+			<SwiperSlide className="styled">
+				<img
+					src="/slider/img12c.png"
+					alt=""
+				/>
+			</SwiperSlide>
+			<SwiperSlide className="styled">
+				<img
+					src="/slider/img34c.png"
+					alt=""
+				/>
+			</SwiperSlide>
+			<SwiperSlide className="styled">
+				<img
+					src="/slider/img77c.png"
 					alt=""
 				/>
 			</SwiperSlide>

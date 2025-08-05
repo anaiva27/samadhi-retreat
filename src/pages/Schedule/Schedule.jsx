@@ -46,34 +46,10 @@ const Schedule = () => {
 				</section> */}
 
 				<section className="schedule-section">
-					<h3 className="center-text headline center">
-						Tentative schedule <br />
-						<span
-							style={{
-								fontFamily: "Zapfino",
-								textTransform: "none",
-								fontSize: ".8rem",
-								marginLeft: "-4px",
-								fontWeight: 600,
-							}}
-						>
-							{" "}
-							September 19th - 25th, 2026
-						</span>
-						<br />
-						<span
-							style={{
-								fontFamily: "Zapfino",
-								textTransform: "none",
-								fontSize: "1rem",
-								marginLeft: "-4px",
-								fontWeight: 600,
-							}}
-						>
-							{" "}
-							- $3333 USD
-						</span>
-					</h3>
+					<h3 className="center-text headline center">Tentative schedule</h3>
+					<p className="center-text headline">September 19th - 25th, 2026</p>
+					<p className="center-text headline"> $3333 USD</p>
+
 					<div className="schedule-list">
 						<div className="schedule-list-row">
 							<div className="line-vertical"></div>
@@ -336,19 +312,10 @@ const Schedule = () => {
 
 				<h3 className="center-text headline center">
 					Stay for another 4 days to see more of Sacred Valley including iconic
-					Machu Picchu <br />
-					<span
-						style={{
-							fontFamily: "Zapfino",
-							textTransform: "none",
-							fontSize: "1rem",
-							marginLeft: "-4px",
-							fontWeight: 600,
-						}}
-					>
-						- $1200 USD
-					</span>
+					Machu Picchu
 				</h3>
+				<br />
+				<p className="center-text headline">$1200 USD</p>
 
 				<section className="schedule-section">
 					<div className="services-col">

@@ -887,7 +887,7 @@ const Home = () => {
 				</p>
 				<section className="intro-samadhi">
 					<img
-						src="/home/wellness-retreats-in-peru.webp"
+						src="/home/samadhi-bg.jpg"
 						alt=""
 					/>
 

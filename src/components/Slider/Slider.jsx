@@ -21,12 +21,6 @@ export function Slider() {
 		>
 			<SwiperSlide className="styled">
 				<img
-					src="/slider/sliderImg1.jpg"
-					alt=""
-				/>
-			</SwiperSlide>
-			<SwiperSlide className="styled">
-				<img
 					src="/slider/sliderImg4.jpg"
 					alt=""
 				/>
@@ -43,58 +37,24 @@ export function Slider() {
 					alt=""
 				/>
 			</SwiperSlide>
-			<SwiperSlide className="styled">
-				<img
-					src="/slider/sliderImg5.jpg"
-					alt=""
-				/>
-			</SwiperSlide>
-			<SwiperSlide className="styled">
-				<img
-					src="/slider/sliderImg6.jpg"
-					alt=""
-				/>
-			</SwiperSlide>
+
 			<SwiperSlide className="styled">
 				<img
 					src="/slider/img122.jpg"
 					alt=""
 				/>
 			</SwiperSlide>
-			<SwiperSlide className="styled">
-				<img
-					src="/slider/img5a.jpg"
-					alt=""
-				/>
-			</SwiperSlide>
+
 			<SwiperSlide className="styled">
 				<img
 					src="/slider/IMG_0488a.png"
 					alt=""
 				/>
 			</SwiperSlide>
-			<SwiperSlide className="styled">
-				<img
-					src="/slider/IMG_0303a.png"
-					alt=""
-				/>
-			</SwiperSlide>
-			<SwiperSlide className="styled">
-				<img
-					src="/slider/B8A8046a.jpg"
-					alt=""
-				/>
-			</SwiperSlide>
 
 			<SwiperSlide className="styled">
 				<img
-					src="/slider/img554.jpg"
-					alt=""
-				/>
-			</SwiperSlide>
-			<SwiperSlide className="styled">
-				<img
-					src="/slider/img1234.jpg"
+					src="/slider/B8A8046a.jpg"
 					alt=""
 				/>
 			</SwiperSlide>
@@ -126,38 +86,14 @@ export function Slider() {
 
 			<SwiperSlide className="styled">
 				<img
-					src="/slider/img5677.jpg"
+					src="/slider/img12c.png"
 					alt=""
 				/>
 			</SwiperSlide>
 
 			<SwiperSlide className="styled">
 				<img
-					src="/slider/img98c.png"
-					alt=""
-				/>
-			</SwiperSlide>
-			<SwiperSlide className="styled">
-				<img
-					src="/slider/img12c.png"
-					alt=""
-				/>
-			</SwiperSlide>
-			<SwiperSlide className="styled">
-				<img
-					src="/slider/img34c.png"
-					alt=""
-				/>
-			</SwiperSlide>
-			<SwiperSlide className="styled">
-				<img
 					src="/slider/img77c.png"
-					alt=""
-				/>
-			</SwiperSlide>
-			<SwiperSlide className="styled">
-				<img
-					src="/slider/img999.jpg"
 					alt=""
 				/>
 			</SwiperSlide>

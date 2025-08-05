@@ -126,6 +126,7 @@
   max-width: 200px;
   margin:  auto auto 10px ;
   filter: invert(1);
+  opacity: 0.3;
 }
 
 .intro {

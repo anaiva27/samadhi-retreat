@@ -311,9 +311,9 @@ const Home = () => {
 					<iframe
 						src="https://www.youtube.com/embed/y-_pgybgKPo?si=UlVtE6g0kjZ0VM2H"
 						title="YouTube video player"
-						frameborder="0"
+						frameBorder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerpolicy="strict-origin-when-cross-origin"
+						referrerPolicy="strict-origin-when-cross-origin"
 						allowFullScreen
 					></iframe>
 				</section>
@@ -524,9 +524,9 @@ const Home = () => {
 										// height="315"
 										src={work.video}
 										title="YouTube video player"
-										frameborder="0"
+										frameBorder="0"
 										allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
-										referrerpolicy="strict-origin-when-cross-origin"
+										referrerPolicy="strict-origin-when-cross-origin"
 										allowFullScreen
 									></iframe>
 								</div>

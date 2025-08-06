@@ -84,6 +84,13 @@
   border-radius: 1em;
 }
 
+.spotify  {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  border-radius: 1em;
+}
+
 .services-col:nth-child(1) {
   position: relative;
   flex: 2;
@@ -287,12 +294,9 @@
     padding: 1.25em;
   }
 
-  /* .services-col:nth-child(1) {
-    aspect-ratio: 5/5;
-  }
-  .home-services-col:nth-child(1) {
-    aspect-ratio: 5/3;
-  } */
+.spotify  {
+  padding: 1.25em;
+}
 
   .service-list-row {
     flex-direction: column;

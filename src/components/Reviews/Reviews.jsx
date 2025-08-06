@@ -152,10 +152,10 @@ const Reviews = ({ hasQuotes }) => {
 				slidesPerView={"auto"}
 				loop={true}
 				navigation={true}
-				autoplay={{
-					delay: 4000,
-					disableOnInteraction: false,
-				}}
+				// autoplay={{
+				// 	delay: 4000,
+				// 	disableOnInteraction: false,
+				// }}
 				// pagination={{ clickable: true }}
 				className="mySwiperRetreat"
 			>
@@ -163,29 +163,20 @@ const Reviews = ({ hasQuotes }) => {
 					return (
 						<SwiperSlide
 							className="styled"
-							// key={review.id}
+							key={review.id}
 							// onClick={() => handleReviewClick(index)}
 						>
 							{/* <h4 id="review-copy">{review?.copy}</h4> */}
 
-							<AnimatedCopy
-								animateOnScroll={false}
-								tag="h3"
-								delay={1}
-								className="review"
-							>
-								{review?.copy}
-							</AnimatedCopy>
+							<p className="reviews-copy review">{review?.copy}</p>
 							<br />
 							<br />
-							<AnimatedCopy
-								animateOnScroll={false}
-								tag="h4"
-								delay={1}
+							<h4
+								style={{ maxWidth: "70%" }}
 								className="cursive tall-font"
 							>
 								{review?.author}
-							</AnimatedCopy>
+							</h4>
 						</SwiperSlide>
 					);
 				})}

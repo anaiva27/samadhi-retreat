@@ -9,7 +9,7 @@ const Menu = () => {
 		{ path: "/", label: "Welcome" },
 		{ path: "/about", label: "About" },
 		{ path: "/testimonials", label: "Testimonials" },
-		{ path: "/", label: "Destinations" },
+		// { path: "/", label: "Destinations" },
 		{ path: "/schedule", label: "Schedule" },
 		{ path: "/contact", label: "Contact" },
 		{ path: "/faq", label: "Q&A" },
@@ -81,11 +81,6 @@ const Menu = () => {
 
 		if (location.pathname === "home" || location.pathname === "/") {
 			setUserLocation("home");
-			console.log(
-				"loc",
-				location.pathname,
-				location.pathname === "home" || location.pathname === "/"
-			);
 		} else {
 			setUserLocation("");
 		}
@@ -196,8 +191,6 @@ const Menu = () => {
 	// 		}
 	// 	};
 	// }, []);
-
-	console.log("loc", userLocation);
 
 	return (
 		<div

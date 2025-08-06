@@ -46,9 +46,9 @@ const Project = () => {
 									// height="315"
 									src={work.video}
 									title="YouTube video player"
-									frameborder="0"
+									frameBorder="0"
 									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
-									referrerpolicy="strict-origin-when-cross-origin"
+									referrerPolicy="strict-origin-when-cross-origin"
 									allowFullScreen
 								></iframe>
 							</div>

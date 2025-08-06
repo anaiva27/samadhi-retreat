@@ -7,14 +7,14 @@ const quotes = [
 	},
 	{
 		id: 2,
-		copy: "Your direction brought our brand to life. Every frame had purpose and emotion — couldn't be happier with the result.",
-		author: "Liam Carter",
+		copy: "Step into the fire of self-discovery. This fire will not burn you; it will only burn what you are not.",
+		author: "Mooji",
 		image: "/reviews/review-2.jpg",
 	},
 	{
 		id: 3,
-		copy: "Truly professional, creative, and detail-oriented. You made our vision clearer and better than we imagined.",
-		author: "Sophie Nguyen",
+		copy: "Feel it all. Use it all. Let it make you, not break you..",
+		author: "Glennon Doyle",
 		image: "/reviews/review-3.jpg",
 	},
 ];

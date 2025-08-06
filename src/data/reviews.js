@@ -7,13 +7,13 @@ const reviews = [
 	},
 	{
 		id: 2,
-		copy: "Your direction brought our brand to life. Every frame had purpose and emotion — couldn't be happier with the result.",
-		author: "Liam Carter",
+		copy: "My overall experience was of a deep anchoring into Self, and timely insightful clarity from the healing sessions offered. My deep gratitude to Marina and Amber for creating this experience and to all the wonderful staff at Samadhi and to all the beautiful women that journeyed alongside me on this retreat. I highly recommend this profound and magical experience.",
+		author: "Caroline Avant",
 		image: "/reviews/review-2.jpg",
 	},
 	{
 		id: 3,
-		copy: "Truly professional, creative, and detail-oriented. You made our vision clearer and better than we imagined.",
+		copy: "Truly professional, creative, and detail-oriented. You made our vision clearer and and inspired us to grow.",
 		author: "Sophie Nguyen",
 		image: "/reviews/review-3.jpg",
 	},

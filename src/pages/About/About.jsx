@@ -8,6 +8,7 @@ import Footer from "../../components/Footer/Footer";
 import ReactLenis from "lenis/react";
 
 import Transition from "../../components/Transition/Transition";
+import Spotify from "../../components/SpotifyPlaylist/Spotify";
 
 const About = () => {
 	return (
@@ -58,10 +59,11 @@ const About = () => {
 							tag="p"
 							//className="primary"
 						>
-							United by a shared vision of life, wellness, and values, they have
-							cultivated a community of empowered, open-minded individuals.
-							Their combined commitment to making a meaningful impact on
-							people's lives has been remarkable.
+							Guided by a shared vision for conscious living, wellness, and
+							aligned values, they’ve nurtured a thriving community of
+							empowered, open-hearted women around the world. Their combined
+							commitment to making a meaningful impact on people's lives has
+							been remarkable.
 						</AnimatedCopy>
 					</div>
 				</section>
@@ -76,6 +78,19 @@ const About = () => {
 						</div>
 					</div>
 					<div className="services-col">
+						<AnimatedCopy
+							animateOnScroll={true}
+							tag="h4"
+							className=""
+						>
+							Together, they’ve hosted transformative women’s retreats in the
+							U.S., El Salvador, Mexico, and Peru — each one rooted in
+							intention, healing, and sisterhood. Now based in Mexico, both
+							women are devoted to studying ancient traditions and spiritual
+							mysteries while continuing to share their gifts through yoga and
+							functional movement, both online and in person.
+						</AnimatedCopy>
+						<br />
 						<AnimatedCopy
 							animateOnScroll={true}
 							tag="p"
@@ -287,19 +302,7 @@ const About = () => {
 					</section>
 				</div>
 				<div className="page about">
-					<section className="spotify">
-						<iframe
-							data-testid="embed-iframe"
-							style={{ borderRadius: "12px" }}
-							src="https://open.spotify.com/embed/playlist/39ekLlKdrIWBvowyNgImHr?utm_source=generator&theme=0"
-							width="100%"
-							height="352"
-							frameBorder="0"
-							allowfullscreen=""
-							allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-							loading="lazy"
-						></iframe>
-					</section>
+					<Spotify />
 				</div>
 				<ContactForm />
 

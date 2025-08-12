@@ -337,12 +337,14 @@ const Home = () => {
 					<br />
 					<br />
 					<div className="intro">
-						<p className="primary sm">
-							What would it be like <br />
-							living your life as a celebration?
+						<p className="primary">
+							Have you been pouring into everyone but yourself, and now your
+							soul is whispering for rest, connection, and meaning?
 						</p>
-						<p className="primary sm">
-							To get in touch with your sacred feminine power?
+						<p className="primary">
+							This is your invitation to pause. <br />
+							To reset. To reconnect — with yourself, with sisterhood, and with
+							the sacred.
 						</p>
 					</div>
 				</section>
@@ -356,7 +358,16 @@ const Home = () => {
 					ref={stickyWorkHeaderRef}
 					className="sticky-work-header"
 				>
-					<h3>Welcome to women’s retreat at the magical land of Peru.</h3>
+					<h3>
+						Welcome to women’s retreat
+						<br /> at the magical land of Peru.
+					</h3>
+					<p className="primary">
+						A Sacred Pause for the Woman Who Does It All — But Feels
+						Disconnected Inside.
+					</p>
+					<br />
+					<br />
 					<AnimatedCopy
 						tag="h1"
 						animateOnScroll="true"
@@ -518,6 +529,8 @@ const Home = () => {
 							>
 								<p className="primary sm">04 - 2025</p>
 								<h3>{work.title}</h3>
+								{work.quote && <p className="primary sm">{work.quote}</p>}
+
 								<div className="work-item-img">
 									<iframe
 										// width="560"
@@ -561,8 +574,11 @@ const Home = () => {
 						$3333 USD
 					</span>
 					<br />
-					What is included:
+					Limited to 12 women. Last year’s retreat was sold out
+					<br />
 				</p>
+				<br />
+				<h3 className="center-text">What is included:</h3>
 				<section className="services home">
 					<Slider />
 					<div className="service-list-col">

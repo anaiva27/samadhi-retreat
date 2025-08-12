@@ -9,6 +9,7 @@ import ReactLenis from "lenis/react";
 
 import Transition from "../../components/Transition/Transition";
 import StarSm from "../../components/Star/StarSm";
+import Spotify from "../../components/SpotifyPlaylist/Spotify";
 
 const Schedule = () => {
 	return (
@@ -568,7 +569,9 @@ const Schedule = () => {
 						/>
 					</div>
 				</section>
-
+				<div className="page about">
+					<Spotify />
+				</div>
 				<ContactForm />
 
 				<Footer />

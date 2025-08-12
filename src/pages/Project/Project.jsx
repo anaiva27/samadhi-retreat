@@ -40,6 +40,8 @@ const Project = () => {
 						>
 							<p className="primary sm">04 - 2025</p>
 							<h3>{work.title}</h3>
+							{work.quote && <p className="primary sm">{work.quote}</p>}
+
 							<div className="work-item-img">
 								<iframe
 									// width="560"

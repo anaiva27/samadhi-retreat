@@ -9,7 +9,11 @@ const Footer = () => {
 			<div className="footer-row">
 				<div className="footer-contact">
 					<div className="socials-container">
-						<Link>
+						<Link
+							to="https://www.facebook.com/share/g/19ZgURseQc/?mibextid=wwXIfr"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<img
 								className="social-icon"
 								src="/home/fb.png"
@@ -17,7 +21,11 @@ const Footer = () => {
 							/>
 						</Link>
 
-						<Link>
+						<Link
+							target="_blank"
+							rel="noopener noreferrer"
+							to="https://www.instagram.com/samadhi.sistarhood/"
+						>
 							<img
 								className="social-icon"
 								src="/home/inst.png"
@@ -25,7 +33,10 @@ const Footer = () => {
 							/>
 						</Link>
 
-						<Link>
+						<Link
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<img
 								className="social-icon"
 								src="/home/wp.png"
@@ -33,7 +44,11 @@ const Footer = () => {
 							/>
 						</Link>
 
-						<Link>
+						<Link
+							target="_blank"
+							rel="noopener noreferrer"
+							to="https://www.youtube.com/results?search_query=samadhi+sistarhood"
+						>
 							<img
 								className="social-icon"
 								src="/home/yt.png"
@@ -90,13 +105,13 @@ const Footer = () => {
 						<span>&#8594;</span>
 					</Link>
 
-					<Link
+					{/* <Link
 						to="/destinations"
 						className="footer-nav-item"
 					>
 						<span>destinations</span>
 						<span>&#8594;</span>
-					</Link>
+					</Link> */}
 
 					<Link
 						to="/contact"

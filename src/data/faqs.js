@@ -22,21 +22,21 @@ export const faqItems = [
 	{
 		question: "What should I pack to Perú?",
 		answer: `<ul className='faq-list'><li> Comfortable clothes (yoga pants, some light long sleeves sweater or hoodie, shorts and short sleeve shirts)
-wind/rain jacket</li><li>
-scarf/ and or hat</li><li>
-Warm socks</li><li>
-Bathing suit</li><li>
-Beautiful white or neutral earth tone dress for cacao ceremony</li><li>
-Hiking shoes/boots</li><li>
-Sunscreen</li><li>
-Sunglasses </li><li>
-Dramamine or chlorophyll supplements for high altitude </li><li>
-Electrolytes</li><li>
-Common medicine traveling kit </li><li>
-Ear plugs</li><li>
-A few special totems or things for altar (stones, pictures of loved ones or pets, jewelry) </li><li>
-Cash to exchange it in local currency or pay for massage</li></ul>
- `,
+			wind/rain jacket</li><li>
+			scarf/ and or hat</li><li>
+			Warm socks</li><li>
+			Bathing suit</li><li>
+			Beautiful white or neutral earth tone dress for cacao ceremony</li><li>
+			Hiking shoes/boots</li><li>
+			Sunscreen</li><li>
+			Sunglasses </li><li>
+			Dramamine or chlorophyll supplements for high altitude </li><li>
+			Electrolytes</li><li>
+			Common medicine traveling kit </li><li>
+			Ear plugs</li><li>
+			A few special totems or things for altar (stones, pictures of loved ones or pets, jewelry) </li><li>
+			Cash to exchange it in local currency or pay for massage</li></ul>
+	`,
 	},
 	{
 		question: "What level of fitness is required?",
@@ -49,9 +49,9 @@ Cash to exchange it in local currency or pay for massage</li></ul>
 			"No. All ages, sexual orientation, skin colors, and backgrounds are welcome! Last retreat our participant's age was ranging from 28 to 73. Diverse, different and so freaking beautiful! We believe inter generational and multicultural mix of women make the connection and healing very special. We are all one in the end.",
 	},
 	{
-		question: "I’m coming alone. Will I feel out of place?",
+		question: "I’m coming solo — will I be welcomed?",
 		answer:
-			"Not at all! Many guests come solo. This is a supportive space to connect with like-minded people and also enjoy personal reflection. Of course, if you’d like to bring a friend, you’re more than welcome to!",
+			"Absolutely. Most women come alone and leave with soul sisters for life. From day one, we create a space where you’ll feel held, seen, and celebrated",
 	},
 	{
 		question: "Can I meet the group before the retreat?",

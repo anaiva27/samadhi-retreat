@@ -404,7 +404,7 @@ const Home = () => {
 						</h5>
 						<br /> <br />
 						<h5 style={{ textAlign: "center" }}>
-							This is a retreat for women who:
+							This retreat is designed for women ready to:
 						</h5>
 						<br />
 						<div className="services-list">
@@ -421,8 +421,8 @@ const Home = () => {
 								/>
 								<div className="service-list-col">
 									<p className="primary sm">
-										...feel the pull to take a sacred pause: a full week to
-										nourish and replenish their body, mind, and spirit.
+										...Reconnect with nature, spirit, and the truth of who they
+										are.
 									</p>
 								</div>
 							</div>
@@ -440,9 +440,8 @@ const Home = () => {
 								/>
 								<div className="service-list-col">
 									<p className="primary sm">
-										...are longing to experience more fulfillment, to reignite
-										their passions, and embrace the playful, adventurous spirit
-										within them.
+										...Take a sacred reset far from city chaos, career demands,
+										and life on autopilot.
 									</p>
 								</div>
 							</div>
@@ -460,9 +459,8 @@ const Home = () => {
 								/>
 								<div className="service-list-col">
 									<p className="primary sm">
-										...are ready to cultivate a deep, abiding love within their
-										bodies, reconnecting with their natural beauty, strength,
-										and grace.
+										...Step away from constant doing, giving, achieving, and
+										feeling burned out.
 									</p>
 								</div>
 							</div>
@@ -480,9 +478,47 @@ const Home = () => {
 								/>
 								<div className="service-list-col">
 									<p className="primary sm">
-										...are seeking a journey of transformation, where the wild,
-										free-spirited essence of their feminine power can bloom in
-										full expression.
+										...Go beyond small talk and experience genuine, soul-deep
+										sisterhood.
+									</p>
+								</div>
+							</div>
+
+							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
+								<div className="service-list-col">
+									<p className="primary sm">
+										..Release an old life chapter and open to the possibilities
+										of what’s next.
+									</p>
+								</div>
+							</div>
+
+							<div className="service-list-row">
+								<img
+									src="/home/star1.png"
+									alt=""
+									style={{
+										display: "inline",
+										width: 30,
+										height: 30,
+										margin: "auto",
+									}}
+								/>
+								<div className="service-list-col">
+									<p className="primary sm">
+										...Journey solo yet join a circle of like-minded women for a
+										safe, uplifting, and unforgettable wellness adventure in
+										Peru’s Sacred Valley.
 									</p>
 								</div>
 							</div>

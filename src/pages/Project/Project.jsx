@@ -33,8 +33,7 @@ const Project = () => {
 				</section>
 				<div className="home-work-list">
 					{workItems.map((work) => (
-						<Link
-							to="/sample-project"
+						<div
 							key={work.id}
 							className="home-work-item"
 						>
@@ -55,7 +54,7 @@ const Project = () => {
 								></iframe>
 							</div>
 							<h4>{work.category}</h4>
-						</Link>
+						</div>
 					))}
 				</div>
 				<Reviews />

@@ -558,8 +558,7 @@ const Home = () => {
 				>
 					<div className="home-work-list">
 						{workItems.slice(0, 3).map((work) => (
-							<Link
-								to="/sample-project"
+							<div
 								key={work.id}
 								className="home-work-item"
 							>
@@ -580,12 +579,12 @@ const Home = () => {
 									></iframe>
 								</div>
 								<h4>{work.category}</h4>
-							</Link>
+							</div>
 						))}
 					</div>
 					<br />
 					<Link
-						to="/feedback"
+						to="/testimonials"
 						className="primary-button"
 					>
 						more reviews

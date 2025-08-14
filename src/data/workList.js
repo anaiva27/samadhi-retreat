@@ -18,14 +18,14 @@ const workList = [
 		title: "Diane Bennett",
 		category: "Delaware, USA",
 		video: "https://www.youtube.com/embed/3WNwQQwv0PA?si=TkKFyMWpi36c1_Tz",
-		quote: "",
+		quote: "“The Sacred Valley gave me back pieces of me I thought were gone.“",
 	},
 	{
 		id: 4,
 		title: "Lugene Nigh",
 		category: "Delaware, USA",
 		video: "https://www.youtube.com/embed/FcpaSSKD3VQ?si=bfRpGeZf57iv2S5Z",
-		quote: "",
+		quote: "“These days in Peru cracked me open in the best way.“",
 	},
 	{
 		id: 5,

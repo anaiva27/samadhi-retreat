@@ -337,15 +337,15 @@ const Home = () => {
 					<br />
 					<br />
 					<div className="intro">
-						<p className="primary">
+						<h5>
 							Have you been pouring into everyone but yourself, and now your
 							soul is whispering for rest, connection, and meaning?
-						</p>
-						<p className="primary">
+						</h5>
+						<h5>
 							This is your invitation to pause. <br />
 							To reset. To reconnect — with yourself, with sisterhood, and with
 							the sacred.
-						</p>
+						</h5>
 					</div>
 				</section>
 				<div className="peru-banner">
@@ -362,10 +362,10 @@ const Home = () => {
 						Welcome to women’s retreat
 						<br /> at the magical land of Peru.
 					</h3>
-					<p className="primary">
+					<h5>
 						A Sacred Pause for the Woman Who Does It All — But Feels
 						Disconnected Inside.
-					</p>
+					</h5>
 					<br />
 					<br />
 					<AnimatedCopy

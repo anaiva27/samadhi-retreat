@@ -9,6 +9,7 @@ import Work from "./pages/Work/Work";
 import Project from "./pages/Project/Project";
 import About from "./pages/About/About";
 import FAQ from "./pages/FAQ/FAQ";
+import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
 
 import { AnimatePresence } from "framer-motion";
@@ -56,6 +57,10 @@ function App() {
 					<Route
 						path="/faq"
 						element={<FAQ />}
+					/>
+					<Route
+						path="/blog"
+						element={<Blog />}
 					/>
 					<Route
 						path="/work"

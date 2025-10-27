@@ -337,15 +337,15 @@ const Home = () => {
 					<br />
 					<br />
 					<div className="intro">
-						<h5>
+						<p className="secondary md">
 							Have you been pouring into everyone but yourself, and now your
 							soul is whispering for rest, connection, and meaning?
-						</h5>
-						<h5>
+						</p>
+						<p className="secondary md">
 							This is your invitation to pause. <br />
 							To reset. To reconnect — with yourself, with sisterhood, and with
 							the sacred.
-						</h5>
+						</p>
 					</div>
 				</section>
 				<div className="peru-banner">
@@ -362,10 +362,10 @@ const Home = () => {
 						Welcome to women’s retreat
 						<br /> at the magical land of Peru.
 					</h3>
-					<h5>
+					<p className="secondary md">
 						A Sacred Pause for the Woman Who Does It All — But Feels
 						Disconnected Inside.
-					</h5>
+					</p>
 					<br />
 					<br />
 					<AnimatedCopy
@@ -531,10 +531,10 @@ const Home = () => {
 						Surrounded by the loving embrace of sisterhood and the sacred
 						presence of Mother Earth.
 					</h4>
-					<h5>
+					<p className="secondary md">
 						This retreat is a space where you can rediscover your truest
 						self—unfiltered, untamed, and radiant.
-					</h5>
+					</p>
 				</section>
 
 				<section className="sticky-work-header">
@@ -948,25 +948,22 @@ const Home = () => {
 							navigating on autopilot through the burdens of stress, work,
 							family responsibilities, and health challenges.
 						</h4>
-						<p>
+						<p className="secondary md">
 							Samadhi is a serene and eco-conscious retreat center situated in
 							the Andes Mountains of Sacred Valley, Peru. Founded by mindful
 							individuals, it serves as a sanctuary for healing, sacred
 							reciprocity, and communion with Pacha Mama (Mother Earth) and the
-							Divine.
+							Divine. Built with heartfelt intention, the center cultivates
+							organic vegetables on-site, prepares food with blessings, and
+							fosters a warm and inviting atmosphere where joy, connection, and
+							deep healing thrive.
 						</p>
-						<p>
-							Built with heartfelt intention, the center cultivates organic
-							vegetables on-site, prepares food with blessings, and fosters a
-							warm and inviting atmosphere where joy, connection, and deep
-							healing thrive.
-						</p>
-						<h5>
+						<p className="secondary md">
 							Samadhi Center at the sacred land of Peru is an ideal destination
 							for your next journey — a journey focused on cultural immersion,
 							awe-inspiring nature, embodying feminine practices,
 							self-nourishment, and hitting the reset button in our busy lives.
-						</h5>
+						</p>
 					</div>
 				</section>
 				<Reviews hasQuotes={true} />

@@ -46,8 +46,8 @@ const About = () => {
 					<div className="services-col">
 						<AnimatedCopy
 							animateOnScroll={true}
-							tag="h4"
-							className=""
+							tag="p"
+							className="secondary lg"
 						>
 							Marina and Amber's bond spans over a decade, evolving from friends
 							and colleagues to what feels like soul sisters connected across
@@ -57,7 +57,7 @@ const About = () => {
 						<AnimatedCopy
 							animateOnScroll={true}
 							tag="p"
-							//className="primary"
+							className="secondary"
 						>
 							Guided by a shared vision for conscious living, wellness, and
 							aligned values, they’ve nurtured a thriving community of
@@ -80,8 +80,8 @@ const About = () => {
 					<div className="services-col">
 						<AnimatedCopy
 							animateOnScroll={true}
-							tag="h4"
-							className=""
+							tag="p"
+							className="secondary lg"
 						>
 							Together, they’ve hosted transformative women’s retreats in the
 							U.S., El Salvador, Mexico, and Peru — each one rooted in
@@ -94,7 +94,7 @@ const About = () => {
 						<AnimatedCopy
 							animateOnScroll={true}
 							tag="p"
-							//className="primary"
+							className="secondary"
 						>
 							Now, they invite others to join them for an unforgettable
 							experience — Women’s retreat that promises to nurture physical,
@@ -121,8 +121,8 @@ const About = () => {
 						<div className="services-col">
 							<AnimatedCopy
 								animateOnScroll={true}
-								tag="h4"
-								className=""
+								tag="p"
+								className="secondary lg"
 							>
 								Susanna – a transformational life coach, certified breathwork
 								facilitator, and devoted student, and corporate trainer, of Dr.
@@ -134,7 +134,7 @@ const About = () => {
 							<AnimatedCopy
 								animateOnScroll={true}
 								tag="p"
-								//className="primary"
+								className="secondary"
 							>
 								Susanna combines science-backed neuroscience and mindset tools
 								with somatic healing practices like meditation, breathwork, and
@@ -163,8 +163,8 @@ const About = () => {
 						<div className="services-col">
 							<AnimatedCopy
 								animateOnScroll={true}
-								tag="h4"
-								className=""
+								tag="p"
+								className="secondary lg"
 							>
 								Yulia is an art and mindfulness educator with over 15 years of
 								global experience as an art curator. Eight years ago, she
@@ -176,7 +176,7 @@ const About = () => {
 							<AnimatedCopy
 								animateOnScroll={true}
 								tag="p"
-								//className="primary"
+								className="secondary"
 							>
 								Four years ago, Yulia moved to Mexico, where she immersed
 								herself in ancient traditions and techniques related to the four
@@ -206,8 +206,8 @@ const About = () => {
 						<div className="services-col">
 							<AnimatedCopy
 								animateOnScroll={true}
-								tag="h4"
-								className=""
+								tag="p"
+								className="secondary lg"
 							>
 								Angelica is a photographer, a certified yoga teacher and
 								Registered Massage Therapist whose work is dedicated to
@@ -220,7 +220,7 @@ const About = () => {
 							<AnimatedCopy
 								animateOnScroll={true}
 								tag="p"
-								//className="primary"
+								className="secondary"
 							>
 								Angelica supports others in reconnecting with their natural
 								rhythm through feminine healing — rooted in softness, intuition,
@@ -272,7 +272,7 @@ const About = () => {
 							<AnimatedCopy
 								animateOnScroll={true}
 								tag="p"
-								//className="primary"
+								className="secondary"
 							>
 								We chose Samadhi Retreat Center for its deep connection to
 								nature, spirit, and tradition. Nestled in the heart of Peru’s

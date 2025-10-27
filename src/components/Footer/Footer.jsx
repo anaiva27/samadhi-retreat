@@ -128,6 +128,13 @@ const Footer = () => {
 						<span>FAQ</span>
 						<span>&#8594;</span>
 					</Link>
+					<Link
+						to="/blog"
+						className="footer-nav-item"
+					>
+						<span>Blog</span>
+						<span>&#8594;</span>
+					</Link>
 				</div>
 			</div>
 			<div className="footer-row">

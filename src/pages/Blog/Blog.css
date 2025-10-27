@@ -1,0 +1,13 @@
+.faq.page {
+  padding-top: 8em;
+}
+
+.faq-list {
+  padding-left: 20px !important;
+}
+
+.inline-link {
+  display: inline;
+  text-decoration: underline;
+  cursor: pointer;
+}

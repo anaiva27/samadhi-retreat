@@ -146,7 +146,9 @@ const Footer = () => {
 				</div>
 
 				<div className="footer-copyright-line">
-					<p className="primary sm">&copy; 2025 Samadhi Sistarhood Retreats</p>
+					<p className="primary sm">
+						&copy; {new Date().getFullYear()} Samadhi Sistarhood Retreats
+					</p>
 				</div>
 			</div>
 		</div>

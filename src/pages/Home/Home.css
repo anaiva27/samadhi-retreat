@@ -249,6 +249,7 @@ h3#sticky {
 	height: auto;
 	overflow: hidden;
 	margin: 80px auto 40px;
+	border-radius: 1rem;
 }
 
 .video-frame iframe {

@@ -204,6 +204,7 @@ h3#sticky {
 	width: 100%;
 	max-width: 400px;
 	height: 300px;
+	border-radius: 10px;
 }
 
 .intro2 {
@@ -249,13 +250,13 @@ h3#sticky {
 	height: auto;
 	overflow: hidden;
 	margin: 80px auto 40px;
-	border-radius: 1rem;
 }
 
 .video-frame iframe {
 	min-height: 600px;
 	width: 100%;
 	height: auto;
+	border-radius: 1rem;
 }
 
 .services-banner {
@@ -335,6 +336,7 @@ h3#sticky {
 		width: 100%;
 		overflow: hidden;
 		margin: 50px auto 10px;
+		padding: 0 10px;
 	}
 
 	.video-frame iframe {

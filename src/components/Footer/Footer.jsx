@@ -58,7 +58,7 @@ const Footer = () => {
 					</div>
 					<h3>
 						Let’s Connect Today <br />
-						info<span>@</span>marinafitness.pro
+						samadhi.sistarhood<span>@</span>gmail.com
 					</h3>
 					<p className="secondary">Feel free to reach out anytime.</p>
 

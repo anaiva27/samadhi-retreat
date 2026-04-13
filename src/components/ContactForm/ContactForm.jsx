@@ -16,7 +16,7 @@ const ContactForm = () => {
 					<p className="primary sm">(Samadhi Sistarhood)</p>
 				</div>
 				<div className="contact-form-row-copy-item">
-					<p className="primary sm">&copy; 2025</p>
+					<p className="primary sm">&copy; {new Date().getFullYear()}</p>
 				</div>
 			</div>
 

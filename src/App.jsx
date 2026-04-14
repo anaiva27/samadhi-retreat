@@ -14,6 +14,7 @@ import Contact from "./pages/Contact/Contact";
 
 import { AnimatePresence } from "framer-motion";
 import Schedule from "./pages/Schedule/Schedule";
+import Welcome from "./pages/Welcome/Welcome";
 
 function ScrollToTop() {
 	const { pathname } = useLocation();
@@ -57,6 +58,10 @@ function App() {
 					<Route
 						path="/faq"
 						element={<FAQ />}
+					/>
+					<Route
+						path="/welcome"
+						element={<Welcome />}
 					/>
 					<Route
 						path="/blog"

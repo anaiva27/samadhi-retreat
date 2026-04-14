@@ -326,9 +326,9 @@ const Home = () => {
 						className="primary-button"
 						onClick={() =>
 							window.open(
-								"https://book.stripe.com/14AfZgbtCdYigNOfc22wU0S",
+								"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
 								"_blank",
-								"noopener,noreferrer"
+								"noopener,noreferrer",
 							)
 						}
 					>
@@ -542,9 +542,9 @@ const Home = () => {
 						className="primary-button button-home"
 						onClick={() =>
 							window.open(
-								"https://book.stripe.com/14AfZgbtCdYigNOfc22wU0S",
+								"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
 								"_blank",
-								"noopener,noreferrer"
+								"noopener,noreferrer",
 							)
 						}
 					>
@@ -919,9 +919,9 @@ const Home = () => {
 						className="primary-button"
 						onClick={() =>
 							window.open(
-								"https://book.stripe.com/14AfZgbtCdYigNOfc22wU0S",
+								"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
 								"_blank",
-								"noopener,noreferrer"
+								"noopener,noreferrer",
 							)
 						}
 					>

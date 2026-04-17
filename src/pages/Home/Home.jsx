@@ -966,6 +966,13 @@ const Home = () => {
 						</p>
 					</div>
 				</section>
+				<img
+					height="1"
+					width="1"
+					src="https://www.facebook.com/tr?id=961330503076825&ev=PageView
+&noscript=1"
+				/>
+
 				<Reviews hasQuotes={true} />
 
 				<Footer />

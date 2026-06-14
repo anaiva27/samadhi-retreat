@@ -400,7 +400,6 @@ h3#sticky {
 	.intro2 {
 		width: 100%;
 		max-width: unset;
-		margin: 1.25em;
 		padding: 1.25em;
 		display: flex;
 		gap: 2em;

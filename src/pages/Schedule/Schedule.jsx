@@ -309,8 +309,13 @@ const Schedule = () => {
 					>
 						Reserve your spot
 					</button>
+					<br />
+					<p className="secondary sm">
+						Payment plans available from Klarna, Affirm and Afterpay.
+					</p>
 				</section>
-
+				<br />
+				<br />
 				<h3 className="center-text headline center">
 					Stay for another 4 days to see more of Sacred Valley including iconic
 					Machu Picchu
@@ -542,19 +547,26 @@ const Schedule = () => {
 							- Toko-pa Turner
 						</span>
 					</h3>
-					<button
-						className="primary-button"
-						onClick={() =>
-							window.open(
-								"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
-								"_blank",
-								"noopener,noreferrer",
-							)
-						}
-					>
-						Reserve your spot
-					</button>
+					<section className="button-wrapper">
+						<button
+							className="primary-button"
+							onClick={() =>
+								window.open(
+									"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
+									"_blank",
+									"noopener,noreferrer",
+								)
+							}
+						>
+							Reserve your spot
+						</button>
 
+						<p className="secondary sm">
+							Payment plans available from Klarna, Affirm and Afterpay.
+						</p>
+					</section>
+					<br />
+					<br />
 					<h5>
 						Designed around sacred geometry and the chakra system, Samadhi
 						invites you to explore your essence through art, nature, and

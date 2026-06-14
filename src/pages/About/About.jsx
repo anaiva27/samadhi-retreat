@@ -281,18 +281,25 @@ const About = () => {
 								ancient temples, and living culture.
 							</AnimatedCopy>
 						</div>
-						<button
-							className="primary-button"
-							onClick={() =>
-								window.open(
-									"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
-									"_blank",
-									"noopener,noreferrer",
-								)
-							}
-						>
-							Reserve your spot
-						</button>
+						<div className="button-wrapper">
+							<button
+								className="primary-button"
+								onClick={() =>
+									window.open(
+										"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
+										"_blank",
+										"noopener,noreferrer",
+									)
+								}
+							>
+								Reserve your spot
+							</button>
+
+							<p className="secondary sm">
+								Payment plans available from Klarna, Affirm and Afterpay.
+							</p>
+						</div>
+						<br />
 						<div className="services-col square-img">
 							<img
 								src="/about/marina-amber.jpeg"

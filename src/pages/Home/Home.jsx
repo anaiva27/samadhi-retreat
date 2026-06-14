@@ -276,7 +276,7 @@ const Home = () => {
 						delay={0.1}
 						id="sticky"
 					>
-						{" "}
+						A Transformation. <br />
 						A sacred space to release <br />
 						what no longer serves you <br />
 						and awaken
@@ -334,6 +334,9 @@ const Home = () => {
 					>
 						Reserve your spot
 					</button>
+					<p className="secondary sm">
+						Payment plans available from Klarna, Affirm and Afterpay.
+					</p>
 					<br />
 					<br />
 					<div className="intro">
@@ -537,7 +540,7 @@ const Home = () => {
 					</p>
 				</section>
 
-				<section className="sticky-work-header">
+				<section className="button-wrapper-home">
 					<button
 						className="primary-button button-home"
 						onClick={() =>
@@ -550,6 +553,11 @@ const Home = () => {
 					>
 						Reserve your spot
 					</button>
+					<br />
+
+					<p className="secondary sm">
+						Payment plans available from Klarna, Affirm and Afterpay.
+					</p>
 				</section>
 
 				<section
@@ -927,6 +935,10 @@ const Home = () => {
 					>
 						Reserve your spot
 					</button>
+					<br />
+					<p className="secondary sm">
+						Payment plans available from Klarna, Affirm and Afterpay.
+					</p>
 				</section>
 
 				<br />

@@ -119,6 +119,17 @@ p.primary.sm {
 	-webkit-font-smoothing: antialiased;
 }
 
+p.primary.md {
+	color: white;
+	text-transform: none;
+	font-family: "Messina Sans Mono";
+	font-size: clamp(1rem, 1.2vw, 1.2rem);
+	font-weight: 600;
+	letter-spacing: 0px;
+	-webkit-font-smoothing: antialiased;
+	margin-top: 10px;
+}
+
 p.secondary.sm {
 	font-family: "Messina Sans";
 	font-size: 1rem;
@@ -295,6 +306,16 @@ textarea::placeholder {
 	.tall-img {
 		aspect-ratio: 5/7 !important;
 	}
+	p.primary.sm {
+		font-size: 0.7rem;
+	}
+	p.primary.md {
+		font-family: "Messina Sans Mono";
+		font-size: clamp(1rem, 1.2vw, 1.2rem);
+		margin-top: 10px;
+		line-height: 1;
+		margin-bottom: 5px;
+	}
 	p.secondary.sm {
 		font-family: "Messina Sans";
 		font-size: 0.8rem;
@@ -316,5 +337,10 @@ textarea::placeholder {
 		line-height: 1.5;
 		font-weight: 600;
 		-webkit-font-smoothing: antialiased;
+	}
+
+	button.hero-home {
+		width: 100%;
+		max-width: unset;
 	}
 }

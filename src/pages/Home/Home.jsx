@@ -9,6 +9,7 @@ import Footer from "../../components/Footer/Footer";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ReactLenis from "lenis/react";
+import { useMediaQuery } from "../../helpers/useMediaQuery";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,6 +23,7 @@ const Home = () => {
 	const stickyTitlesRef = useRef(null);
 	const stickyWorkHeaderRef = useRef(null);
 	const homeWorkRef = useRef(null);
+	const isMobile = useMediaQuery();
 
 	// useEffect(() => {
 	// 	const handleResize = () => {
@@ -180,34 +182,13 @@ const Home = () => {
 			<div className="page home">
 				<section className="hero">
 					<div className="hero-img">
-						<img
+						{/* <img
 							src="/home/hero1.jpg"
 							alt=""
-						/>
+						/> */}
 					</div>
 
 					<div className="hero-header">
-						<AnimatedCopy
-							tag="h1"
-							animateOnScroll={false}
-							delay={0.7}
-						>
-							Samadhi
-						</AnimatedCopy>
-						<AnimatedCopy
-							tag="h1"
-							animateOnScroll={false}
-							delay={0.8}
-						>
-							Sistarhood
-						</AnimatedCopy>
-						<AnimatedCopy
-							tag="h1"
-							animateOnScroll={false}
-							delay={0.9}
-						>
-							Retreats
-						</AnimatedCopy>
 						<AnimatedCopy
 							tag="p"
 							animateOnScroll={false}
@@ -227,29 +208,82 @@ const Home = () => {
 						</AnimatedCopy>
 						<br />
 						<AnimatedCopy
-							tag="p"
+							tag="h1"
 							animateOnScroll={false}
-							delay={1.1}
-							className="primary sm "
+							delay={0.7}
 						>
-							<span
-								style={{ fontWeight: 600, letterSpacing: 1, color: "white" }}
-							>
-								Where{" "}
-								<span
-									style={{
-										fontFamily: "Zapfino",
-										textTransform: "none",
-										fontSize: "1rem",
-										marginLeft: "-4px",
-										fontWeight: 600,
-									}}
-								>
-									women{" "}
-								</span>{" "}
-								Come Home to Themselves
-							</span>
+							Samadhi
 						</AnimatedCopy>
+						<AnimatedCopy
+							tag="h1"
+							animateOnScroll={false}
+							delay={0.8}
+						>
+							Sistarhood Retreats
+						</AnimatedCopy>
+						{!isMobile ? (
+							<AnimatedCopy
+								tag="p"
+								animateOnScroll={false}
+								delay={1.1}
+								className="primary md "
+							>
+								<span>
+									Where{" "}
+									<span
+										style={{
+											fontFamily: "Zapfino",
+											textTransform: "none",
+											fontSize: "1.7rem",
+											marginRight: "6px",
+											fontWeight: 600,
+											lineHeight: "160%",
+										}}
+									>
+										women{" "}
+									</span>{" "}
+									Come Home to Themselves
+								</span>
+							</AnimatedCopy>
+						) : (
+							<AnimatedCopy
+								tag="p"
+								animateOnScroll={false}
+								delay={1.1}
+								className="primary md "
+							>
+								<span>
+									Where{" "}
+									<span
+										style={{
+											fontFamily: "Zapfino",
+											textTransform: "none",
+											fontSize: "1.7rem",
+											marginRight: "6px",
+											fontWeight: 600,
+											lineHeight: "140%",
+										}}
+									>
+										women{" "}
+									</span>{" "}
+									<br />
+									Come Home to Themselves
+								</span>
+							</AnimatedCopy>
+						)}
+						<button
+							style={{ margin: "25px 0 0px" }}
+							className="primary-button hero-home"
+							onClick={() =>
+								window.open(
+									"https://calendly.com/marina-marinafitness/30min",
+									"_blank",
+									"noopener,noreferrer",
+								)
+							}
+						>
+							Schedule a chat
+						</button>
 					</div>
 				</section>
 				<section

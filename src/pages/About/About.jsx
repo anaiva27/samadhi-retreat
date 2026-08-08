@@ -109,92 +109,6 @@ const About = () => {
 						<br />
 						<h2>Guest Facilitators</h2>
 					</section>
-
-					<p className=" headline"> Meet Susanna</p>
-					<section className="services">
-						<div className="services-col">
-							<img
-								src="/about/susanna.jpeg"
-								alt=""
-							/>
-						</div>
-						<div className="services-col">
-							<AnimatedCopy
-								animateOnScroll={true}
-								tag="p"
-								className="secondary lg"
-							>
-								Susanna – a transformational life coach, certified breathwork
-								facilitator, and devoted student, and corporate trainer, of Dr.
-								Joe Dispenza’s work. With a global background in the corporate
-								tech world, she deeply understands the pressure, burnout, and
-								identity loss many high-achieving people face.
-							</AnimatedCopy>
-							<br />
-							<AnimatedCopy
-								animateOnScroll={true}
-								tag="p"
-								className="secondary"
-							>
-								Susanna combines science-backed neuroscience and mindset tools
-								with somatic healing practices like meditation, breathwork, and
-								intentional journaling to help men and women break through
-								limiting beliefs and reconnect with their true selves. <br />
-								<br />
-								She’s also the creator of the Manifestation Journal
-								‘Intentions’, and the visionary behind retreats designed to
-								rewire old patterns, regulate the nervous system, and create
-								lasting transformation from the inside out.
-							</AnimatedCopy>
-						</div>
-					</section>
-				</div>
-
-				<div className="page about">
-					<br />
-					<p className=" headline"> Meet Yulia</p>
-					<section className="services">
-						<div className="services-col">
-							<img
-								src="/about/yulia.JPG"
-								alt=""
-							/>
-						</div>
-						<div className="services-col">
-							<AnimatedCopy
-								animateOnScroll={true}
-								tag="p"
-								className="secondary lg"
-							>
-								Yulia is an art and mindfulness educator with over 15 years of
-								global experience as an art curator. Eight years ago, she
-								discovered Human Design and began incorporating mindfulness
-								practices to gain deeper insights into her own path and better
-								serve others.
-							</AnimatedCopy>
-							<br />
-							<AnimatedCopy
-								animateOnScroll={true}
-								tag="p"
-								className="secondary"
-							>
-								Four years ago, Yulia moved to Mexico, where she immersed
-								herself in ancient traditions and techniques related to the four
-								elements and spiritual temazcal, actively engaging with the
-								local community.
-								<br />
-								<br /> She is a Sun-Dancer in Lakota traditions, a Human Design
-								and Genetic Keys reader, a dedicated Vipassana meditator, a
-								Reiki Master, and an art historian. Yulia's mission is to
-								empower women by blending ancient and contemporary mindfulness
-								tools to achieve transformative results.
-							</AnimatedCopy>
-						</div>
-					</section>
-				</div>
-
-				<div className="page about">
-					<br />
 					<p className=" headline"> Meet Angelica</p>
 					<section className="services">
 						<div className="services-col">
@@ -237,6 +151,95 @@ const About = () => {
 						</div>
 					</section>
 				</div>
+
+				{/* <div className="page about">
+					<section className="about-header">
+						<br />
+						<h2>Guest Facilitators</h2>
+					</section>
+
+					<p className=" headline"> Meet Susanna</p>
+					<section className="services">
+						<div className="services-col">
+							<img
+								src="/about/susanna.jpeg"
+								alt=""
+							/>
+						</div>
+						<div className="services-col">
+							<AnimatedCopy
+								animateOnScroll={true}
+								tag="p"
+								className="secondary lg"
+							>
+								Susanna – a transformational life coach, certified breathwork
+								facilitator, and devoted student, and corporate trainer, of Dr.
+								Joe Dispenza’s work. With a global background in the corporate
+								tech world, she deeply understands the pressure, burnout, and
+								identity loss many high-achieving people face.
+							</AnimatedCopy>
+							<br />
+							<AnimatedCopy
+								animateOnScroll={true}
+								tag="p"
+								className="secondary"
+							>
+								Susanna combines science-backed neuroscience and mindset tools
+								with somatic healing practices like meditation, breathwork, and
+								intentional journaling to help men and women break through
+								limiting beliefs and reconnect with their true selves. <br />
+								<br />
+								She’s also the creator of the Manifestation Journal
+								‘Intentions’, and the visionary behind retreats designed to
+								rewire old patterns, regulate the nervous system, and create
+								lasting transformation from the inside out.
+							</AnimatedCopy>
+						</div>
+					</section>
+				</div> */}
+
+				{/* <div className="page about">
+					<br />
+					<p className=" headline"> Meet Yulia</p>
+					<section className="services">
+						<div className="services-col">
+							<img
+								src="/about/yulia.JPG"
+								alt=""
+							/>
+						</div>
+						<div className="services-col">
+							<AnimatedCopy
+								animateOnScroll={true}
+								tag="p"
+								className="secondary lg"
+							>
+								Yulia is an art and mindfulness educator with over 15 years of
+								global experience as an art curator. Eight years ago, she
+								discovered Human Design and began incorporating mindfulness
+								practices to gain deeper insights into her own path and better
+								serve others.
+							</AnimatedCopy>
+							<br />
+							<AnimatedCopy
+								animateOnScroll={true}
+								tag="p"
+								className="secondary"
+							>
+								Four years ago, Yulia moved to Mexico, where she immersed
+								herself in ancient traditions and techniques related to the four
+								elements and spiritual temazcal, actively engaging with the
+								local community.
+								<br />
+								<br /> She is a Sun-Dancer in Lakota traditions, a Human Design
+								and Genetic Keys reader, a dedicated Vipassana meditator, a
+								Reiki Master, and an art historian. Yulia's mission is to
+								empower women by blending ancient and contemporary mindfulness
+								tools to achieve transformative results.
+							</AnimatedCopy>
+						</div>
+					</section>
+				</div> */}
 
 				<section className="sticky-work-header">
 					<AnimatedCopy

@@ -149,6 +149,17 @@ const Footer = () => {
 					<p className="primary sm">
 						&copy; {new Date().getFullYear()} Samadhi Sistarhood Retreats
 					</p>
+					<p className="primary sm">
+						Developed by -{" "}
+						<Link
+							to="https://a27-web-lab.vercel.app/"
+							className="dev-link"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							A27 Web Lab
+						</Link>
+					</p>
 				</div>
 			</div>
 		</div>

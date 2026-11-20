@@ -239,7 +239,7 @@ h3#sticky {
 
 .home-work {
 	width: 100%;
-	padding: 4em 2em 8em;
+	padding: 4em 2em 6em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -506,7 +506,7 @@ h3#sticky {
 	}
 
 	.home-work {
-		padding: 6em 1.25em 4em;
+		padding: 4em 1.25em 4em;
 	}
 
 	.home-work-list {
@@ -557,5 +557,19 @@ h3#sticky {
 
 	.hero-button-wrapper {
 		gap: 15px;
+	}
+	.hero-btn-link {
+		color: var(--bg);
+		font-size: 13px;
+		letter-spacing: 0.1px;
+		font-family: "Messina Sans";
+	}
+	.home-host-img img {
+		height: 55vh;
+		border-radius: 1em;
+		width: 100%;
+		object-fit: cover;
+		max-height: 600px;
+		min-height: 500px;
 	}
 }

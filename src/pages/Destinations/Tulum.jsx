@@ -303,7 +303,8 @@ const Tulum = () => {
 						<h3>"Tulum is a feeling..."</h3>
 						<br />
 						<p className="center-text headline">
-							A blend of nature, culture, nourishment and connection.
+							A blend of nature, culture, nourishment {isMobile && <br />}and
+							connection.
 						</p>
 						<br />
 					</section>
@@ -330,7 +331,7 @@ const Tulum = () => {
 										}}
 									/>
 									<div className="schedule-list-col">
-										<h5>$3,199 USD</h5>
+										<h5>$3,199 USD / Per Person</h5>
 									</div>
 									<div className="schedule-list-col">
 										<p className="primary sm">
@@ -370,7 +371,7 @@ const Tulum = () => {
 										}}
 									/>
 									<div className="schedule-list-col">
-										<h5>$2,799 USD</h5>
+										<h5>$2,799 USD / Per Person</h5>
 									</div>
 									<div className="schedule-list-col">
 										<p className="primary sm">
@@ -799,7 +800,7 @@ const Tulum = () => {
 					<div className="page destinations-spotify">
 						<Spotify />
 					</div>
-					<ContactForm />
+					{/* <ContactForm /> */}
 				</div>
 
 				<Footer />

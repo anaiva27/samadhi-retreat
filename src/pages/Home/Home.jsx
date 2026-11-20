@@ -495,7 +495,7 @@ const Home = () => {
 							)
 						}
 					>
-						Place your deposit
+						Upcoming retreat
 					</button>
 					<p className="secondary sm mobile-text-center">
 						Payment plans available from Klarna, Affirm and Afterpay.
@@ -599,7 +599,7 @@ const Home = () => {
 							)
 						}
 					>
-						Place your deposit
+						Upcoming retreat
 					</button>
 					<p className="secondary sm mobile-text-center">
 						Payment plans available from Klarna, Affirm and Afterpay.
@@ -673,6 +673,19 @@ const Home = () => {
 					className="home-header-padding"
 				>
 					<h3 className="cursive-quote">And remember, you are magic!</h3>
+					<button
+						style={{ margin: "50px auto -20px" }}
+						className="primary-button"
+						onClick={() =>
+							window.open(
+								"https://buy.stripe.com/aFaaEW41a07s69abZQ2wU17",
+								"_blank",
+								"noopener,noreferrer",
+							)
+						}
+					>
+						Upcoming retreat
+					</button>
 				</section>
 
 				<img

@@ -1,8 +1,8 @@
 .reviews {
 	position: relative;
 	width: 100vw;
-	height: 650px;
-	padding: 4em 2em;
+	height: 600px;
+	padding: 4em 2em 2em;
 	background-color: var(--fg200);
 	color: var(--bg);
 	text-align: center;
@@ -92,8 +92,9 @@ h4#review-author .line span {
 
 @media (max-width: 1000px) {
 	.reviews {
-		padding: 4em 1.25em;
+		padding: 4em 1.25em 2em;
 		margin-top: 40px;
+		height: 550px;
 	}
 
 	#review-copy {
@@ -109,8 +110,5 @@ h4#review-author .line span {
 	}
 	.reviews-copy {
 		font-size: min(5vw, 16px);
-	}
-	.reviews {
-		height: 650px;
 	}
 }

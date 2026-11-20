@@ -10,15 +10,15 @@ import ReactLenis from "lenis/react";
 import Transition from "../../components/Transition/Transition";
 
 const FAQ = () => {
-  return (
-    <ReactLenis root>
-      <div className="page faq">
-        <FAQContainer />
-        <ContactForm />
-        <Footer />
-      </div>
-    </ReactLenis>
-  );
+	return (
+		<ReactLenis root>
+			<div className="page faq">
+				<FAQContainer />
+				<ContactForm />
+				<Footer />
+			</div>
+		</ReactLenis>
+	);
 };
 
 export default Transition(FAQ);

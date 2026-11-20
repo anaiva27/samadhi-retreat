@@ -287,41 +287,35 @@ const Home = () => {
 								<button
 									style={{ margin: "25px 0 0px", backgroundColor: "#171833" }}
 									className="primary-button hero-home"
-									onClick={() =>
-										window.open(
-											"https://calendly.com/marina-marinafitness/30min",
-											"_blank",
-											"noopener,noreferrer",
-										)
-									}
 								>
-									Mexico
+									<Link
+										className="hero-btn-link"
+										to="/tulum"
+									>
+										Mexico
+									</Link>
 								</button>
 								<button
 									style={{ margin: "25px 0 0px", backgroundColor: "#2c1b1b" }}
 									className="primary-button hero-home"
-									onClick={() =>
-										window.open(
-											"https://calendly.com/marina-marinafitness/30min",
-											"_blank",
-											"noopener,noreferrer",
-										)
-									}
 								>
-									Peru
+									<Link
+										className="hero-btn-link"
+										to="/tulum"
+									>
+										Peru
+									</Link>
 								</button>
 								<button
-									style={{ margin: "25px 0 0px", backgroundColor: "#2c1b1b" }}
+									style={{ margin: "25px 0 0px", backgroundColor: "#3f0505c3" }}
 									className="primary-button hero-home"
-									onClick={() =>
-										window.open(
-											"https://calendly.com/marina-marinafitness/30min",
-											"_blank",
-											"noopener,noreferrer",
-										)
-									}
 								>
-									Guatemala
+									<Link
+										className="hero-btn-link"
+										to="/tulum"
+									>
+										Guatemala
+									</Link>
 								</button>
 							</div>
 						) : (
@@ -495,7 +489,7 @@ const Home = () => {
 						className="primary-button"
 						onClick={() =>
 							window.open(
-								"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
+								"https://buy.stripe.com/aFaaEW41a07s69abZQ2wU17",
 								"_blank",
 								"noopener,noreferrer",
 							)
@@ -599,7 +593,7 @@ const Home = () => {
 						className="primary-button"
 						onClick={() =>
 							window.open(
-								"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
+								"https://buy.stripe.com/aFaaEW41a07s69abZQ2wU17",
 								"_blank",
 								"noopener,noreferrer",
 							)

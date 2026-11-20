@@ -97,7 +97,7 @@ const Tulum = () => {
 											className="primary-button"
 											onClick={() =>
 												window.open(
-													"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
+													"https://buy.stripe.com/aFaaEW41a07s69abZQ2wU17",
 													"_blank",
 													"noopener,noreferrer",
 												)
@@ -161,7 +161,7 @@ const Tulum = () => {
 											className="primary-button"
 											onClick={() =>
 												window.open(
-													"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
+													"https://buy.stripe.com/aFaaEW41a07s69abZQ2wU17",
 													"_blank",
 													"noopener,noreferrer",
 												)
@@ -405,7 +405,7 @@ const Tulum = () => {
 							className="primary-button"
 							onClick={() =>
 								window.open(
-									"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
+									"https://buy.stripe.com/aFaaEW41a07s69abZQ2wU17",
 									"_blank",
 									"noopener,noreferrer",
 								)
@@ -746,7 +746,7 @@ const Tulum = () => {
 								className="primary-button"
 								onClick={() =>
 									window.open(
-										"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
+										"https://buy.stripe.com/aFaaEW41a07s69abZQ2wU17",
 										"_blank",
 										"noopener,noreferrer",
 									)

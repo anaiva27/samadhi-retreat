@@ -31,7 +31,7 @@ const FAQContainer = ({ title = true, fullWidth = false }) => {
 				ease: "power2.out",
 				stagger: 0.1,
 				delay: 1.25,
-			}
+			},
 		);
 	}, []);
 
@@ -94,10 +94,7 @@ const FAQContainer = ({ title = true, fullWidth = false }) => {
 							delay={1}
 						>
 							We know you have questions, and we’re here to make the retreat
-							experience as seamless and exciting as possible. Whether you’re
-							new to Samadhi Si<span style={{ fontWeight: 600 }}>Star</span>hood
-							retreat or a returning guest, this FAQ hub has all the answers you
-							need to feel confident and prepared to join us.
+							experience as seamless and exciting as possible.
 						</AnimatedCopy>
 					</div>
 				)}

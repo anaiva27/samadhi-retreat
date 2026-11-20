@@ -56,7 +56,7 @@ export function SliderHero() {
 				/>
 				<div className="slider-img-overlay"></div>
 			</SwiperSlide>
-			<SwiperSlide className="styled">
+			{/* <SwiperSlide className="styled">
 				<div
 					className="slider-img-bg"
 					style={{
@@ -74,7 +74,7 @@ export function SliderHero() {
 					}}
 				/>
 				<div className="slider-img-overlay"></div>
-			</SwiperSlide>
+			</SwiperSlide> */}
 		</Swiper>
 	);
 }

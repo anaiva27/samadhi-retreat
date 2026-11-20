@@ -17,6 +17,8 @@ import Transition from "../../components/Transition/Transition";
 import { Slider } from "../../components/Slider/Slider";
 import PrimaryButton from "../../components/Buttons/PrimaryButton";
 import { InstagramEmbed, YouTubeEmbed } from "react-social-media-embed";
+import { SliderHero } from "../../components/SliderHero/SliderHero";
+import { BiSolidQuoteLeft } from "react-icons/bi";
 
 const Home = () => {
 	const workItems = Array.isArray(workList) ? workList : [];
@@ -182,6 +184,7 @@ const Home = () => {
 			<div className="page home">
 				<section className="hero">
 					<div className="hero-img">
+						<SliderHero />
 						{/* <img
 							src="/home/hero1.jpg"
 							alt=""
@@ -203,87 +206,161 @@ const Home = () => {
 									marginTop: 15,
 								}}
 							>
-								September 19th - 25th, 2026
+								Samadhi Si
+								<span
+									style={{
+										fontWeight: 800,
+										textShadow: "0px 0px 5px 5px #000000",
+									}}
+								>
+									star
+								</span>
+								hood Retreats
 							</span>
 						</AnimatedCopy>
 						<br />
-						<AnimatedCopy
-							tag="h1"
-							animateOnScroll={false}
-							delay={0.7}
-						>
-							Samadhi
-						</AnimatedCopy>
-						<AnimatedCopy
-							tag="h1"
-							animateOnScroll={false}
-							delay={0.8}
-						>
-							Sistarhood Retreats
-						</AnimatedCopy>
-						{!isMobile ? (
-							<AnimatedCopy
-								tag="p"
-								animateOnScroll={false}
-								delay={1.1}
-								className="primary md "
-							>
-								<span>
-									Where{" "}
-									<span
-										style={{
-											fontFamily: "Zapfino",
-											textTransform: "none",
-											fontSize: "1.7rem",
-											marginRight: "6px",
-											fontWeight: 600,
-											lineHeight: "160%",
-										}}
-									>
-										women{" "}
-									</span>{" "}
-									Come Home to Themselves
-								</span>
-							</AnimatedCopy>
+						{isMobile ? (
+							<>
+								<AnimatedCopy
+									tag="h1"
+									animateOnScroll={false}
+									delay={0.7}
+								>
+									Come for adventure
+								</AnimatedCopy>
+								<AnimatedCopy
+									tag="h1"
+									animateOnScroll={false}
+									delay={0.8}
+								>
+									Stay for connection
+								</AnimatedCopy>
+							</>
 						) : (
-							<AnimatedCopy
-								tag="p"
-								animateOnScroll={false}
-								delay={1.1}
-								className="primary md "
-							>
-								<span>
-									Where{" "}
-									<span
-										style={{
-											fontFamily: "Zapfino",
-											textTransform: "none",
-											fontSize: "1.7rem",
-											marginRight: "6px",
-											fontWeight: 600,
-											lineHeight: "140%",
-										}}
-									>
-										women{" "}
-									</span>{" "}
-									<br />
-									Come Home to Themselves
-								</span>
-							</AnimatedCopy>
+							<>
+								<AnimatedCopy
+									tag="h1"
+									animateOnScroll={false}
+									delay={0.7}
+								>
+									Come for adventure ...
+								</AnimatedCopy>
+								<AnimatedCopy
+									tag="h1"
+									animateOnScroll={false}
+									delay={0.8}
+								>
+									... Stay for connection
+								</AnimatedCopy>
+							</>
 						)}
-						<button
-							style={{ margin: "25px 0 0px" }}
-							className="primary-button hero-home"
-							onClick={() =>
-								window.open(
-									"https://calendly.com/marina-marinafitness/30min",
-									"_blank",
-									"noopener,noreferrer",
-								)
-							}
+
+						<AnimatedCopy
+							tag="p"
+							animateOnScroll={false}
+							delay={1.1}
+							className="primary sm hero-sm-padding"
 						>
-							Schedule a chat
-						</button>
+							<span
+								style={{
+									color: "white",
+								}}
+							>
+								Remember, you are{" "}
+								<span
+									style={{
+										fontFamily: "Zapfino",
+										textTransform: "none",
+										fontSize: "1.7rem",
+										marginRight: "6px",
+										fontWeight: 600,
+										lineHeight: "300%",
+									}}
+								>
+									magic!{" "}
+								</span>{" "}
+							</span>
+						</AnimatedCopy>
+
+						{isMobile ? (
+							<div className="hero-button-wrapper">
+								<button
+									style={{ margin: "25px 0 0px", backgroundColor: "#171833" }}
+									className="primary-button hero-home"
+									onClick={() =>
+										window.open(
+											"https://calendly.com/marina-marinafitness/30min",
+											"_blank",
+											"noopener,noreferrer",
+										)
+									}
+								>
+									Mexico
+								</button>
+								<button
+									style={{ margin: "25px 0 0px", backgroundColor: "#2c1b1b" }}
+									className="primary-button hero-home"
+									onClick={() =>
+										window.open(
+											"https://calendly.com/marina-marinafitness/30min",
+											"_blank",
+											"noopener,noreferrer",
+										)
+									}
+								>
+									Peru
+								</button>
+								<button
+									style={{ margin: "25px 0 0px", backgroundColor: "#2c1b1b" }}
+									className="primary-button hero-home"
+									onClick={() =>
+										window.open(
+											"https://calendly.com/marina-marinafitness/30min",
+											"_blank",
+											"noopener,noreferrer",
+										)
+									}
+								>
+									Guatemala
+								</button>
+							</div>
+						) : (
+							<div className="hero-button-wrapper">
+								<button
+									style={{ margin: "25px 0 0px", backgroundColor: "#171833" }}
+									className="primary-button hero-home"
+								>
+									<Link
+										className="hero-btn-link"
+										to="/tulum"
+									>
+										Tulum - Mexico
+									</Link>
+								</button>
+								<button
+									style={{ margin: "25px 0 0px", backgroundColor: "#2c1b1b" }}
+									className="primary-button hero-home"
+								>
+									<Link
+										className="hero-btn-link"
+										to="/tulum"
+									>
+										Sacred Valley - Peru
+									</Link>
+								</button>
+								<button
+									style={{ margin: "25px 0 0px", backgroundColor: "#3f0505c3" }}
+									className="primary-button hero-home"
+								>
+									<Link
+										className="hero-btn-link"
+										to="/tulum"
+									>
+										Lake Atitlan - Guatemala
+									</Link>
+								</button>
+							</div>
+						)}
 					</div>
 				</section>
 				<section
@@ -304,31 +381,56 @@ const Home = () => {
 					<h2 ref={(el) => (titlesRef.current[2] = el)}>
 						Welcome to women’s retreat at the magical land of Peru.
 					</h2> */}
-					<AnimatedCopy
-						tag="h3"
-						animateOnScroll={true}
-						delay={0.1}
-						id="sticky"
-					>
-						A Transformation. <br />
-						A sacred space to release <br />
-						what no longer serves you <br />
-						and awaken
-						<br />
-						<br />
-						<span
-							className="margin-top"
-							style={{ fontFamily: "Zapfino" }}
+					{isMobile ? (
+						<AnimatedCopy
+							tag="h3"
+							animateOnScroll={true}
+							delay={0.1}
+							id="sticky"
 						>
-							the blissful woman{" "}
+							A sacred space where <br />
+							women gather <br />
+							and return <br />
+							<br />
+							<br />
 							<span
-								className="block"
-								style={{ marginTop: 30, display: "block", height: 90 }}
+								className="margin-top"
+								style={{ fontFamily: "Zapfino" }}
 							>
-								within you.
+								radiant, supported,{" "}
+								<span
+									className="block"
+									style={{ marginTop: 30, display: "block", height: 90 }}
+								>
+									balanced.
+								</span>
 							</span>
-						</span>
-					</AnimatedCopy>
+						</AnimatedCopy>
+					) : (
+						<AnimatedCopy
+							tag="h3"
+							animateOnScroll={true}
+							delay={0.1}
+							id="sticky"
+							className="intro-width"
+						>
+							A sacred space where women gather and return <br />
+							<br />
+							<br />
+							<span
+								className="margin-top"
+								style={{ fontFamily: "Zapfino" }}
+							>
+								radiant, supported,{" "}
+								<span
+									className="block"
+									style={{ marginTop: 30, display: "block", height: 90 }}
+								>
+									balanced.
+								</span>
+							</span>
+						</AnimatedCopy>
+					)}
 
 					<div className="sticky-work-logo">
 						<img
@@ -341,263 +443,19 @@ const Home = () => {
 						<p className="primary sm">Women</p>
 					</div>
 				</section>
-				<section className="video-frame">
-					<iframe
-						src="https://www.youtube.com/embed/y-_pgybgKPo?si=UlVtE6g0kjZ0VM2H"
-						title="YouTube video player"
-						frameBorder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerPolicy="strict-origin-when-cross-origin"
-						allowFullScreen
-					></iframe>
-				</section>
-				<section
-					ref={stickyWorkHeaderRef}
-					className="sticky-work-header"
-				>
-					<button
-						style={{ margin: "5px auto 20px" }}
-						className="primary-button"
-						onClick={() =>
-							window.open(
-								"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
-								"_blank",
-								"noopener,noreferrer",
-							)
-						}
-					>
-						Reserve your spot
-					</button>
-					<p className="secondary sm">
-						Payment plans available from Klarna, Affirm and Afterpay.
-					</p>
-					<br />
-					<br />
-					<div className="intro">
-						<p className="secondary md">
-							Have you been pouring into everyone but yourself, and now your
-							soul is whispering for rest, connection, and meaning?
-						</p>
-						<p className="secondary md">
-							This is your invitation to pause. <br />
-							To reset. To reconnect — with yourself, with sisterhood, and with
-							the sacred.
-						</p>
-					</div>
-				</section>
-				<div className="peru-banner">
-					<img
-						src="/home/wallpaper1.jpeg"
-						alt=""
-					/>
-				</div>
-				<section
-					ref={stickyWorkHeaderRef}
-					className="sticky-work-header"
-				>
-					<h3>
-						Welcome to women’s retreat
-						<br /> at the magical land of Peru.
-					</h3>
-					<p className="secondary md">
-						A Sacred Pause for the Woman Who Does It All — But Feels
-						Disconnected Inside.
-					</p>
-					<br />
-					<br />
-					<AnimatedCopy
-						tag="h1"
-						animateOnScroll="true"
-					>
-						<div className="sticky-work-print">
-							<img
-								src="/home/Logo-updated.png"
-								alt=""
-							/>
-						</div>
-					</AnimatedCopy>
-				</section>
-
-				<section className="services home">
-					<div className="services-col">
-						<div className="services-banner">
-							<img
-								src="/home/img3-1.jpg"
-								alt=""
-							/>
-							<p className="primary sm text-shadow">
-								This is more than just a retreat
-							</p>
-						</div>
-					</div>
-					<div className="services-col">
-						<h4 style={{ textAlign: "center" }}>
-							It’s an invitation to step into a life where joy, connection, and
-							love flow effortlessly.
-						</h4>{" "}
-						<h5 style={{ textAlign: "center" }}>
-							Come, embrace your fullest expression and let the adventure of
-							your soul unfold!
-						</h5>
-						<br /> <br />
-						<h5 style={{ textAlign: "center" }}>
-							This retreat is designed for women ready to:
-						</h5>
-						<br />
-						<div className="services-list">
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<p className="primary sm">
-										...Reconnect with nature, spirit, and the truth of who they
-										are.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<p className="primary sm">
-										...Take a sacred reset far from city chaos, career demands,
-										and life on autopilot.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<p className="primary sm">
-										...Step away from constant doing, giving, achieving, and
-										feeling burned out.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<p className="primary sm">
-										...Go beyond small talk and experience genuine, soul-deep
-										sisterhood.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<p className="primary sm">
-										..Release an old life chapter and open to the possibilities
-										of what’s next.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<p className="primary sm">
-										...Journey solo yet join a circle of like-minded women for a
-										safe, uplifting, and unforgettable wellness adventure in
-										Peru’s Sacred Valley.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section className="intro2">
-					<h4>
-						Surrounded by the loving embrace of sisterhood and the sacred
-						presence of Mother Earth.
-					</h4>
-					<p className="secondary md">
-						This retreat is a space where you can rediscover your truest
-						self—unfiltered, untamed, and radiant.
-					</p>
-				</section>
-
-				<section className="button-wrapper-home">
-					<button
-						className="primary-button button-home"
-						onClick={() =>
-							window.open(
-								"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
-								"_blank",
-								"noopener,noreferrer",
-							)
-						}
-					>
-						Reserve your spot
-					</button>
-					<br />
-
-					<p className="secondary sm">
-						Payment plans available from Klarna, Affirm and Afterpay.
-					</p>
-				</section>
 
 				<section
 					ref={homeWorkRef}
 					className="home-work"
 				>
+					<div className="headline-wrapper-center">
+						<h4>
+							A restorative pause for the Woman who does it all — but feels
+							disconnected inside.
+						</h4>
+					</div>
+					<br />
+					<br />
 					<div className="home-work-list">
 						{workItems.slice(0, 3).map((work) => (
 							<div
@@ -605,7 +463,7 @@ const Home = () => {
 								className="home-work-item"
 							>
 								<p className="primary sm">04 - 2025</p>
-								<h3>{work.title}</h3>
+								<h4>{work.title}</h4>
 								{work.quote && <p className="primary sm">{work.quote}</p>}
 
 								<div className="work-item-img">
@@ -620,344 +478,20 @@ const Home = () => {
 										allowFullScreen
 									></iframe>
 								</div>
-								<h4>{work.category}</h4>
+								{/* <p className="primary sm">{work.category}</p> */}
+								<h5>{work.category}</h5>
 							</div>
 						))}
 					</div>
 					<br />
 					<Link
 						to="/testimonials"
-						className="primary-button"
+						className="primary-button hero-btn-link"
 					>
 						more reviews
 					</Link>
-				</section>
-
-				<p
-					className="primary "
-					style={{ textAlign: "center" }}
-				>
-					<span
-						style={{
-							//fontFamily: "Zapfino",
-							textTransform: "none",
-							fontSize: "1rem",
-							marginLeft: "-4px",
-							marginTop: "20px",
-							fontWeight: 600,
-						}}
-					>
-						{" "}
-						$3333 USD
-					</span>
-					<br />
-					Limited to 12 women. Last year’s retreat was sold out
-					<br />
-				</p>
-				<br />
-				<h3 className="center-text">What is included:</h3>
-				<section className="services home">
-					<Slider />
-					<div className="service-list-col">
-						<h4>
-							A Transformational Experience to gain clarity as you clear blocks
-							holding you back
-						</h4>
-						<br />
-
-						<div className="service-list">
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>6 nights</h5>
-								</div>
-								<p className="primary sm">
-									shared accommodation in chakra bungalows, a restful sanctuary
-									to align your soul.
-								</p>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>3 nourishing organic meals</h5>
-								</div>
-								<div className="service-list-col">
-									<p className="primary sm"> to energize and heal.</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>Full Access</h5>
-								</div>
-								<div className="service-list-col">
-									<p className="primary sm">
-										to serene amenities, including jacuzzi and chakra garden.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>TEMAZCAL CEREMONY</h5>
-								</div>
-								<div className="service-list-col">
-									<p className="primary sm">
-										to release and renew your spirit.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>Cacao CEREMONY</h5>
-								</div>
-								<div className="service-list-col">
-									<p className="primary sm">
-										and ecstatic dance to awaken joy within.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>Bonfire circle</h5>
-								</div>
-								<div className="service-list-col">
-									<p className="primary sm">
-										for heartfelt sharing and connection.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>Daily movement</h5>
-								</div>
-								<div className="service-list-col">
-									<p className="primary sm">
-										yoga and mobility, meditation, and journaling to ground and
-										center
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>Trip to Pisac town</h5>
-								</div>
-								<div className="service-list-col">
-									<p className="primary sm">
-										and sound healing with local practitioner.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>Breathwork session</h5>
-								</div>
-								<div className="service-list-col">
-									<p className="primary sm"> to release and let go.</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>Tour to Moray and Maras</h5>
-								</div>
-								<div className="service-list-col">
-									<p className="primary sm">
-										to explore ancient wisdom and beauty.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>Sacred mandala creation</h5>
-								</div>
-								<div className="service-list-col">
-									<p className="primary sm">to express your inner artist.</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>Shuttle service</h5>
-								</div>
-								<div className="service-list-col">
-									<p className="primary sm">
-										from Cusco airport for a seamless journey.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>Zoom prep call</h5>
-								</div>
-								<div className="service-list-col">
-									<p className="primary sm">
-										and a month of integration through virtual classes.
-									</p>
-								</div>
-							</div>
-
-							<div className="service-list-row">
-								<img
-									src="/home/star1.png"
-									alt=""
-									style={{
-										display: "inline",
-										width: 30,
-										height: 30,
-										margin: "auto",
-									}}
-								/>
-								<div className="service-list-col">
-									<h5>A personalized gift bag</h5>
-								</div>
-								<div className="service-list-col">
-									<p className="primary sm"> to honor your journey.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section className="sticky-work-header">
 					<button
-						style={{ margin: "auto", marginTop: "-20px" }}
+						style={{ margin: "5px auto 20px" }}
 						className="primary-button"
 						onClick={() =>
 							window.open(
@@ -967,50 +501,182 @@ const Home = () => {
 							)
 						}
 					>
-						Reserve your spot
+						Place your deposit
 					</button>
-					<br />
-					<p className="secondary sm">
+					<p className="secondary sm mobile-text-center">
 						Payment plans available from Klarna, Affirm and Afterpay.
 					</p>
 				</section>
 
-				<br />
-				<p
-					className="primary "
-					style={{ textAlign: "center" }}
+				<section
+					ref={stickyWorkHeaderRef}
+					className="home-header-padding"
 				>
-					Why Samadhi:
-				</p>
-				<section className="intro-samadhi">
+					<h3>
+						Meet Marina and Amber.
+						<br /> Your facilitators.
+					</h3>
+					<p className="secondary">
+						The Women Behind the Retreats. &nbsp;Where Sisterhood Meets Purpose.
+					</p>
+				</section>
+
+				<section className="services">
+					<div className="home-host-img">
+						<img
+							className="rotate-img"
+							src="/home/Sunrise-46.JPG"
+							alt=""
+						/>
+						<img
+							src="/home/IMG_3902.JPG"
+							alt=""
+						/>
+					</div>
+					<div className="home-host-content">
+						<div className="home-host-text">
+							<h4>Cherished Bond, Guided Sisterhood.</h4>
+							<br />
+							<p className="secondary">
+								Soul sisters and seasoned retreat leaders, Marina and Amber
+								bring a decade of friendship and proven experience as yoga
+								teachers, movement educators, and space holders to every
+								retreat.
+								<br />
+								<br />
+								United by purpose, they have made a real difference in the lives
+								of those they guide.
+							</p>
+						</div>
+						<div className="home-host-text-sm">
+							<h4 id="quote-home">
+								<BiSolidQuoteLeft />
+							</h4>
+							<p className="secondary">
+								“After more than a decade of coaching, we’ve learned that an
+								authentic experience is what changes people. We help women start
+								watering their own grass and come home to themselves.”
+							</p>
+						</div>
+					</div>
+
+					<div className="home-host-content">
+						<div className="video-frame">
+							<iframe
+								src="https://www.youtube.com/embed/y-_pgybgKPo?si=UlVtE6g0kjZ0VM2H"
+								title="YouTube video player"
+								frameBorder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerPolicy="strict-origin-when-cross-origin"
+								allowFullScreen
+							></iframe>
+						</div>
+
+						<div className="home-host-text">
+							<p className="secondary">
+								Their shared commitment to meaningful change has touched the
+								lives of everyone who joins them.
+							</p>
+						</div>
+					</div>
+
+					{/* <div className="intro">
+						<p className="secondary md">
+							Have you been pouring into everyone but yourself, and now your
+							soul is whispering for rest, connection, and meaning?
+						</p>
+						<p className="secondary md">
+							This is your invitation to pause. <br />
+							To reset. To reconnect — with yourself, with sisterhood, and with
+							the sacred.
+						</p>
+					</div> */}
+				</section>
+
+				<section className="button-wrapper-center">
+					<button
+						style={{ margin: "5px auto 20px" }}
+						className="primary-button"
+						onClick={() =>
+							window.open(
+								"https://buy.stripe.com/7sY5kCeFO7zUfJK5Bs2wU0X",
+								"_blank",
+								"noopener,noreferrer",
+							)
+						}
+					>
+						Place your deposit
+					</button>
+					<p className="secondary sm mobile-text-center">
+						Payment plans available from Klarna, Affirm and Afterpay.
+					</p>
+				</section>
+
+				<div className="samadhi-banner">
 					<img
-						src="/home/samadhi-bg.jpg"
+						src="/home/collage.png"
 						alt=""
 					/>
+				</div>
 
-					<div className="intro-samadhi-col">
-						<h4>
-							In today's hectic world, many of us experience disconnection,
-							navigating on autopilot through the burdens of stress, work,
-							family responsibilities, and health challenges.
-						</h4>
-						<p className="secondary md">
-							Samadhi is a serene and eco-conscious retreat center situated in
-							the Andes Mountains of Sacred Valley, Peru. Founded by mindful
-							individuals, it serves as a sanctuary for healing, sacred
-							reciprocity, and communion with Pacha Mama (Mother Earth) and the
-							Divine. Built with heartfelt intention, the center cultivates
-							organic vegetables on-site, prepares food with blessings, and
-							fosters a warm and inviting atmosphere where joy, connection, and
-							deep healing thrive.
-						</p>
-						<p className="secondary md">
-							Samadhi Center at the sacred land of Peru is an ideal destination
-							for your next journey — a journey focused on cultural immersion,
-							awe-inspiring nature, embodying feminine practices,
-							self-nourishment, and hitting the reset button in our busy lives.
-						</p>
+				<br />
+
+				<section
+					ref={stickyWorkHeaderRef}
+					className="home-header-padding"
+				>
+					<h3>Why Samadhi?</h3>
+					<p className="secondary">
+						Because your journey deserves more than a getaway: a space to be
+						supported, heard, and fully yourself.
+						<br />
+						An invitation and permission to soften, breathe, and belong.
+					</p>
+				</section>
+
+				<section className="services">
+					<div className="home-host-img">
+						<img
+							className="rotate-img"
+							src="/home/SS-237.jpg"
+							alt=""
+						/>
+						<img
+							src="/home/1K3A8261.JPG"
+							alt=""
+						/>
 					</div>
+					<div className="home-host-content">
+						<div className="home-host-text">
+							<h4>
+								We don't need another transformation. <br />
+								{/* We don't need any more self-improvement. <br /> */}
+								We just need each other.
+							</h4>
+							<br />
+							<p className="secondary">
+								In today's hectic world, many of us experience disconnection,
+								navigating on autopilot through the burdens of stress, work,
+								family responsibilities, and health challenges. Samadhi
+								SiSTARhood creates immersive retreats where women take a pause,
+								reconnect, and feel supported.
+							</p>
+						</div>
+						<div className="home-host-text-sm">
+							<p className="secondary">
+								Samadhi SiSTARhood offers a space to move, rest, nurture your
+								body, mind, and spirit through love, adventures and genuine
+								connection.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section
+					ref={stickyWorkHeaderRef}
+					className="home-header-padding"
+				>
+					<h3 className="cursive-quote">And remember, you are magic!</h3>
 				</section>
 
 				<img

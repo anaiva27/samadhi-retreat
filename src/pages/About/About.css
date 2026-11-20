@@ -92,7 +92,7 @@
 
 .spotify {
 	width: 100%;
-	padding: 2em;
+	padding: 2em 0;
 	display: flex;
 	border-radius: 1em;
 }
@@ -301,7 +301,7 @@
 	}
 
 	.spotify {
-		padding: 1.25em;
+		padding: 0em;
 	}
 
 	.service-list-row {

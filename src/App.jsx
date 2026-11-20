@@ -15,6 +15,8 @@ import Contact from "./pages/Contact/Contact";
 import { AnimatePresence } from "framer-motion";
 import Schedule from "./pages/Schedule/Schedule";
 import Welcome from "./pages/Welcome/Welcome";
+import Tulum from "./pages/Destinations/Tulum";
+import Gallery from "./pages/Gallery/Gallery";
 
 function ScrollToTop() {
 	const { pathname } = useLocation();
@@ -72,12 +74,20 @@ function App() {
 						element={<Work />}
 					/>
 					<Route
+						path="/gallery"
+						element={<Gallery />}
+					/>
+					<Route
 						path="/testimonials"
 						element={<Project />}
 					/>
 					<Route
 						path="/schedule"
 						element={<Schedule />}
+					/>
+					<Route
+						path="/tulum"
+						element={<Tulum />}
 					/>
 				</Routes>
 			</AnimatePresence>

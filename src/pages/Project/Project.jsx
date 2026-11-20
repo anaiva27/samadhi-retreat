@@ -20,15 +20,14 @@ const Project = () => {
 						tag="h2"
 						delay={1}
 					>
-						Check out the feedback from our amazing retreat guests.
+						What shifted for the women who joined us.
 					</AnimatedCopy>
 					<AnimatedCopy
 						delay={1}
 						animateOnScroll={false}
 						className="primary sm"
 					>
-						What they felt. What they found. <br />
-						Honest feedback from those who’ve experienced the retreat firsthand.
+						What they felt. What they found.
 					</AnimatedCopy>
 				</section>
 				<div className="home-work-list">

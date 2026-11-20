@@ -5,21 +5,33 @@
 	overflow: hidden;
 	display: flex;
 	align-items: flex-end;
-	padding: 2em;
+	/* padding: 2em; */
+	background-color: black;
 }
 
 .hero-img {
 	position: absolute;
 	top: 0;
 	left: 0;
+	bottom: 0;
+	right: 0;
 	width: 100%;
 	height: 100%;
+	display: flex;
+	flex-direction: column;
+	/* 
+	background-image: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 0.85) 0%,
+		rgba(0, 0, 0, 0) 80%
+	);
 	background-image:
-		linear-gradient(to top right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 70%),
-		url("/home/hero1.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+		linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 80%),
+		url("/home/hero1.jpg"); 
+		background-size: cover;
+		background-position: center bottom 30%;
+		background-repeat: no-repeat;
+		*/
 }
 
 .hero-header {
@@ -28,14 +40,18 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	z-index: 1;
+	padding-bottom: 2em;
 }
 
 .hero-header h1 {
 	color: var(--bg);
-	line-height: 1;
-	font-size: clamp(65px, 5vw, 80px);
+	line-height: 100%;
+	font-size: clamp(50px, 5vw, 60px);
 	text-shadow: 0.5px 0.5px black;
+	letter-spacing: 1px;
+	word-spacing: 5%;
 }
 .hero-header h4 {
 	color: var(--bg);
@@ -44,8 +60,26 @@
 	text-shadow: 0.5px 0.5px black;
 }
 
+.hero-button-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
 .button-home {
 	margin: 20px auto -20px;
+}
+
+.hero-btn-link {
+	color: var(--bg);
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	font-family: "Messina Sans";
+}
+
+.rotate-img {
+	transform: rotate(0deg);
 }
 
 .socials-container {
@@ -128,11 +162,67 @@ h3#sticky {
 }
 
 .sticky-work-logo {
-	width: 40%;
-	max-width: 200px;
+	width: 35%;
+	max-width: 170px;
 	margin: auto auto 40px;
 	filter: invert(1);
 	opacity: 0.3;
+}
+
+.home-header-padding {
+	position: relative;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	overflow: hidden;
+	gap: 1rem;
+}
+
+.home-host-img {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 2rem;
+}
+
+.home-host-content {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 2rem;
+}
+
+.home-host-text {
+	border: 0.5px solid var(--border100);
+	border-radius: 1em;
+	padding: 2rem;
+}
+
+.home-host-text-sm {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: flex-start;
+	justify-content: flex-end;
+	border: 0.5px solid var(--border100);
+	border-radius: 1em;
+	padding: 2rem;
+}
+
+.home-host-img img {
+	height: 55vh;
+	border-radius: 1em;
+	width: 100%;
+	object-fit: cover;
+	max-height: 800px;
+	min-height: 600px;
+}
+
+#quote-home {
+	margin-bottom: 17px;
+	font-weight: 300;
+	font-size: 1.8rem !important;
 }
 
 .intro {
@@ -149,7 +239,7 @@ h3#sticky {
 
 .home-work {
 	width: 100%;
-	padding: 8em 2em;
+	padding: 4em 2em 8em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -209,7 +299,7 @@ h3#sticky {
 .work-item-img iframe {
 	width: 100%;
 	max-width: 400px;
-	height: 300px;
+	height: 400px;
 	border-radius: 10px;
 }
 
@@ -224,6 +314,9 @@ h3#sticky {
 	border: 0.5px solid var(--border100);
 	border-radius: 1em;
 	text-align: center;
+}
+.intro-width {
+	max-width: 700px;
 }
 
 .service-list-col {
@@ -247,6 +340,12 @@ h3#sticky {
 	margin: 40px auto;
 }
 
+.samadhi-banner {
+	width: 100%;
+
+	margin: 40px auto;
+}
+
 .button-wrapper-home {
 	width: 100%;
 	display: flex;
@@ -262,13 +361,11 @@ h3#sticky {
 
 .video-frame {
 	width: 100%;
-	max-width: 1000px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: auto;
 	overflow: hidden;
-	margin: 80px auto 40px;
 }
 
 .video-frame iframe {
@@ -328,11 +425,27 @@ h3#sticky {
 	width: 100%;
 }
 
+.cursive-quote {
+	font-family: "Zapfino";
+	text-transform: none;
+	font-size: 2.7rem;
+	font-weight: 600;
+	line-height: 250%;
+	margin-top: 2rem;
+	margin-bottom: -1rem;
+}
+
 @media (max-width: 1000px) {
+	.hero-header {
+		padding-bottom: 0;
+	}
+
 	.hero-header h1 {
-		font-size: clamp(35px, 8vw, 40px);
+		font-size: clamp(30px, 5vw, 40px);
 		text-shadow: 0.5px 0.5px black;
 		line-height: 125%;
+		width: 100%;
+		text-align: center;
 	}
 
 	.peru-banner {
@@ -360,7 +473,7 @@ h3#sticky {
 	.video-frame {
 		width: 100%;
 		overflow: hidden;
-		margin: 50px auto 10px;
+		margin: 0px auto 0px;
 		padding: 0 10px;
 	}
 
@@ -380,7 +493,7 @@ h3#sticky {
 		padding: 1.25em;
 	}
 	.sticky-work-header {
-		padding: 4em 0em;
+		padding: 2em 0em;
 	}
 
 	.sticky-titles h2,
@@ -393,7 +506,7 @@ h3#sticky {
 	}
 
 	.home-work {
-		padding: 8em 1.25em;
+		padding: 6em 1.25em 4em;
 	}
 
 	.home-work-list {
@@ -418,5 +531,31 @@ h3#sticky {
 		border: 0.5px solid var(--border100);
 		border-radius: 1em;
 		text-align: left;
+	}
+
+	.hero-sm-padding {
+		margin-bottom: -15px;
+		margin-top: -5px;
+	}
+
+	.home-host-img {
+		grid-template-columns: 1fr;
+	}
+
+	.home-host-content {
+		grid-template-columns: 1fr;
+	}
+
+	.cursive-quote {
+		font-size: 2rem;
+		margin-bottom: -1rem;
+	}
+
+	.mobile-text-center {
+		text-align: center;
+	}
+
+	.hero-button-wrapper {
+		gap: 15px;
 	}
 }

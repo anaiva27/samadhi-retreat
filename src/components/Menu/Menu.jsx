@@ -1,24 +1,49 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Menu.css";
-
+import { BiChevronDown } from "react-icons/bi";
 import { Link, useLocation } from "react-router-dom";
 import { gsap } from "gsap";
+import { useMediaQuery } from "../../helpers/useMediaQuery";
 
 const Menu = () => {
 	const menuLinks = [
-		{ path: "/", label: "Welcome" },
-		{ path: "/about", label: "About" },
-		{ path: "/schedule", label: "Schedule" },
+		// { path: "/", label: "Welcome" },
+		// { path: "/schedule", label: "Schedule" },
+		// { path: "/schedule", label: "Tulum" },
+		// { path: "/schedule", label: "Peru" },
+		{ path: "", label: "Destinations" },
 		{ path: "/testimonials", label: "Testimonials" },
+		{ path: "/gallery", label: "Gallery" },
+		// { path: "/about", label: "About" },
+		{ path: "/contact", label: "Contact / Q&A" },
+		// { path: "/faq", label: "Q&A" },
+	];
+
+	const mobileMenuLinks = [
+		// { path: "/", label: "Welcome" },
+		// { path: "/schedule", label: "Schedule" },
+		{ path: "/schedule", label: "Guatemala" },
+		{ path: "/schedule", label: "Peru" },
+		{ path: "/tulum", label: "Tulum" },
 		// { path: "/", label: "Destinations" },
-		{ path: "/contact", label: "Contact" },
-		{ path: "/faq", label: "Q&A" },
+		{ path: "/testimonials", label: "Testimonials" },
+		{ path: "/gallery", label: "Gallery" },
+		{ path: "/contact", label: "Contact / Q&A" },
+		// { path: "/faq", label: "Q&A" },
+	];
+
+	const desktopMenuLinks = [
+		{ path: "/schedule", label: "Guatemala" },
+		{ path: "/schedule", label: "Peru" },
+		{ path: "/tulum", label: "Tulum" },
 	];
 
 	const location = useLocation();
 	const menuContainer = useRef();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [userLocation, setUserLocation] = useState("");
+	const isMobile = useMediaQuery();
+
 	const menuAnimation = useRef();
 	const menuLinksAnimation = useRef();
 	const menuBarAnimation = useRef();
@@ -223,15 +248,33 @@ const Menu = () => {
 									userLocation === "home" ? "menu-item white-text" : "menu-item"
 								}
 							>
-								{/* <div className="menu-link-item-holder"> */}
-								<Link
-									className="menu-link"
-									to={link.path}
-									onClick={() => handleLinkClick(link.path)}
-								>
-									{link.label}
-								</Link>
-								{/* </div> */}
+								{link.label === "Destinations" ? (
+									<div
+										className="menu-item"
+										onClick={toggleMenu}
+									>
+										<Link
+											className="menu-link"
+											to={link.path}
+											onClick={() => handleLinkClick(link.path)}
+										>
+											{link.label}
+										</Link>
+										<h5>
+											<BiChevronDown />
+										</h5>
+									</div>
+								) : (
+									<div className="menu-item">
+										<Link
+											className="menu-link"
+											to={link.path}
+											onClick={() => handleLinkClick(link.path)}
+										>
+											{link.label}
+										</Link>
+									</div>
+								)}
 							</div>
 						))}
 					</div>
@@ -245,26 +288,45 @@ const Menu = () => {
 					</div>
 				</div>
 			</div>
+
 			<div className="menu">
 				<div className="menu-col">
 					<div className="menu-sub-col">
 						<div className="menu-links">
-							{menuLinks.map((link, index) => (
-								<div
-									key={index}
-									className="menu-link-item"
-								>
-									<div className="menu-link-item-holder">
-										<Link
-											className="menu-link"
-											to={link.path}
-											onClick={() => handleLinkClick(link.path)}
+							{isMobile
+								? mobileMenuLinks.map((link, index) => (
+										<div
+											key={index}
+											className="menu-link-item"
 										>
-											{link.label}
-										</Link>
-									</div>
-								</div>
-							))}
+											<div className="menu-link-item-holder">
+												<Link
+													className="menu-link"
+													to={link.path}
+													onClick={() => handleLinkClick(link.path)}
+												>
+													{link.label}
+												</Link>
+												{link.label === "Tulum" && <br />}
+											</div>
+										</div>
+									))
+								: desktopMenuLinks.map((link, index) => (
+										<div
+											key={index}
+											className="menu-link-item"
+										>
+											<div className="menu-link-item-holder">
+												<Link
+													className="menu-link"
+													to={link.path}
+													onClick={() => handleLinkClick(link.path)}
+												>
+													{link.label}
+												</Link>
+											</div>
+										</div>
+									))}
 						</div>
 					</div>
 				</div>

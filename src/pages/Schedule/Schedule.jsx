@@ -307,7 +307,7 @@ const Schedule = () => {
 							)
 						}
 					>
-						Reserve your spot
+						Place your deposit
 					</button>
 					<br />
 					<p className="secondary sm">
@@ -558,7 +558,7 @@ const Schedule = () => {
 								)
 							}
 						>
-							Reserve your spot
+							Place your deposit
 						</button>
 
 						<p className="secondary sm">

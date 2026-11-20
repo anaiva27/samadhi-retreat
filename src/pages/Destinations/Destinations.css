@@ -1,0 +1,409 @@
+.destinations {
+	width: 100%;
+}
+
+.destinations-spotify {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.masonry {
+	width: 100%;
+}
+
+.padding-wrapper {
+	padding: 0 50px;
+}
+
+.destinations-hero {
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+.destinations-hero-wrapper {
+	width: 100%;
+	display: flex;
+	height: 100vh;
+	gap: 50px;
+}
+
+.destinations-hero-content {
+	width: 50vw;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 50px;
+	padding-top: 50px;
+}
+
+.destinations-hero-slider {
+	width: 50vw;
+}
+
+.tulum-host-text {
+	border: 0.5px solid var(--border100);
+	border-radius: 1em;
+	padding: 2rem;
+}
+
+.tulum-host-text-sm {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: flex-start;
+	justify-content: flex-end;
+	border: 0.5px solid var(--border100);
+	border-radius: 1em;
+	padding: 2rem;
+}
+
+.tulum-hero-content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.tulum-schedule-section {
+	padding: 50px 1.25em;
+	width: 100%;
+	margin: 1.25em auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	border: 0.5px solid var(--border100);
+	border-radius: 1em;
+	max-width: 1400px;
+}
+
+.tulum-included {
+	margin: 0px auto 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 1400px;
+}
+
+.tulum-included-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	margin-bottom: 100px;
+}
+
+.tulum-pricing-section {
+	margin: 1.25em auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border: 0.5px solid var(--border100);
+	border-radius: 1em;
+	padding: 0 0px;
+	max-width: 1400px;
+}
+
+.tulum-pricing-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	padding: 20px;
+}
+
+.tulum-testimonials {
+	margin: 2em auto;
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	border: 0.5px solid var(--border100);
+	border-radius: 1em;
+	max-width: 1400px;
+}
+
+.tulum-testimonials-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 2rem;
+}
+
+.conclusion-section {
+	padding: 1.25em;
+	margin: 1.25em auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	border: 0.5px solid var(--border100);
+	border-radius: 1em;
+	max-width: 1400px;
+}
+
+/* //// */
+
+.schedule-list-col {
+	margin-left: 50px;
+}
+
+.schedule-list-col p {
+	line-height: 170%;
+}
+
+.schedule-list-col h5 {
+	text-transform: uppercase;
+}
+
+.line-vertical {
+	width: 1px;
+	background-color: rgb(181, 181, 181);
+	height: 100%;
+	position: absolute;
+	left: 24px;
+}
+
+.tulum-header {
+	width: 100%;
+	padding: 2em;
+	display: flex;
+	justify-content: center;
+	justify-self: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.header-space {
+	margin-top: 8em;
+}
+
+.tulum-header h1 {
+	position: relative;
+	left: -0.75vw;
+	font-size: 4vw;
+	line-height: 0.75;
+	font-family: "Zapfino";
+}
+
+.about p.headline {
+	text-align: center;
+	margin: 20px auto -10px;
+	text-transform: uppercase;
+}
+
+.about-hero {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding: 2em;
+	height: 100svh;
+	margin: 2em;
+	border-radius: 1em;
+	overflow: hidden;
+	border: 0.5px solid var(--border100);
+}
+
+.about-hero-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.about-me-copy {
+	position: relative;
+	width: 100%;
+	padding: 4em 2em;
+}
+
+.about-me-copy-wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.about-me-copy-wrapper p {
+	margin: 0 1em;
+}
+
+.services-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.schedule-list-row {
+	width: 100%;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	position: relative;
+}
+
+.schedule-list-header {
+	width: 100%;
+	display: flex;
+	gap: 2em;
+}
+
+.schedule-list-header img {
+	width: 30px;
+}
+
+/* .schedule-list-col:nth-child(1) {
+  flex: 2;
+}
+
+.schedule-list-col:nth-child(2) {
+  flex: 4;
+} */
+
+.schedule-list-row {
+	padding: 10px 0;
+	/* border-top: 0.5px solid var(--border100); */
+}
+
+.fav-tools {
+	margin: 2em;
+	padding: 6em 2em 2em 2em;
+	border: 0.5px solid var(--border100);
+	border-radius: 1em;
+}
+
+.fav-tools-header {
+	margin-bottom: 4em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5em;
+}
+
+.fav-tools-header p.primary {
+	margin-bottom: 1.5em;
+}
+
+.fav-tools-header p.secondary {
+	width: 60%;
+	text-align: center;
+}
+
+.fav-tools-list {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.fav-tools-list-row {
+	display: flex;
+	gap: 2em;
+}
+
+.fav-tool {
+	position: relative;
+	flex: 1;
+	padding: 1em;
+	aspect-ratio: 5/2.5;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 0.5em;
+	border: 0.5px solid var(--border100);
+	border-radius: 1em;
+	overflow: hidden;
+}
+
+.fav-tool-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.fav-tool h4,
+.fav-tool p {
+	color: var(--bg);
+}
+
+.price-headline {
+	margin-left: 2.8rem;
+}
+.text-center {
+	text-align: center;
+}
+
+.quote-tulum {
+	font-family: "Zapfino";
+	text-transform: none;
+	font-size: 1.1rem;
+	margin-left: -4px;
+	font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+	.padding-wrapper {
+		padding: 0 20px;
+	}
+
+	.tulum-included-content,
+	.tulum-pricing-content {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.tulum-pricing-content {
+		padding: 0px;
+	}
+
+	.destinations-hero-content {
+		width: 100%;
+		padding: 170px 30px 20px;
+	}
+	.destinations-hero-wrapper {
+		flex-direction: column;
+	}
+	.destinations-hero-slider {
+		width: 100%;
+	}
+	.tulum-header {
+		width: 100%;
+		padding: 0 0 20px;
+	}
+	.tulum-host-text,
+	.tulum-host-text-sm {
+		padding: 1rem;
+	}
+	.tulum-schedule-section {
+		padding: 1.5rem 1rem;
+	}
+	.price-headline {
+		margin-left: 2.6rem;
+	}
+	.quote-tulum {
+		display: block;
+		margin-top: 20px;
+		margin-left: -25px;
+		font-size: 1rem;
+	}
+	.tulum-testimonials-content {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+	.tulum-testimonials {
+		margin: 2em auto;
+		padding: 1.5rem 1rem;
+	}
+	.primary-button {
+		max-width: unset;
+	}
+}
+
+@media (max-width: 1000px) {
+	.swiper-button-next,
+	.swiper-button-prev {
+		height: 30px;
+	}
+}

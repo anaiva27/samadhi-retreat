@@ -295,7 +295,7 @@ const About = () => {
 									)
 								}
 							>
-								Reserve your spot
+								Place your deposit
 							</button>
 
 							<p className="secondary sm">

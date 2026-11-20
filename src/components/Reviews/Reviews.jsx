@@ -4,7 +4,7 @@ import React from "react";
 import "./Reviews.css";
 import "../Slider/retreat.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -152,10 +152,10 @@ const Reviews = ({ hasQuotes }) => {
 				slidesPerView={"auto"}
 				loop={true}
 				navigation={true}
-				// autoplay={{
-				// 	delay: 4000,
-				// 	disableOnInteraction: false,
-				// }}
+				autoplay={{
+					delay: 4000,
+					disableOnInteraction: false,
+				}}
 				// pagination={{ clickable: true }}
 				className="mySwiperRetreat"
 			>

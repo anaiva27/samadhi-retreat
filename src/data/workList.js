@@ -34,6 +34,27 @@ const workList = [
 		video: "https://www.youtube.com/embed/a_DcGVlnNpw?si=c7Sj0dkHPbN_9s1I",
 		quote: "“I came here empty. I’m leaving whole.”",
 	},
+	{
+		id: 5,
+		title: "Maggie Arias",
+		category: "Miami, FLorida",
+		video: "https://www.youtube.com/embed/CwynTq_OCk0",
+		quote: "“I came here empty. I’m leaving whole.”",
+	},
+	{
+		id: 5,
+		title: "Hanna",
+		category: "Gold Coast, Australia",
+		video: "https://www.youtube.com/embed/oEGtR05qtXQ",
+		quote: "“I came here empty. I’m leaving whole.”",
+	},
+	{
+		id: 5,
+		title: "Marina",
+		category: "Tulum, Mexico",
+		video: "https://www.youtube.com/embed/FV5b_O5saJs",
+		quote: "“I came here empty. I’m leaving whole.”",
+	},
 ];
 
 export default workList;

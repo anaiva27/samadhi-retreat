@@ -10,13 +10,15 @@ const ContactForm = () => {
 		<div className="contact-form">
 			<div className="contact-form-row">
 				<div className="contact-form-row-copy-item">
-					<p className="primary sm">Let’s evolve together</p>
+					<p className="primary sm pfooter">Let’s evolve together</p>
 				</div>
 				<div className="contact-form-row-copy-item">
-					<p className="primary sm">(Samadhi Sistarhood)</p>
+					<p className="primary sm pfooter">(Samadhi Sistarhood)</p>
 				</div>
 				<div className="contact-form-row-copy-item">
-					<p className="primary sm">&copy; {new Date().getFullYear()}</p>
+					<p className="primary sm pfooter">
+						&copy; {new Date().getFullYear()}
+					</p>
 				</div>
 			</div>
 
@@ -32,8 +34,8 @@ const ContactForm = () => {
 					</div>
 
 					<div className="contact-form-availability">
-						<p className="primary sm">Still have questions in mind?</p>
-						<p className="primary sm">Let's connect</p>
+						<p className="primary sm pfooter">Still have questions in mind?</p>
+						<p className="primary sm pfooter">Let's connect</p>
 					</div>
 				</div>
 

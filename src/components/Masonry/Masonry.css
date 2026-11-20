@@ -1,0 +1,156 @@
+.pin-masonry {
+	display: flex;
+	align-items: stretch; /* was flex-start: columns now match the tallest one */
+	gap: 20px;
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	transition: opacity 0.3s ease;
+}
+
+/* hidden until all images are measured, so nothing jumps around */
+.pin-masonry--loading {
+	opacity: 0;
+}
+
+.pin-masonry__column {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	flex: 1 1 0;
+	min-width: 0; /* lets columns shrink evenly */
+}
+
+.pin-masonry__item {
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	background: #d9d9d3; /* shows while images load / when src is empty */
+}
+
+/* !important guards against global img rules (fixed heights, object-fit, etc.) */
+.pin-masonry__item img {
+	display: block;
+	width: 100% !important;
+	height: auto !important;
+	max-width: 100%;
+	object-fit: initial !important;
+}
+
+/* last image in each column grows to fill the remaining height */
+.pin-masonry__item:last-child {
+	flex: 1 0 auto;
+	display: flex;
+}
+
+.pin-masonry__item:last-child img {
+	flex: 1 1 auto;
+	min-height: 0;
+	object-fit: cover !important;
+}
+
+@media (max-width: 600px) {
+	.pin-masonry,
+	.pin-masonry__column {
+		gap: 12px;
+	}
+	.pin-masonry__item {
+		border-radius: 16px;
+	}
+}
+
+/* clickable tiles */
+.pin-masonry__button {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background: none;
+	cursor: zoom-in;
+	font: inherit;
+}
+
+/* keep the "last image fills the column" behavior working through the button */
+.pin-masonry__item:last-child .pin-masonry__button {
+	flex: 1 1 auto;
+	display: flex;
+}
+
+/* lightbox */
+.pin-lightbox {
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.92);
+	cursor: zoom-out;
+}
+
+.pin-lightbox__img {
+	max-width: 92vw;
+	max-height: 88vh;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	border-radius: 12px;
+	cursor: default;
+}
+
+.pin-lightbox__close,
+.pin-lightbox__nav {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.12);
+	color: #fff;
+	font-size: 32px;
+	line-height: 1;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+.pin-lightbox__close:hover,
+.pin-lightbox__nav:hover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+.pin-lightbox__close {
+	top: 20px;
+	right: 20px;
+}
+
+.pin-lightbox__nav {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.pin-lightbox__nav--prev {
+	left: 20px;
+}
+
+.pin-lightbox__nav--next {
+	right: 20px;
+}
+
+@media (max-width: 600px) {
+	.pin-lightbox__nav {
+		width: 40px;
+		height: 40px;
+		font-size: 26px;
+	}
+	.pin-lightbox__nav--prev {
+		left: 8px;
+	}
+	.pin-lightbox__nav--next {
+		right: 8px;
+	}
+}

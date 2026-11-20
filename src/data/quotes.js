@@ -7,8 +7,8 @@ const quotes = [
 	},
 	{
 		id: 2,
-		copy: "Step into the fire of self-discovery. This fire will not burn you; it will only burn what you are not.",
-		author: "Mooji",
+		copy: "Rarely, if ever, are any of us healed in isolation. Healing is an act of communion.",
+		author: "Bell Hooks",
 		image: "/reviews/review-2.jpg",
 	},
 	{

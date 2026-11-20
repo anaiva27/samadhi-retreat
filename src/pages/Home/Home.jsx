@@ -606,12 +606,14 @@ const Home = () => {
 					</p>
 				</section>
 
-				<div className="samadhi-banner">
-					<img
-						src="/home/collage.png"
-						alt=""
-					/>
-				</div>
+				{!isMobile && (
+					<div className="samadhi-banner">
+						<img
+							src="/home/collage.png"
+							alt=""
+						/>
+					</div>
+				)}
 
 				<br />
 

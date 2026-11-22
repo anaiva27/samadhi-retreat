@@ -11,12 +11,6 @@ const reviews = [
 		author: "Caroline Avant",
 		image: "/reviews/review-2.jpg",
 	},
-	{
-		id: 3,
-		copy: "Truly professional, creative, and detail-oriented. You made our vision clearer and and inspired us to grow.",
-		author: "Sophie Nguyen",
-		image: "/reviews/review-3.jpg",
-	},
 ];
 
 export default reviews;

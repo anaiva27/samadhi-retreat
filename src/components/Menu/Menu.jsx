@@ -20,16 +20,12 @@ const Menu = () => {
 	];
 
 	const mobileMenuLinks = [
-		// { path: "/", label: "Welcome" },
-		// { path: "/schedule", label: "Schedule" },
 		{ path: "/tulum", label: "Guatemala" },
 		{ path: "/tulum", label: "Peru" },
-		{ path: "/tulum", label: "Tulum" },
-		// { path: "/", label: "Destinations" },
+		{ path: "/gallery", label: "Tulum" },
 		{ path: "/testimonials", label: "Testimonials" },
 		{ path: "/gallery", label: "Gallery" },
 		{ path: "/contact", label: "Contact / Q&A" },
-		// { path: "/faq", label: "Q&A" },
 	];
 
 	const desktopMenuLinks = [

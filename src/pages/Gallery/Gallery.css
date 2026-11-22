@@ -8,6 +8,7 @@
 .masonry-gallery {
 	width: 100%;
 	margin: auto;
+	margin-bottom: 50px;
 }
 
 .faq-list {
@@ -18,4 +19,13 @@
 	display: inline;
 	text-decoration: underline;
 	cursor: pointer;
+}
+.gallery-first-headline {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.gallery-headline {
+	margin: 100px auto 50px;
+	text-align: center;
 }

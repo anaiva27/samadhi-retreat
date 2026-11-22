@@ -15,6 +15,14 @@ const Gallery = () => {
 		<ReactLenis root>
 			<div className="gallery">
 				<section className="masonry-gallery">
+					<h3 className="gallery-first-headline">
+						{" "}
+						Tulum - Cleansing Land of Water
+					</h3>
+					<Masonry />
+				</section>
+				<section className="masonry-gallery">
+					<h3 className="gallery-headline"> Peru - Support of Mother Earth</h3>
 					<Masonry />
 				</section>
 				<ContactForm />

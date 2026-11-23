@@ -173,14 +173,14 @@
 
 @media (max-width: 1000px) {
 	.menu {
-		width: calc(100% - 2.5em);
-		height: calc(100svh - 2.5em);
+		width: calc(100% - 2.5rem);
+		height: calc(100svh - 2.5rem);
 		margin: 1.25em;
 	}
 
 	.menu-bar {
 		margin: 1.25em;
-		width: calc(100% - 2.5em);
+		width: calc(100% - 2.7rem);
 	}
 
 	.menu-actions {

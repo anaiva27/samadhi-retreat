@@ -19,6 +19,7 @@ const Gallery = () => {
 						{" "}
 						Tulum - Where Water Cleanses
 					</h3>
+					{/* <h5 className="gallery-first-headline"> Where Water Cleanses</h5> */}
 					<Masonry location="Tulum" />
 				</section>
 				<section className="masonry-gallery">

@@ -2,3 +2,10 @@
 	padding: 8em 2rem 2rem;
 	margin: 0 auto;
 }
+
+@media (max-width: 1000px) {
+	.page.contact {
+		padding: 8em 1.5rem 2rem;
+		margin: 0 auto;
+	}
+}

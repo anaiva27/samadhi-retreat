@@ -15,8 +15,8 @@ const Menu = () => {
 
 	const mobileMenuLinks = [
 		{ path: "/tulum", label: "Guatemala" },
-		{ path: "/tulum", label: "Peru" },
-		{ path: "/gallery", label: "Tulum" },
+		{ path: "/peru-2025", label: "Peru" },
+		{ path: "/tulum", label: "Tulum" },
 		{ path: "/testimonials", label: "Testimonials" },
 		{ path: "/gallery", label: "Gallery" },
 		{ path: "/contact", label: "Contact / Q&A" },
@@ -24,7 +24,7 @@ const Menu = () => {
 
 	const desktopMenuLinks = [
 		{ path: "/tulum", label: "Guatemala" },
-		{ path: "/tulum", label: "Peru" },
+		{ path: "/peru-2025", label: "Peru" },
 		{ path: "/tulum", label: "Tulum" },
 	];
 

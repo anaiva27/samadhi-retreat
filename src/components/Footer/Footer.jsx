@@ -56,7 +56,7 @@ const Footer = () => {
 							/>
 						</Link>
 					</div>
-					<h3>
+					<h3 className="footer-email">
 						Let’s Connect Today <br />
 						samadhi.sistarhood<span>@</span>gmail.com
 					</h3>

@@ -7,16 +7,10 @@ import { useMediaQuery } from "../../helpers/useMediaQuery";
 
 const Menu = () => {
 	const menuLinks = [
-		// { path: "/", label: "Welcome" },
-		// { path: "/schedule", label: "Schedule" },
-		// { path: "/schedule", label: "Tulum" },
-		// { path: "/schedule", label: "Peru" },
 		{ path: "", label: "Destinations" },
 		{ path: "/testimonials", label: "Testimonials" },
 		{ path: "/gallery", label: "Gallery" },
-		// { path: "/about", label: "About" },
 		{ path: "/contact", label: "Contact / Q&A" },
-		// { path: "/faq", label: "Q&A" },
 	];
 
 	const mobileMenuLinks = [

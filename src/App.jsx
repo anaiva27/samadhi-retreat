@@ -17,6 +17,7 @@ import Schedule from "./pages/Schedule/Schedule";
 import Welcome from "./pages/Welcome/Welcome";
 import Tulum from "./pages/Destinations/Tulum";
 import Gallery from "./pages/Gallery/Gallery";
+import Peru2026 from "./pages/Home/Peru-2026";
 
 function ScrollToTop() {
 	const { pathname } = useLocation();
@@ -88,6 +89,10 @@ function App() {
 					<Route
 						path="/tulum"
 						element={<Tulum />}
+					/>
+					<Route
+						path="/peru-2026"
+						element={<Peru2026 />}
 					/>
 				</Routes>
 			</AnimatePresence>

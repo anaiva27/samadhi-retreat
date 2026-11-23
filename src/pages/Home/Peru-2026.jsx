@@ -19,7 +19,7 @@ import PrimaryButton from "../../components/Buttons/PrimaryButton";
 import { InstagramEmbed, YouTubeEmbed } from "react-social-media-embed";
 import { SliderHero } from "../../components/SliderHero/SliderHero";
 
-const Home = () => {
+const Peru2026 = () => {
 	const workItems = Array.isArray(workList) ? workList : [];
 	const stickyTitlesRef = useRef(null);
 	const stickyWorkHeaderRef = useRef(null);
@@ -432,101 +432,6 @@ const Home = () => {
 					</p>
 				</section>
 
-				<section
-					ref={stickyWorkHeaderRef}
-					className="sticky-work-header"
-				>
-					<h3>
-						Meet Marina and Amber.
-						<br /> Your facilitators.
-					</h3>
-					<p className="secondary">
-						The Women Behind the Retreats. &nbsp;Where Sisterhood Meets Purpose.
-					</p>
-				</section>
-
-				<section className="services">
-					<div className="home-host-img">
-						<img
-							className="rotate-img"
-							src="/home/Sunrise-46.JPG"
-							alt=""
-						/>
-						<img
-							src="/home/IMG_3902.JPG"
-							alt=""
-						/>
-					</div>
-					<div className="home-host-content">
-						<div className="home-host-text">
-							<h4>Cherished Bond, Guided Sisterhood.</h4>
-							<br />
-							<p className="secondary">
-								Soul sisters and seasoned retreat leaders, Marina and Amber
-								bring a decade of friendship and proven experience as yoga
-								teachers, movement educators, and space holders to every
-								retreat.
-							</p>
-						</div>
-						<div className="home-host-text-sm">
-							<p className="secondary">
-								Their shared commitment to meaningful change has touched the
-								lives of everyone who joins them.
-							</p>
-						</div>
-					</div>
-
-					<div className="home-host-content">
-						<div className="video-frame">
-							<iframe
-								src="https://www.youtube.com/embed/y-_pgybgKPo?si=UlVtE6g0kjZ0VM2H"
-								title="YouTube video player"
-								frameBorder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								referrerPolicy="strict-origin-when-cross-origin"
-								allowFullScreen
-							></iframe>
-						</div>
-
-						<div className="home-host-text">
-							<p className="secondary">
-								United by purpose, they have made a real difference in the lives
-								of those they guide.
-							</p>
-						</div>
-					</div>
-
-					{/* <div className="intro">
-						<p className="secondary md">
-							Have you been pouring into everyone but yourself, and now your
-							soul is whispering for rest, connection, and meaning?
-						</p>
-						<p className="secondary md">
-							This is your invitation to pause. <br />
-							To reset. To reconnect — with yourself, with sisterhood, and with
-							the sacred.
-						</p>
-					</div> */}
-				</section>
-
-				<section className="button-wrapper-center">
-					<button
-						style={{ margin: "5px auto 20px" }}
-						className="primary-button"
-						onClick={() =>
-							window.open(
-								"https://buy.stripe.com/aFaaEW41a07s69abZQ2wU17",
-								"_blank",
-								"noopener,noreferrer",
-							)
-						}
-					>
-						Place your deposit
-					</button>
-					<p className="secondary sm">
-						Payment plans available from Klarna, Affirm and Afterpay.
-					</p>
-				</section>
 				<div className="peru-banner">
 					<img
 						src="/home/wallpaper1.jpeg"
@@ -1130,4 +1035,4 @@ const Home = () => {
 	);
 };
 
-export default Transition(Home);
+export default Transition(Peru2026);

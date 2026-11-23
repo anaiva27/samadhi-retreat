@@ -8,15 +8,48 @@ import { useMediaQuery } from "../../helpers/useMediaQuery";
 const GAP_WEIGHT = 0.04; // rough share of the gap, relative to column width
 
 // `ratio` (width / height) is only a fallback until the real size is measured.
-const images = [
+const imagesTulum = [
 	{ id: 1, src: "/tulum/1K3A8082.JPG", alt: "", ratio: 0.75 },
 	{ id: 2, src: "/tulum/1K3A8290.JPG", alt: "", ratio: 1.5 },
 	{
 		id: 3,
-		src: "/tulum/b68098af-8212-4383-9f39-a4b48a92fe17.JPG",
+		src: "/tulum/fe17.JPG",
 		alt: "",
 		ratio: 1.5,
 	},
+	{ id: 6, src: "/tulum/hero-t1.JPG", alt: "", ratio: 0.75 },
+	{ id: 4, src: "/tulum/Sunrise_Yoga-06.JPG", alt: "", ratio: 1.5 },
+	{ id: 5, src: "/tulum/IMG_0938.JPG", alt: "", ratio: 1.5 },
+	{ id: 9, src: "/tulum/IMG_7870.JPG", alt: "", ratio: 0.75 },
+	{ id: 8, src: "/tulum/Sunrise-11.JPG", alt: "", ratio: 1.5 },
+	{ id: 7, src: "/tulum/IMG_0939.JPG", alt: "", ratio: 1.5 },
+	{ id: 10, src: "/tulum/Cenote-Corazon.jpg", alt: "", ratio: 1.5 },
+	{ id: 11, src: "/tulum/IMG_9978.JPG", alt: "", ratio: 0.75 },
+];
+
+const imagesPeru = [
+	{ id: 2, src: "/peru/IMG_3823.JPG", alt: "", ratio: 0.75 },
+	{ id: 3, src: "/peru/IMG_3804.JPG", alt: "", ratio: 1.5 },
+	{ id: 4, src: "/peru/IMG_3911.JPG", alt: "", ratio: 1.5 },
+	{ id: 5, src: "/peru/IMG_3860.JPG", alt: "", ratio: 1.5 },
+	{ id: 6, src: "/peru/IMG_3864.JPG", alt: "", ratio: 0.75 },
+	{ id: 7, src: "/peru/IMG_7853.JPG", alt: "", ratio: 0.75 },
+	{ id: 8, src: "/peru/IMG_3825.JPG", alt: "", ratio: 1.5 },
+	{ id: 9, src: "/peru/IMG_3830.JPG", alt: "", ratio: 1.5 },
+	{ id: 10, src: "/peru/IMG_3879.JPG", alt: "", ratio: 1.5 },
+	{ id: 11, src: "/peru/IMG_3863.JPG", alt: "", ratio: 0.75 },
+	{ id: 13, src: "/peru/IMG_37731.jpg", alt: "", ratio: 1.5 },
+	{ id: 14, src: "/peru/IMG_38291.jpeg", alt: "", ratio: 1.5 },
+	{ id: 15, src: "/peru/IMG_3881.JPG", alt: "", ratio: 0.75 },
+	{ id: 16, src: "/peru/IMG_3747.jpeg", alt: "", ratio: 0.75 },
+	{ id: 17, src: "/peru/IMG_3848.JPG", alt: "", ratio: 0.75 },
+	{ id: 18, src: "/peru/IMG_3848.JPG", alt: "", ratio: 0.75 },
+];
+
+const imagesGuatemala = [
+	{ id: 1, src: "/tulum/1K3A8082.JPG", alt: "", ratio: 0.75 },
+	{ id: 2, src: "/tulum/1K3A8290.JPG", alt: "", ratio: 1.5 },
+	{ id: 3, src: "/peru/IMG_3911.JPG", alt: "", ratio: 1.5 },
 	{ id: 6, src: "/tulum/hero-t1.JPG", alt: "", ratio: 0.75 },
 	{ id: 4, src: "/tulum/Sunrise_Yoga-06.JPG", alt: "", ratio: 1.5 },
 	{ id: 5, src: "/tulum/IMG_0938.JPG", alt: "", ratio: 1.5 },
@@ -204,8 +237,14 @@ function Lightbox({ images, index, onClose, onChange }) {
 	);
 }
 
-export default function Masonry() {
+export default function Masonry({ location }) {
 	const isMobile = useMediaQuery();
+	const IMAGES_BY_LOCATION = {
+		Peru: imagesPeru,
+		Tulum: imagesTulum,
+		Guatemala: imagesGuatemala,
+	};
+	const images = IMAGES_BY_LOCATION[location] ?? imagesGuatemala;
 
 	const COLUMNS = isMobile ? 2 : 3;
 	const { measured, ready } = useMeasuredRatios(images);

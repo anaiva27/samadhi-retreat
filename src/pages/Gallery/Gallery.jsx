@@ -17,13 +17,17 @@ const Gallery = () => {
 				<section className="masonry-gallery">
 					<h3 className="gallery-first-headline">
 						{" "}
-						Tulum - Cleansing Land of Water
+						Tulum - Where Water Cleanses
 					</h3>
-					<Masonry />
+					<Masonry location="Tulum" />
 				</section>
 				<section className="masonry-gallery">
-					<h3 className="gallery-headline"> Peru - Support of Mother Earth</h3>
-					<Masonry />
+					<h3 className="gallery-headline"> Peru - Where Earth Holds You</h3>
+					<Masonry location="Peru" />
+				</section>
+				<section className="masonry-gallery">
+					<h3 className="gallery-headline"> Guatemala - Where Fire Purifies</h3>
+					<Masonry location="Guatemala" />
 				</section>
 				<ContactForm />
 				<Footer />

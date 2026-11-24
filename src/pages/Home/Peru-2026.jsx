@@ -1,4 +1,4 @@
-import workList from "../../data/workList";
+// import workList from "../../data/workList";
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
@@ -18,12 +18,13 @@ import { Slider } from "../../components/Slider/Slider";
 import PrimaryButton from "../../components/Buttons/PrimaryButton";
 import { InstagramEmbed, YouTubeEmbed } from "react-social-media-embed";
 import { SliderHero } from "../../components/SliderHero/SliderHero";
+import { SliderTulum } from "../../components/SliderTulum/sliderTulum";
 
 const Peru2026 = () => {
-	const workItems = Array.isArray(workList) ? workList : [];
+	// const workItems = Array.isArray(workList) ? workList : [];
 	const stickyTitlesRef = useRef(null);
 	const stickyWorkHeaderRef = useRef(null);
-	const homeWorkRef = useRef(null);
+	// const homeWorkRef = useRef(null);
 	const isMobile = useMediaQuery();
 
 	// useEffect(() => {
@@ -181,13 +182,174 @@ const Peru2026 = () => {
 	return (
 		<ReactLenis root>
 			<div className="page home">
-				<section className="hero">
+				<section className="destinations-hero">
+					<div className="destinations-hero-wrapper">
+						<div className="destinations-hero-content">
+							<div className="tulum-hero-content">
+								<AnimatedCopy
+									tag="p"
+									animateOnScroll={false}
+									delay={0.7}
+									className="primary sm"
+								>
+									<span
+										style={{
+											fontWeight: 600,
+											letterSpacing: 1,
+										}}
+									>
+										February 19–25, 2027. Tulum, Mexico.
+									</span>
+								</AnimatedCopy>
+
+								<br />
+								{isMobile ? (
+									<>
+										<AnimatedCopy
+											tag="h2"
+											animateOnScroll={false}
+											delay={1.2}
+										>
+											Reconnect. Recharge.
+										</AnimatedCopy>
+
+										<AnimatedCopy
+											tag="h2"
+											animateOnScroll={false}
+											delay={1.4}
+										>
+											Rediscover.
+										</AnimatedCopy>
+										<AnimatedCopy
+											tag="p"
+											animateOnScroll={false}
+											delay={1.6}
+											className="secondary md"
+										>
+											<span
+												style={{ margin: "20px 0 30px 0", maxWidth: "650px" }}
+											>
+												Meaningful connection and moments of adventure, set
+												against the natural beauty of the Caribbean coast.
+											</span>
+										</AnimatedCopy>
+										<AnimatedCopy
+											tag="p"
+											animateOnScroll={false}
+											delay={1.8}
+											className="primary sm hero-sm-padding"
+										>
+											You deserve this. <br />
+											Remember, you are{" "}
+											<span
+												style={{
+													fontFamily: "Zapfino",
+													textTransform: "none",
+													fontSize: "1.3rem",
+													marginRight: "6px",
+													fontWeight: 600,
+													lineHeight: "300%",
+													marginBottom: 20,
+												}}
+											>
+												magic!{" "}
+											</span>{" "}
+										</AnimatedCopy>
+										<button
+											style={{ margin: "15px auto 20px 0" }}
+											className="primary-button"
+											onClick={() =>
+												window.open(
+													"https://buy.stripe.com/aFaaEW41a07s69abZQ2wU17",
+													"_blank",
+													"noopener,noreferrer",
+												)
+											}
+										>
+											Place your deposit
+										</button>
+									</>
+								) : (
+									<>
+										<AnimatedCopy
+											tag="h2"
+											animateOnScroll={false}
+											delay={1.2}
+										>
+											Reconnect. Recharge.
+										</AnimatedCopy>
+
+										<AnimatedCopy
+											tag="h2"
+											animateOnScroll={false}
+											delay={1.4}
+										>
+											Rediscover.
+										</AnimatedCopy>
+										<AnimatedCopy
+											tag="p"
+											animateOnScroll={false}
+											delay={1.6}
+											className="secondary md"
+										>
+											<span
+												style={{ margin: "20px 0 0px 0", maxWidth: "650px" }}
+											>
+												Meaningful connection and moments of adventure, set
+												against the natural beauty of the Caribbean coast.
+											</span>
+										</AnimatedCopy>
+										<AnimatedCopy
+											tag="p"
+											animateOnScroll={false}
+											delay={1.8}
+											className="primary sm hero-sm-padding"
+										>
+											You deserve this. Remember, you are{" "}
+											<span
+												style={{
+													fontFamily: "Zapfino",
+													textTransform: "none",
+													fontSize: "1.7rem",
+													marginRight: "6px",
+													fontWeight: 600,
+													lineHeight: "300%",
+												}}
+											>
+												magic!{" "}
+											</span>{" "}
+										</AnimatedCopy>
+										<button
+											style={{ margin: "15px auto 20px 0" }}
+											className="primary-button"
+											onClick={() =>
+												window.open(
+													"https://buy.stripe.com/aFaaEW41a07s69abZQ2wU17",
+													"_blank",
+													"noopener,noreferrer",
+												)
+											}
+										>
+											Place your deposit
+										</button>
+									</>
+								)}
+
+								{/* <p className="secondary sm mobile-text-center">
+									Payment plans available from Klarna, Affirm and Afterpay.
+								</p> */}
+							</div>
+						</div>
+
+						<div className="destinations-hero-slider">
+							<SliderTulum />
+						</div>
+					</div>
+				</section>
+				{/* <section className="hero">
 					<div className="hero-img">
 						<SliderHero />
-						{/* <img
-							src="/home/hero1.jpg"
-							alt=""
-						/> */}
+						
 					</div>
 
 					<div className="hero-header">
@@ -314,7 +476,8 @@ const Peru2026 = () => {
 							</button>
 						</div>
 					</div>
-				</section>
+				</section> */}
+
 				<section
 					ref={stickyTitlesRef}
 					className="sticky-titles"
@@ -370,7 +533,7 @@ const Peru2026 = () => {
 					</div>
 				</section>
 
-				<section
+				{/* <section
 					ref={homeWorkRef}
 					className="home-work"
 				>
@@ -392,8 +555,6 @@ const Peru2026 = () => {
 
 								<div className="work-item-img">
 									<iframe
-										// width="560"
-										// height="315"
 										src={work.video}
 										title="YouTube video player"
 										frameBorder="0"
@@ -402,7 +563,6 @@ const Peru2026 = () => {
 										allowFullScreen
 									></iframe>
 								</div>
-								{/* <p className="primary sm">{work.category}</p> */}
 								<h4>{work.category}</h4>
 							</div>
 						))}
@@ -430,7 +590,7 @@ const Peru2026 = () => {
 					<p className="secondary sm">
 						Payment plans available from Klarna, Affirm and Afterpay.
 					</p>
-				</section>
+				</section> */}
 
 				<div className="peru-banner">
 					<img

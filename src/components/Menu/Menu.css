@@ -179,8 +179,8 @@
 	}
 
 	.menu-bar {
-		margin: 1.25em;
-		width: calc(100% - 2.7rem);
+		margin: 1.2rem 15px;
+		width: calc(100% - 30px);
 	}
 
 	.menu-actions {

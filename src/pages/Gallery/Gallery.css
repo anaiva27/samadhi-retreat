@@ -11,10 +11,6 @@
 	margin-bottom: 50px;
 }
 
-.masonry-gallery h3 {
-	/* margin-bottom: -30px; */
-}
-
 .faq-list {
 	padding-left: 20px !important;
 }
@@ -36,9 +32,17 @@
 
 @media (max-width: 1000px) {
 	.gallery {
-		padding: 10rem 0px;
+		padding: 7rem 0px;
 		margin: auto;
 		width: 100%;
 		max-width: 1400px;
+	}
+
+	.masonry-gallery {
+		padding: 0 15px;
+	}
+
+	.masonry-gallery h3 {
+		margin-bottom: 20px;
 	}
 }

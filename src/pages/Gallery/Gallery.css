@@ -33,3 +33,12 @@
 	margin: 100px auto 50px;
 	text-align: center;
 }
+
+@media (max-width: 1000px) {
+	.gallery {
+		padding: 10rem 0px;
+		margin: auto;
+		width: 100%;
+		max-width: 1400px;
+	}
+}

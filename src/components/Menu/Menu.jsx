@@ -15,7 +15,7 @@ const Menu = () => {
 
 	const mobileMenuLinks = [
 		{ path: "/tulum", label: "Guatemala" },
-		{ path: "/peru-2025", label: "Peru" },
+		{ path: "/peru-2026", label: "Peru" },
 		{ path: "/tulum", label: "Tulum" },
 		{ path: "/testimonials", label: "Testimonials" },
 		{ path: "/gallery", label: "Gallery" },
@@ -24,7 +24,7 @@ const Menu = () => {
 
 	const desktopMenuLinks = [
 		{ path: "/tulum", label: "Guatemala" },
-		{ path: "/peru-2025", label: "Peru" },
+		{ path: "/peru-2026", label: "Peru" },
 		{ path: "/tulum", label: "Tulum" },
 	];
 

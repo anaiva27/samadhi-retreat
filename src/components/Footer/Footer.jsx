@@ -82,36 +82,36 @@ const Footer = () => {
 					</Link>
 
 					<Link
-						to="/schedule"
+						to="/tulum"
 						className="footer-nav-item"
 					>
-						<span>Schedule</span>
+						<span>Tulum</span>
 						<span>&#8594;</span>
 					</Link>
 
 					<Link
-						to="/testimonials"
+						to="/peru-2026"
 						className="footer-nav-item"
 					>
-						<span>Testimonials</span>
+						<span>Peru</span>
 						<span>&#8594;</span>
 					</Link>
 
 					<Link
-						to="/about"
+						to="/tulum"
 						className="footer-nav-item"
 					>
-						<span>About</span>
+						<span>Guatemala</span>
 						<span>&#8594;</span>
 					</Link>
 
-					{/* <Link
-						to="/destinations"
+					<Link
+						to="/gallery"
 						className="footer-nav-item"
 					>
-						<span>destinations</span>
+						<span>Gallery</span>
 						<span>&#8594;</span>
-					</Link> */}
+					</Link>
 
 					<Link
 						to="/contact"

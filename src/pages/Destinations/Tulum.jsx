@@ -310,7 +310,7 @@ const Tulum = () => {
 					</section>
 
 					<section className="masonry">
-						<Masonry />
+						<Masonry location="Tulum" />
 					</section>
 
 					<section className="tulum-pricing-section">

@@ -109,7 +109,7 @@
 
 @media (max-width: 900px) {
 	.contact-form {
-		margin: 1.25em 0 1.25em;
+		margin: 1.25em 10px 1.25em;
 	}
 	.contact-form-row:nth-child(1) {
 		flex-direction: column;

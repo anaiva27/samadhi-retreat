@@ -52,7 +52,11 @@
 @media (max-width: 600px) {
 	.pin-masonry,
 	.pin-masonry__column {
-		gap: 12px;
+		gap: 10px;
+	}
+
+	.pin-masonry {
+		padding: 0 10px;
 	}
 	.pin-masonry__item {
 		border-radius: 16px;
